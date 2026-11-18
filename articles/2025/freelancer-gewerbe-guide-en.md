@@ -7,14 +7,14 @@ tags:
   - gewerbe
 summary: >-
   Practical guide to registering and working as a freelancer or Gewerbe owner in
-  Germany, covering registration, taxes, accounting (EÜR), invoicing, tools,
+  Germany, covering registration, taxes, cash-basis accounting (Einnahmenüberschussrechnung, EÜR), invoicing, tools,
   banks, insurance, and contracts.
 ---
 # Freelancer & Gewerbe Guide (EN)
 
 Russian version: [Freelancer Gewerbe Guide (RU)](freelancer-gewerbe-guide.md)
 
-**Last updated:** 02.05.2026. Internal links, external sources, and key 2026 tax figures were checked: Grundfreibetrag, Kinderfreibetrag, Kleinunternehmerregelung limits, filing deadlines, and baseline health-insurance parameters. Rules can change, so before filing or applying, verify the current requirements with Finanzamt, Ausländerbehörde, Krankenkasse, or a Steuerberater.
+**Last updated:** 18.11.2026. Registration, tax, insurance and hourly-rate sections received targeted corrections, and several original examples and tips were restored. On 02.05.2026: Internal links, external sources, and key 2026 tax figures were checked: Grundfreibetrag, Kinderfreibetrag, Kleinunternehmerregelung limits, filing deadlines, and baseline health-insurance parameters. Rules can change, so before filing or applying, verify the current requirements with Finanzamt, Ausländerbehörde, Krankenkasse, or a Steuerberater.
 
 ## Contents
 
@@ -89,7 +89,7 @@ Russian version: [Freelancer Gewerbe Guide (RU)](freelancer-gewerbe-guide.md)
 - [Freiberufler vs Gewerbe vs employee with side gig](#freiberufler-vs-gewerbe-vs-employee-with-side-gig)
 - [Conclusion](#conclusion)
 
-**Heads-up (B2B e-invoices from 01.01.2025):** All businesses, including Kleinunternehmer, must be able to receive and store structured e-invoices (XML/XRechnung); PDF alone is not an e-invoice. See the TL;DR in the invoicing section for the quick checklist.
+**Electronic invoices between businesses (B2B).** Since 1 January 2025, businesses in Germany, including Kleinunternehmer, must be able to receive e-invoices for covered domestic transactions. If a supplier sends an XRechnung, keep the original XML file so your software can read the invoice details and amounts. An ordinary PDF without structured data does not serve this purpose. [Invoicing checklist](#invoicing)
 
 ## Foreword
 
@@ -117,6 +117,7 @@ Questions or feedback? Email fedotov.ilya (at) gmail.com or reach out on LinkedI
 
 | **Change** | **Page** | **Date** | **Comments** | **Author** |
 |----|:--:|:--:|:--:|:--:|
+| Legal and tax corrections, restored examples | Entire document | 18.11.2026 | Freiberufler vs Gewerbe, §141 AO, VAT periods (2027 start-ups), trade tax credit, car VAT example, KUR invoice note, retention, accident insurance, hourly rate, status comparison table | Ilya |
 | 2026 tax figures and filing section update | Entire document | 02.05.2026 | Grundfreibetrag, Kinderfreibetrag, KUR, insurance contributions, filing deadlines, ELSTER forms by status | Ilya |
 | TL;DR, tax/insurance tables, FAQ/glossary | Entire document | 22.11.2025 | Added quick blocks, tax/status tables, FAQ/10 mistakes | Ilya |
 | Retention tables, platform/FX cases | Entire document | 22.11.2025 | GoBD with HR/tech docs; Upwork/Stripe numeric examples | Ilya |
@@ -142,37 +143,43 @@ The overall registration flow looks roughly like this:
 
 ### Who are freelancers and Gewerbe owners in Germany?
 
-In Germany any activity—freelance or business—has to be clearly classified. There are two main categories: freelancers (Freiberufler) and Gewerbe (sole proprietors). Each has its own rules and requirements under German law.
+In everyday English, “freelancer” can describe anyone who works for clients on their own account. In Germany, registration depends on the work itself. A freelancer may practise a liberal profession (freiberufliche Tätigkeit) or run a commercial business (Gewerbe).
 
 ### Freelancer (Freiberufler)
 
-A freelancer in Germany provides professional services not tied to trade or commerce. The key requirement is that the activity is intellectual and needs special expertise—doctors, lawyers, consultants, programmers, and similar roles. Not all self-employment qualifies; simple PC repairs, for example, may not.
+Doctors, architects and translators are examples of the liberal professions. Independent teaching also qualifies. If you work in IT, describe what you actually deliver and what qualifications the work requires. Designing a complex system and repairing computers are quite different activities, even if both specialists introduce themselves as IT freelancers. [§ 18 EStG](https://www.gesetze-im-internet.de/estg/__18.html)
 
-Freelancers are exempt from the Handelsregister (commercial register) and mandatory IHK membership, which reduces bureaucracy. But not every activity will be accepted as “freelance.” To check if you can be a Freiberufler, review the IHK guidance: [<u>https://www.ihk.de/magdeburg/recht/allgemeine-rechtsauskuenfte-1/gewerberecht-ordner/gewerbeordnung/freier-beruf/abgrenzung-gewerbe-und-freier-beruf-1717318</u>](https://www.ihk.de/magdeburg/recht/allgemeine-rechtsauskuenfte-1/gewerberecht-ordner/gewerbeordnung/freier-beruf/abgrenzung-gewerbe-und-freier-beruf-1717318)
+Individuals practising only a liberal profession generally do not need registration in the Handelsregister or membership of the local chamber of commerce and industry (Industrie- und Handelskammer, IHK). Members of regulated professions may have their own professional chamber. But not every activity will be accepted as “freelance.” To check if you can be a Freiberufler, review the IHK guidance: [<u>https://www.ihk.de/magdeburg/recht/allgemeine-rechtsauskuenfte-1/gewerberecht-ordner/gewerbeordnung/freier-beruf/abgrenzung-gewerbe-und-freier-beruf-1717318</u>](https://www.ihk.de/magdeburg/recht/allgemeine-rechtsauskuenfte-1/gewerberecht-ordner/gewerbeordnung/freier-beruf/abgrenzung-gewerbe-und-freier-beruf-1717318)
 
 ### Gewerbe (small business owners)
 
-If your work is not “intellectual” under the rules, you’re a Gewerbe (sole proprietor). Classic cases: running a shop, selling goods, or services like repairs. This requires Handelsregister registration, trade tax, and dealings with more bureaucracy.
+Imagine opening a shop, selling goods or running a repair service on your own. Those are typical examples of a Gewerbe. You notify your local Gewerbeamt when you start. Entry in the commercial register (Handelsregister) is a separate step. For a sole proprietor with a small shop it is generally voluntary, but it becomes mandatory when the nature or scale of the business requires commercial organisation. [§ 14 GewO](https://www.gesetze-im-internet.de/gewo/__14.html) · [§ 1 HGB](https://www.gesetze-im-internet.de/hgb/__1.html)
 
-Gewerbe status has upsides: you can scale, hire, and even seek investment. But you’re an entrepreneur, not a “free artist.” If you want freedom and lighter compliance, freelancing may fit. If you plan to grow a business, Gewerbe opens those doors.
+Both kinds of business can grow and hire. An architect can bring a colleague into the practice to work on drawings. To retain Freiberufler status, the architect must continue to direct the professional work and take personal responsibility for it using their own expertise. [§ 18 EStG](https://www.gesetze-im-internet.de/estg/__18.html)
+
+So where do you start? Describe your first project the way you would explain it to the client. What will you do, what will you hand over, and what are you being paid for? With that description it is much easier to fill in the Finanzamt questionnaire and to sort out a borderline case.
 
 ### Key differences between a freelancer and a Gewerbe owner
 
-One major difference is tax: Gewerbe owners pay trade tax (Gewerbesteuer); freelancers do not. Bureaucracy differs too—freelancers have simpler bookkeeping and filings, while Gewerbe owners keep fuller records and file trade tax returns. It’s the “hard mode” of running a business.
+One practical difference is trade tax. Income from a liberal profession is outside Gewerbesteuer. A sole trader or partnership has a €24,500 annual allowance against Gewerbeertrag, the trade earnings after tax adjustments. A workshop with €30,000 of trade earnings therefore has €5,500 left for the calculation. [§ 11 GewStG](https://www.gesetze-im-internet.de/gewstg/__11.html)
+
+What about bookkeeping? A small workshop can also use simple cash-basis accounts (Einnahmenüberschussrechnung, EÜR) if the owner has no duty to keep full books and does not keep them voluntarily. So the question of long evenings over spreadsheets has a very concrete answer: which requirements apply to your business, and which documents will you need for the tax return?
 
 Registration also varies by activity and region, so review local guidance:
 
-[<u>https://www.lexoffice.de/wissenswelt/selbstaendig-machen/gewerbe-anmelden/</u>](https://www.lexoffice.de/wissenswelt/selbstaendig-machen/gewerbe-anmelden/)
+[<u>https://www.lexware.de/wissen/gruendung/gewerbe-anmelden/</u>](https://www.lexware.de/wissen/gruendung/gewerbe-anmelden/)
 
 [<u>https://www.ihk.de/karlsruhe/fachthemen/recht/gewerberecht/gewerbeanmeldung-4632354</u>](https://www.ihk.de/karlsruhe/fachthemen/recht/gewerberecht/gewerbeanmeldung-4632354)
 
-If you want control and can handle heavier reporting, Gewerbe might be right. If you prefer a lighter path (with some sharp edges), freelancing may suit you better.
+If you offer several things, describe each activity separately. Developing software for a client and selling hardware may need different accounting treatment. It is easier to settle that before the first invoice, while you can still explain exactly what the customer is buying.
+
+So you don’t pick Freiberufler or Gewerbe like a tariff plan: your work decides. Gewerbe isn’t automatically “hard mode” either, because a small Gewerbe can keep the same simple EÜR. The real extras are the Gewerbeamt notification, IHK membership and, above the allowance, trade tax. Freelancing has its own sharp edges: Finanzamt may not accept your activity as a liberal profession, so describe it carefully.
 
 ### Registration in Elster
 
-**Prerequisite:** You need access to your Finanzamt online cabinet. There you submit your freelance application, communicate with the tax office, file returns, and grant access to a Steuerberater. Steps:
+**Prerequisite:** You need access to Mein ELSTER, the online portal for communicating with your tax office (Finanzamt). ELSTER stands for elektronische Steuererklärung, or electronic tax return. There you submit your freelance application, communicate with the tax office, file returns, and grant access to a Steuerberater. Steps:
 
-1. Go to [<u>https://www.elster.de/eportal/registrierung-auswahl?locale=en_US</u>](https://www.elster.de/eportal/registrierung-auswahl?locale=en_US)
+1. Go to [<u>https://www.elster.de/eportal/start?themaGlobal=help_registrierung</u>](https://www.elster.de/eportal/start?themaGlobal=help_registrierung)
 
 2. Click **Next**
 
@@ -214,11 +221,11 @@ If everything is filled (grey fields), click **Submit**. You’ll get an email t
 
 When the second activation code arrives (up to ~14 days; contact support if not), complete registration. You’ll need the saved certificate plus login/password to access later.
 
-Before registering, have a dedicated bank account/IBAN for income, taxes, and self-employment expenses. *See Section 6: Banks.*
+A dedicated account makes it easier to distinguish customer payments from personal spending. For a sole proprietor, check that the account terms permit business use. See Chapter 5, Banks.
 
 ### Fast Freiberufler registration
 
-Note: not an ad for getsorted.
+Note: not an ad for getsorted. The screenshots show the workflow when this guide was prepared. Button names may differ today.
 
 1. Sign up at [<u>https://en.getsorted.de</u>](https://en.getsorted.de)
 
@@ -228,15 +235,15 @@ Note: not an ad for getsorted.
 
 3. Fill the **Personal Details** form. Be sure to specify your profession.
 
-4. Fill **Business Info**. It’s important to state your profession so the system determines whether you’re **Freiberufler** or **Gewerbe.**
+4. Fill in **Business Info.** Describe your profession and the work you do for clients. Finanzamt assesses your activity using these details. The software selection alone does not settle your status.
 
 ![](../assets/freelancer-gewerbe-guide/media/image11.png)
 
-5. **Tax Setup.** Under **Profit determination method** you’ll likely pick single-entry bookkeeping. If revenue exceeds €800k/year, pick the second option.
+5. **Tax Setup.** Under **Profit determination method**, choose single-entry bookkeeping if you use EÜR. Select the balance-sheet method if that is how you keep your books. For a commercial business, turnover over €800,000 or profit over €80,000 can trigger a bookkeeping obligation following notice from Finanzamt under §141 AO. That rule does not apply to income from a liberal profession. [§ 141 AO](https://www.gesetze-im-internet.de/ao_1977/__141.html)
 
 6. **Tax Estimation.** Enter your freelance status and expected income for the current and next year (details vary per situation).
 
-**Bank Account.** Use a separate account. Set **YES** and provide your IBAN.
+**Bank Account.** Enter the international bank account number (IBAN) you will use for business. If you have opened a dedicated account, use its details here.
 
 ![](../assets/freelancer-gewerbe-guide/media/image12.png)
 
@@ -270,33 +277,33 @@ Depending on your location and processing times, within 2–9 weeks you’ll get
 
 ### First 90 days checklist
 
-1. Open a separate account/IBAN for the business.
+1. Choose an account for business payments and confirm that your bank permits that use.
 2. Register in Elster and keep the certificate file safe.
-3. Submit the Fragebogen zur steuerlichen Erfassung; choose KUR or standard VAT.
-4. Set up bookkeeping (EÜR, receipt storage, GoBD, e-invoice handling).
+3. Complete the tax registration questionnaire (Fragebogen zur steuerlichen Erfassung). State whether you will use the small-business exemption from value added tax (Kleinunternehmerregelung, KUR) or the standard VAT rules.
+4. Set up your cash-basis bookkeeping (EÜR). Decide where you will keep receipts and original electronic invoices. The German principles governing digital bookkeeping and record retention are known as GoBD.
 5. Minimum insurance: health; consider liability (Haftpflicht) and disability (Berufsunfähigkeit).
-6. Prepare invoice templates (DE/EU/non-EU) and your issuing flow.
+6. Prepare invoice templates for customers in Germany, elsewhere in the EU and outside the EU.
 7. Issue your first invoice and verify banking/VAT wording (§19 UStG if applicable).
 
 ## 2. Taxes
 
 Taxes are a mandatory “quest” for every freelancer or small business in Germany. Not the most fun, but skipping it brings fines and tax-office questions. This chapter covers the core taxes freelancers and Gewerbe owners must handle to stay legal and sleep well.
 
-**TL;DR for taxes:**
+**Tax essentials:**
 - Confirm status (Freiberufler vs Gewerbe) and whether Gewerbeamt is required.
-- Check KUR: ≤€25k prior year and ≤€100k current year → no VAT; above → standard VAT.
-- Voranmeldung: VAT owed > €9k prior year → monthly; €2k–9k → quarterly; ≤€2k → usually annual.
+- **KUR.** In the start year, the KUR ceiling is €25,000 of actual qualifying turnover. In later years, the limits are €25,000 in the previous year and €100,000 in the current year, both inclusive.
+- Voranmeldung usually follows the prior year’s VAT liability. Over €9,000 means monthly filing, otherwise quarterly. At €2,000 or less, Finanzamt may waive prefilings. [§ 18 UStG](https://www.gesetze-im-internet.de/ustg_1980/__18.html)
 - Income tax is progressive: the 2026 Grundfreibetrag is €12,348, then rates progress up to 42/45%.
-- International: EU B2B → Reverse Charge; non-EU → export of services (§4 Nr.1a UStG).
+- International: ordinary services supplied to a business customer in another EU country (business-to-business, B2B) generally use reverse charge: the customer accounts for the VAT. For ordinary B2B services to non-EU customers, the place of supply is generally outside Germany. [§ 3a UStG](https://www.gesetze-im-internet.de/ustg_1980/__3a.html)
 
 ### Types of taxes for freelancers and Gewerbe
 #### Tax overview (quick table)
 
 | Tax | Base | Who pays | Key thresholds/rates | When to file/pay | Notes |
 | --- | --- | --- | --- | --- | --- |
-| Income tax (ESt) | Net income/profit | Everyone | 2026 Grundfreibetrag: €12,348; progressive to 42/45% | Annual return; quarterly advances | Formulas: Grundtabelle BMF |
-| VAT (USt) | Turnover | Everyone unless KUR | KUR ≤€25k prior, ≤€100k current; Voranmeldung monthly if VAT owed > €9k | Voranmeldung monthly/quarterly; annual return | Vorsteuerabzug if not on KUR |
-| Trade tax (GewSt) | Profit from Gewerbe | Gewerbe only | Freibetrag ~€24,500; base 3.5% × municipal Hebesatz (min 200%) | Annual after EÜR/income tax | Check Hebesatz: e.g., <https://www.hebesatzdatenbank.de/> |
+| Income tax (ESt) | Taxable income | Individuals with taxable income | 2026 Grundfreibetrag: €12,348; progressive to 42/45% | Annual return; quarterly advances if assessed | Formulas: Grundtabelle published by the Federal Ministry of Finance (BMF) |
+| VAT (USt) | Turnover | Everyone unless KUR | KUR ≤€25k prior, ≤€100k current; start year ≤€25k; Voranmeldung monthly if VAT owed > €9k | Voranmeldung monthly/quarterly; annual return | Vorsteuerabzug if not on KUR |
+| Trade tax (GewSt) | Adjusted trade profit (Gewerbeertrag) | Commercial businesses | €24,500 allowance for sole proprietors and partnerships; 3.5% × municipal Hebesatz | Annual return if required | Check Hebesatz: e.g., <https://www.hebesatzdatenbank.de/> |
 | Solidarity surcharge (Soli) | Add-on to ESt | High earners | Based on ESt amount | With ESt | --- |
 | Church tax | Add-on to ESt | If registered church member | 8–9% of ESt | With ESt | --- |
 
@@ -307,29 +314,29 @@ Formulas/refs: income tax (Grundtabelle BMF), VAT (§§18, 19 UStG), trade tax (
 
 **Important:** the tax amounts and thresholds below were updated for 2026, but the final requirements depend on your situation. Before decisions on VAT, Kleinunternehmerregelung, EÜR, or deductions, verify the rules with Finanzamt or a Steuerberater.
 
-Freelancers and Gewerbe owners pay income tax like any taxpayer. It’s based on net income (revenue minus deductible expenses) and is progressive (figures are for 2026):
+Freelancers and Gewerbe owners pay income tax like other taxpayers. Your business profit contributes to taxable income along with any other income and applicable deductions (figures are for 2026).
 
 - Up to €12,348/year: 0% (Grundfreibetrag).
 - €12,349–€17,799: first progression zone, entering at about 14%.
 - €17,800–€69,878: second progression zone, gradually rising to 42%.
 - €69,879–€277,825: 42%.
-- Above €277,826: 45%.
+- From €277,826: 45%.
 
-Example: at €80,000 income, you don’t pay 42% on all of it; the effective rate is ~30–35% because only amounts above each threshold are taxed at higher rates. Use the effective rate to see total tax share—it’s always below the top marginal rate.
+Example: at €80,000 of taxable income in 2026, the basic single-person tariff yields €22,464 of income tax, about 28.1% overall before any solidarity surcharge or church tax. The marginal rate at that income is 42%. [§ 32a EStG](https://www.gesetze-im-internet.de/estg/__32a.html)
 
 - Formulas/Grundtabelle BMF: <https://www.bmf-steuerrechner.de/>
 
-Example calculation:
+The screenshot below uses the 2024 tariff to illustrate the difference between the average and marginal rate.
 
 ![](../assets/freelancer-gewerbe-guide/media/image13.png)
 
 #### 2. VAT (Umsatzsteuer)
 
-Most freelancers and Gewerbe owners must charge VAT (Mehrwertsteuer/Umsatzsteuer). The standard rate in Germany is 19%; some items like books and many foods use a reduced 7% rate. Exception: Kleinunternehmer: from 2025 the national thresholds are up to €25,000 turnover in the previous calendar year and up to €100,000 in the current year.
+Most freelancers and Gewerbe owners must charge VAT (Mehrwertsteuer/Umsatzsteuer). The standard rate in Germany is 19%; some items like books and many foods use a reduced 7% rate. Exception: Kleinunternehmer: from 2025 the national thresholds are up to €25,000 turnover in the previous calendar year and up to €100,000 in the current year. The start-year ceiling is €25,000.
 
 #### 3. Trade tax (Gewerbesteuer)
 
-Freelancers do not pay trade tax. Gewerbe owners pay it if annual profit exceeds roughly €24,500. The rate = 3.5% × municipal Hebesatz (cannot be below 200% per §16(3) GewStG), so the effective span is roughly 7–31.5%. Paid trade tax is credited against income tax under §35(1) EStG (often fully up to Hebesatz ~380%), so the net burden rises less than the paperwork.
+Income from a liberal profession is outside trade tax. For a commercial sole proprietor, start with adjusted trade profit (Gewerbeertrag) and subtract the €24,500 allowance. Apply the 3.5% measurement rate and the local Hebesatz. The statutory minimum Hebesatz is 200% through 2026 and 280% from 2027. The income-tax credit is capped at four times the measurement amount, the actual trade tax and the portion of income tax attributable to commercial income. In practice, the effective rate is roughly 7–31.5% (at least 9.8% from 2027). Paid trade tax is credited against income tax, often fully up to a Hebesatz of about 400%, so the net burden rises less than the paperwork. [§ 11 GewStG](https://www.gesetze-im-internet.de/gewstg/__11.html) · [BMF](https://www.bundesfinanzministerium.de/Content/DE/Glossareintraege/G/gewerbesteuer.html?view=renderHelp) · [§ 35 EStG](https://www.gesetze-im-internet.de/estg/__35.html)
 
 #### 4. Cooperative and corporate taxes
 
@@ -339,21 +346,23 @@ Freelancers do not pay corporate tax (Körperschaftsteuer); it applies to Kapita
 
 VAT applies to most goods/services in Germany. Two main methods matter: **Soll-Versteuerung** and **Ist-Versteuerung**.
 
-#### 1. Soll-Versteuerung (VAT due on invoice date)
+<a id="1-soll-versteuerung-vat-due-on-invoice-date"></a>
 
-VAT is due when you issue the invoice, even if unpaid. This can create cash-flow pressure. Best for businesses with strong liquidity.
+#### 1. Soll-Versteuerung (VAT based on when you perform the service)
+
+VAT normally arises at the end of the filing period in which you perform the service, even if you invoice later or the client has yet to pay. An advance payment triggers VAT on the amount received in that period. You may therefore have to pay VAT before the client settles the invoice. [§ 13 UStG](https://www.gesetze-im-internet.de/ustg_1980/__13.html)
 
 #### 2. Ist-Versteuerung (VAT due on payment date)
 
-VAT is due only after the client pays. Better for liquidity. For businesses obliged to keep double-entry books, turnover must be under €800,000 (from 01.01.2025). Freiberufler can use Ist-Versteuerung regardless of turnover because they are not required to keep double-entry accounts (§20(1) Nr.3 UStG).
+With Finanzamt approval, VAT arises at the end of the filing period in which you receive payment. That can help with cash flow. You can apply if your total turnover in the prior calendar year was at most €800,000. Qualifying liberal-profession turnover has a separate route without that ceiling if you keep no books for those sales. [§ 20 UStG](https://www.gesetze-im-internet.de/ustg_1980/__20.html) · [UStAE 20.1](https://lsth.bundesfinanzministerium.de/usth/2024/A-Umsatzsteuergesetz/V-Besteuerung/Paragraf-20/inhalt.html)
 
 #### 3. VAT prefilings (Umsatzsteuer-Voranmeldung)
 
-Freelancers and Gewerbe must file VAT pre-returns monthly, quarterly, or annually depending on prior-year VAT:
+Under the regular VAT filing rules, the prior year’s VAT liability normally determines the filing period. For 2026, use expected VAT liability if you start that year. If you operated for only part of 2025, convert the actual 2025 liability to an annual amount. That special rule covers 2021–2026 only: unless it is extended, a business that starts in 2027 or later files monthly in its first and second calendar years. [§ 18 UStG](https://www.gesetze-im-internet.de/ustg_1980/__18.html)
 
 - If prior-year VAT liability **> €9,000**: file monthly.
-- If **€2,000–€9,000**: file quarterly.
-- If **≤ €2,000**: usually annual (can be fully exempt from prefilings).
+- If **over €2,000 and up to €9,000**: file quarterly.
+- If **€2,000 or less**, Finanzamt may waive prefilings. The annual VAT return is a separate filing. [§ 18 UStG](https://www.gesetze-im-internet.de/ustg_1980/__18.html)
 
 Note: thresholds refer to VAT **amount owed**, not your turnover.
 
@@ -414,31 +423,33 @@ Examples:
 Partially deductible = only a portion counts, often because there’s a personal element.
 
 Examples:
-- **Client entertainment (Bewirtungskosten):** 70% of net cost is deductible; VAT can be reclaimed fully only if you are VAT-registered with input-tax rights (no reclaim under KUR).
+- **Client entertainment (Bewirtungskosten):** Deduct 70% of reasonable and documented business entertainment costs, net of any recoverable VAT. With input VAT rights and proper documentation, you can generally reclaim the full VAT on reasonable business entertainment. Under Kleinunternehmerregelung you cannot reclaim input VAT, so the VAT stays part of the cost and 70% of the gross amount is deductible. [§ 4 EStG](https://www.gesetze-im-internet.de/estg/__4.html) · [§ 15 UStG](https://www.gesetze-im-internet.de/ustg_1980/__15.html)
 - **Personal car used for work:** Deduct only the business-use share; personal use is not deductible.
 
-#### Which expenses are VAT-only deductible?
+<a id="which-expenses-are-vat-only-deductible"></a>
 
-Some purchases (equipment, vehicles) allow you to reclaim VAT upfront, but the asset cost is deducted over time via depreciation (AfA). Important for big items like computers or cars.
+#### Which expenses involve input VAT and depreciation?
+
+For purchases such as equipment or vehicles, claim input VAT separately if you are entitled to it. The purchase cost itself may be deducted over time via depreciation (Absetzung für Abnutzung, AfA). [§ 15 UStG](https://www.gesetze-im-internet.de/ustg_1980/__15.html) · [§ 7 EStG](https://www.gesetze-im-internet.de/estg/__7.html)
 
 #### Limits on deductions
 
 Some costs have caps or are non-deductible, for example:
 
-- **Client gifts (Geschenke an Kunden):** Over €50 value is not deductible.
+- **Client gifts (Geschenke an Kunden):** If gifts to the same recipient cost more than €50 in total over the financial year, none of those gifts are deductible. [§ 4 EStG](https://www.gesetze-im-internet.de/estg/__4.html)
 
-- **Meals on business trips (Verpflegungsmehraufwendungen):** Deduct only within official per diem limits. In Germany: €14 for trips of 8–24 hours, €28 for longer; other countries may allow higher rates.
+- **Meals on business trips (Verpflegungsmehraufwendungen):** Within Germany, the allowance is €14 for a same-day trip of more than 8 hours or for the arrival and departure days of an overnight trip, and €28 for each full calendar day away. Foreign rates can differ. [§ 4 EStG](https://www.gesetze-im-internet.de/estg/__4.html) · [§ 9 EStG](https://www.gesetze-im-internet.de/estg/__9.html)
 
 #### How to optimize taxes?
 
 1. **Track all expenses.** Keep every receipt tied to your work.
-2. **Use depreciation for big purchases (AfA Tabellen):** [<u>https://www.bundesfinanzministerium.de/Web/DE/Themen/Steuern/Steuerverwaltungu-Steuerrecht/Betriebspruefung/AfA_Tabellen/afa_tabellen.html</u>](https://www.bundesfinanzministerium.de/Web/DE/Themen/Steuern/Steuerverwaltungu-Steuerrecht/Betriebspruefung/AfA_Tabellen/afa_tabellen.html). Expensive gear (laptop, printer) is written off over years.
+2. **Use depreciation for big purchases.** You can spread equipment costs over its useful life. For eligible computer hardware and software, you can generally deduct the full amount in the acquisition year under the BMF’s one-year useful-life guidance. [AfA tables](https://www.bundesfinanzministerium.de/Datenportal/Daten/offene-daten/steuern-zoelle/afa-tabellen/AFA-Tabellen.html) · [BMF computer guidance](https://esth.bundesfinanzministerium.de/esth/2022/C-Anhaenge/Anhang-01/V/anhang-1-V.html)
 3. **Separate personal vs business use.** For car/phone/computer, track business share to avoid audit issues.
 4. **Consult a tax pro.** A Steuerberater helps allocate expenses and optimize legally.
 
 #### Expense table
 
-Table: which costs are fully deductible vs VAT-only.
+The table is an older illustration of common expenses. Use the rules above to check separately how much you can deduct from profit and how much input VAT you can reclaim.
 
 ![](../assets/freelancer-gewerbe-guide/media/image14.png)
 
@@ -448,14 +459,14 @@ Using a business car privately creates a **taxable benefit (geldwerter Vorteil)*
 
 #### Input VAT on car expenses
 
-- If you’re entitled to Vorsteuerabzug, you can reclaim VAT on car costs like fuel, repairs, and maintenance.
-- Example: total costs €9,450 incl. VAT (~€7,941 net + €1,509 VAT); you can reclaim the €1,509.
+- Input VAT on car costs such as fuel, repairs and maintenance depends on your right to deduct it and how the car is allocated for VAT purposes. A vehicle used less than 10% for the business cannot be allocated to it for input VAT on the purchase. [§ 15 UStG](https://www.gesetze-im-internet.de/ustg_1980/__15.html) · [UStAE 15.23](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/Umsatzsteuer-Anwendungserlass-31-12-2025.pdf?__blob=publicationFile&v=3)
+- Example: if all €9,450 of costs include VAT at 19% and qualify for full deduction, the amounts are about €7,941 net and €1,509 deductible VAT.
 
 #### VAT on private use
 
-- The private-use portion is subject to VAT. Example with logbook:
-  - €1,928 private use (net amount)
-  - €1,928 × 19% = €366.32 VAT to pay back.
+- Private use of a vehicle allocated fully to the business can trigger VAT where the purchase gave rise to input VAT deduction. Use the VAT valuation rules for private use. Example using a logbook and an assumed taxable cost base. [UStAE 15.23](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/Umsatzsteuer-Anwendungserlass-31-12-2025.pdf?__blob=publicationFile&v=3)
+  - €7,941 net costs × (5,000 km / 24,500 km) = €1,620.61 private use (net amount)
+  - €1,620.61 × 19% = €307.92 VAT to pay back.
 
 #### 1. Logbook method (Fahrtenbuchmethode)
 
@@ -477,7 +488,7 @@ You must record every business trip with:
 
 #### 2. 1% method (1-Prozent-Methode)
 
-This method taxes private use at **1% of the car’s gross list price** per month. For EVs, 0.5% or 0.25% may apply.
+This method values private use at **1% of the car’s original gross list price** per month. For self-employed taxpayers it applies only if the car is used more than 50% for business. A reduced basis can apply to eligible electric vehicles and plug-in hybrids. [§ 6 EStG](https://www.gesetze-im-internet.de/estg/__6.html)
 
 ##### Advantages of the 1% method
 
@@ -495,7 +506,7 @@ This method taxes private use at **1% of the car’s gross list price** per mont
 
 Suppose total car costs are €9,450/year. You drove 24,500 km, of which 19,500 km were business and 5,000 km private.
 
-- *€9,450 × (5,000 km / 24,500 km) = **€1,928** is the taxable amount for private use.*
+- *€9,450 × (5,000 km / 24,500 km) = **€1,928.57** is the private-use amount for income tax.*
 
 ##### Example calculation with 1% method
 
@@ -505,15 +516,15 @@ If the car’s gross list price is €35,000, the 1% method gives:
 
 #### 3. Adjustments: commuting to first workplace
 
-If you commute (home ↔ first workplace), add 0.03% of list price per km. Example: 10 km commute, €35,000 car:
+Under the 1% method, the flat calculation for trips between home and your first business location uses 0.03% of the gross list price per month per one-way kilometre. For a 10 km commute in a car with a €35,000 list price over 12 months, the calculation is as follows. [§ 4 EStG](https://www.gesetze-im-internet.de/estg/__4.html)
 
-- *0.03% × 10 km × 12 months = **€1,260**.*
+- *€35,000 × 0.03% × 10 km × 12 months = **€1,260**.*
 
-This is added to private-use taxation, but you can also deduct the commuter allowance (Pendlerpauschale): €0.30 per distance km up to 20 km and €0.38 from the 21st km onward.
+The positive difference between this amount and the commuter allowance (Entfernungspauschale) is nondeductible. From 2026, the allowance is €0.38 per full one-way kilometre from the first kilometre, for days you travel to that location. [§ 4 EStG](https://www.gesetze-im-internet.de/estg/__4.html) · [§ 9 EStG](https://www.gesetze-im-internet.de/estg/__9.html)
 
 #### 4. Tax benefits for EVs
 
-EVs and hybrids have special relief. For cars bought from 2019, you can use **0.25% of list price** if CO2 is zero and the gross list price is ≤ €100,000 at first registration.
+EVs and plug-in hybrids have special relief for income tax. The **0.25%** rate for eligible zero-emission cars uses a gross list-price ceiling of €100,000 for acquisitions from 1 July 2025 through 2030. For earlier acquisitions, check the lower ceiling that applied to the acquisition date. [§ 6 EStG](https://www.gesetze-im-internet.de/estg/__6.html) · [BMF guidance](https://esth.bundesfinanzministerium.de/lsth/2026/B-Anhaenge/Anhang-24/IV/IV-6/inhalt.html)
 
 #### EV calculation example
 
@@ -554,11 +565,11 @@ Two main methods to deduct car costs:
 
 1. **Actual expenses.** Track all real costs: fuel, maintenance, insurance, vehicle tax, depreciation, parking, etc., then apportion by business-use share from your logbook. Best if you drive a lot for work.
 2. **Per-kilometer flat rate.** Simpler: deduct €0.30 per business km. Still keep a logbook, but you don’t track individual car costs.
-   For commuting between home and your regular workplace, a separate commuter allowance applies: €0.30 per distance km up to 20 km and €0.38 from the 21st km.
+   For trips between home and your first business location, the separate Entfernungspauschale is €0.38 per full one-way kilometre from the first kilometre in 2026. [§ 4 EStG](https://www.gesetze-im-internet.de/estg/__4.html) · [§ 9 EStG](https://www.gesetze-im-internet.de/estg/__9.html)
 
 #### 4. Registering the car to the business
 
-If the car is registered to the business, all costs (purchase, insurance, maintenance) are business expenses. The car becomes a business asset, so you must depreciate it and correctly handle private use as taxable benefit.
+Income-tax treatment depends on how you use the vehicle. Above 50% business use it is a business asset. At 10% to 50% you can designate it as a business asset if you document the allocation. For a business asset, deduct eligible running costs, depreciate the purchase cost and account for private use. [BMF guidance](https://ao.bundesfinanzministerium.de/esth/2025/B-Anhaenge/Anhang-16/III/inhalt.html)
 
 #### 5. Depreciation
 
@@ -566,7 +577,7 @@ Depreciation writes off the car’s cost over several years. You deduct a portio
 
 #### Example calculation
 
-Example: a freelancer’s personal car is 60% business use per the logbook.
+Example: a freelancer keeps the car as a private asset and records 8,000 business kilometres out of 20,000 in total, or 40%.
 
 - Annual costs:
   - Fuel: €1,500
@@ -575,7 +586,7 @@ Example: a freelancer’s personal car is 60% business use per the logbook.
   - Other: €200
   - Total: €2,600
 
-- **Actual-expense method:** 60% business → *€2,600 × 0.60 = €1,560* deductible.
+- **Actual-expense method:** 40% business → *€2,600 × 0.40 = €1,040* deductible.
 
 - **Per-km flat rate:** 8,000 business km × €0.30 = *€2,400* deductible.
 
@@ -594,63 +605,66 @@ Raising children is rewarding and expensive. Germany provides tax relief via **K
    Components: **Freibetrag für das Existenzminimum des Kindes** (basic needs) and **Freibetrag für den Betreuungs-, Erziehungs- und Ausbildungsbedarf** (care/education).
 
 2. Who can claim:
-   - Available to all taxpayers with children; tax classes are not a restriction. Employees in classes I–IV can add it to their ELStAM to reflect it in wage tax; self-employed claim it in the annual return.
-   - **Co-living parents** file jointly and get the full amount.
-   - **Separated parents** can split 50/50.
+   - Parents must meet the child allowance conditions. In the electronic wage tax data used by your employer (Elektronische Lohnsteuerabzugsmerkmale, ELStAM), the allowance affects the withholding calculation for solidarity surcharge and church tax. Self-employed parents enter the child’s details in the annual return. [§ 32 EStG](https://www.gesetze-im-internet.de/estg/__32.html) · [§ 51a EStG](https://www.gesetze-im-internet.de/estg/__51a.html)
+   - **Parents assessed jointly** generally receive the full allowance for a child of both.
+   - **Parents assessed separately** generally receive half each. A transfer is possible in certain circumstances.
 
-3. Kinderfreibetrag vs **Kindergeld**: Parents don’t pick manually; the tax office runs a **Günstigerprüfung** and either leaves Kindergeld in place or replaces it with Kinderfreibetrag if that’s better. The allowance usually wins when income is above about **€64,000** (couples) or **€32,000** (single parents).
+3. Kinderfreibetrag vs **Kindergeld**: Finanzamt runs the **Günstigerprüfung** automatically. If the allowance saves more tax than the Kindergeld entitlement, Finanzamt deducts the allowance and adds the Kindergeld entitlement back to the calculated tax. The result depends on your taxable income and family situation. As a rule of thumb, the full allowance only wins once your marginal tax rate is above roughly 32% (€3,108 of Kindergeld ÷ €9,756 allowance in 2026). [§ 31 EStG](https://www.gesetze-im-internet.de/estg/__31.html)
 
 4. How to claim: Include it in your tax return; the tax office will state in the Steuerbescheid whether Kinderfreibetrag or Kindergeld was more advantageous.
 
 #### Additional deduction: Ausbildungsfreibetrag
 
-If your child is older and studying, you can also claim **Ausbildungsfreibetrag** to cover education costs.
+If your adult child is in education or vocational training and lives away from home, you may also claim the **Ausbildungsfreibetrag**. [§ 33a EStG](https://www.gesetze-im-internet.de/estg/__33a.html)
 - Until 2022: **€924** per year.
 - From 2023: **€1,200** per year.
-This is in addition to Kinderfreibetrag if you still receive Kindergeld for the studying child.
+You can claim this in addition to the child allowance if you are entitled to Kindergeld or the child allowance for that child.
 
 #### Example of using Kinderfreibetrag
 
-Example: one child, you claim Kinderfreibetrag in 2026:
+Example: you have one child and qualify for the full child allowance in 2026.
 1. Deduction: €9,756 is included in the taxable-income calculation.
-2. Tax reduction: at an illustrative 30% rate this lowers the tax burden by about **€2,927** (30% of €9,756). The actual effect is calculated by Finanzamt through the Günstigerprüfung.
-If your income exceeds the Kindergeld threshold, Kinderfreibetrag can be a significant benefit.
+2. Potential reduction: at an illustrative 30% rate, the calculation gives about **€2,927** before the Kindergeld comparison (30% of €9,756).
+With €259 per month in Kindergeld for all 12 months (€3,108), this example favours Kindergeld. [§ 31 EStG](https://www.gesetze-im-internet.de/estg/__31.html) · [§ 66 EStG](https://www.gesetze-im-internet.de/estg/__66.html)
 
 ------------------------------------------------------------------------
 
 ### How to track expenses and keep receipts?
 
-For expenses to be accepted, document them properly. Every purchase or service should have a receipt/invoice showing date, amount, description, and seller. Keep all documents in a GoBD-compliant way for 6–10 years (many sources cite 8 years for Buchungsbelege from 2025); retain the original structured file for e-invoices.
+For expenses to be accepted, document them properly. Every purchase or service should have a receipt/invoice showing date, amount, description, and seller. Keep original files and use the retention period for the document type in the table below.
 
 #### Document retention table (Aufbewahrungsfristen)
 
 | Document | Retention | Comment |
 | --- | --- | --- |
-| Invoices/receipts (Buchungsbelege, e-invoice XML) | 8–10 years | Keep original file/paper, GoBD |
+| Books, records and annual accounts, including your EÜR | 10 years | The figures behind your tax returns |
+| Invoices and other accounting vouchers (Buchungsbelege) | Generally 8 years | Keep the original structured data for e-invoices |
 | Business correspondence | 6 years | Incoming/outgoing related to deals |
-| Tax returns/assessments (Bescheide) | 10 years | Until limitation periods end |
-| Bank statements | 10 years | PDF/CSV, GoBD |
+| Tax returns and assessments (Bescheide) | Depends on the document and open tax periods | Retain anything still needed for a review or appeal |
+| Bank statements | Generally 8 years when they serve as accounting vouchers | Keep the original electronic statements |
 | Contracts | 6–10 years | Depending on tax relevance |
-| HR documents (if you employ) | 6 years | Employment contracts, leave, sickness docs |
-| Technical docs/licenses | 6–10 years | If relevant to assets/tax |
+| Staff documents | Depends on purpose | Payroll, social insurance and health information have different requirements |
+| Technical documentation and licences | Depends on function | Instructions needed to interpret the books are generally retained for 10 years |
+
+The period normally runs from the end of the relevant calendar year. Keep records longer if an open tax matter still depends on them. [§ 147 AO](https://www.gesetze-im-internet.de/ao_1977/__147.html)
 
 ------------------------------------------------------------------------
 
 ### Simplified deductions (flat rates)
 
-Some expenses can be claimed via flat rates without receipts. Example: home-office flat rate of €6 per home-work day, capped at €1,260/year. Other flat rates exist for small office supplies, etc.
+The home-office daily allowance is €6, capped at €1,260/year. It generally applies on days when you work mainly at home and do not visit your first work location. A separate rule can apply if you permanently have no other workspace. [§ 4 EStG](https://www.gesetze-im-internet.de/estg/__4.html)
 
 ### Applying Kleinunternehmerregelung
 **Quick view:**
-- Limits: ≤€25,000 net prior year and ≤€100,000 net current year.
-- If you exceed €100,000 mid-year, switch to VAT immediately from the crossing invoice.
+- **Limits.** In the start year, the KUR ceiling is €25,000 of actual qualifying turnover. In later years, the limits are €25,000 in the previous year and €100,000 in the current year, both inclusive. [§ 19 UStG](https://www.gesetze-im-internet.de/ustg_1980/__19.html)
+- Normal VAT rules apply to the whole transaction that takes you over the applicable ceiling.
 - Sum all activities; notify Finanzamt and clients when switching.
-- Downsides: opting out of VAT means no input VAT deduction, so big purchases cost the VAT. Voluntary switch to standard VAT generally locks you in for 5 years (§19(2) UStG); you cannot hop back to KUR during that period.
+- A drawback of KUR is that input VAT on purchases for your exempt sales generally stays in your costs. A voluntary switch to standard VAT binds you for at least five calendar years. You can return to KUR afterwards if you meet its conditions. [§ 19 UStG](https://www.gesetze-im-internet.de/ustg_1980/__19.html)
 
 From 2025 the German small-business rule (§19 UStG) works with two net limits:
 
 - up to **€25,000 net** turnover in the **prior** calendar year;
-- up to **€100,000 net** forecast turnover in the **current** year. If you exceed €100,000 during the year, you switch to standard VAT immediately starting with the invoice that crosses the limit.
+- up to **€100,000 of actual turnover** in the current calendar year after the start year. Normal VAT rules apply to the entire transaction that takes you over the ceiling.
 
 All business activities count together (services + goods, etc.). If you break the current-year cap:
 
@@ -658,7 +672,7 @@ All business activities count together (services + goods, etc.). If you break th
 2. Update clients/contracts for the new VAT treatment.
 3. Notify Finanzamt and file returns with VAT going forward.
 
-For details, see BMF/IHK guidance or ask a tax advisor.
+For details, see BMF/IHK guidance or ask a tax advisor. [BMF guidance on KUR](https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/2025-03-18-sonderregelung-kleinunternehmer.html)
 
 ### Asset depreciation
 Freelancers can depreciate large purchases (computers, office furniture, equipment) over several years to spread deductions across tax periods.
@@ -666,29 +680,29 @@ Freelancers can depreciate large purchases (computers, office furniture, equipme
 ### Applying the Europäische Kleinunternehmerregelung from 2025
 **Quick view:**
 - EU ceiling 85k is not your personal limit.
-- Track three limits: §19 DE (25k/100k), Unionsgrenze 100k, and buyer-country cap (≤85k).
-- Mostly relevant for low-volume B2C into other EU countries; plan for OSS if you expect to exceed buyer-country caps.
+- Track the €100,000 Union-wide limit and the conditions of each country where you claim the exemption. German KUR governs your domestic sales separately.
+- This is particularly relevant if you sell to private customers in other EU countries (business-to-consumer, B2C). If you expect to exceed a local exemption threshold, check whether One Stop Shop (OSS) applies. It lets you report VAT on eligible sales through a single portal.
 
 From 1 Jan 2025 an EU small-business VAT regime (EU-KUR) starts. It eases cross-border VAT, but **85,000 € is not a personal universal limit**.
 
 #### What actually applies
 
 - **€85,000** is an EU ceiling up to which countries may set their own thresholds—it is not automatically your personal cap.
-- In Germany you must watch three limits at once:
-  1. national §19 UStG limits (25,000 € net prior year and up to 100,000 € net current year);
-  2. **Unionsgrenze 100,000 €** — total EU-wide turnover;
-  3. buyer-country limit (capped at 85,000 €) for B2C sales into that country; check the national threshold of the buyer’s country.
+- Check these conditions separately.
+  1. German §19 UStG limits govern exemption in Germany. Regular VAT in Germany does not bar you from the cross-border scheme.
+  2. **Union-wide ceiling of €100,000** in both the current and previous calendar years. [§ 19a UStG](https://www.gesetze-im-internet.de/ustg_1980/__19a.html)
+  3. The threshold and other conditions of the country where the transaction is taxable, including any relevant sector threshold and look-back period.
 
 #### How to use it
 
-- Register via BZSt for a KU ID and file quarterly EU-KUR reports.
-- Stay within all three limits. If you exceed one, switch to normal VAT from that point and, if needed, register in the buyer’s country.
+- Apply through the [Federal Central Tax Office (Bundeszentralamt für Steuern, BZSt)](https://online.portal.bzst.de/SharedDocs/Leistungsbeschreibung/DE/registrierung_kleinunternehmer_regelung.html) for an identification number ending in EX. Wait for confirmation covering the countries you select, then submit quarterly turnover reports.
+- If you exceed the Union-wide €100,000 ceiling, report it to BZSt within 15 working days. If you exceed only a national threshold, check the rules in that country. [§ 19a UStG](https://www.gesetze-im-internet.de/ustg_1980/__19a.html)
 - Buyer-country limits matter for B2C: e.g., if you sell to French consumers, check France’s threshold (max 85k). Exceeding it can mean registering in France or dropping EU-KUR.
 
 #### Who benefits
 
 - B2C sales into other EU countries where you want to avoid multiple VAT registrations while turnover per country stays low.
-- If you only work with German clients or B2B customers with VAT IDs, the national Kleinunternehmerregelung often suffices.
+- For German transactions, check the domestic KUR. For ordinary EU B2B services, first check the place-of-supply and reverse-charge rules.
 - Not useful if you expect to exceed buyer-country thresholds soon—then plan for normal VAT/OSS instead.
 
 ### Tax calculator
@@ -740,7 +754,7 @@ Income level affects complexity and the need for a tax advisor:
 
 #### 3. How much a tax advisor costs
 
-Fees are governed by StBVV. Cost factors:
+Fees are governed by the German tax adviser fee regulation (Steuerberatervergütungsverordnung, StBVV). Cost factors:
 - **Complexity/volume:** Harder work costs more.
 - **Your income:** Higher income/turnover means more prep time.
 Indicative range for individuals: **€150–€500** for a tax return. For freelancers/business owners, costs can be higher depending on bookkeeping complexity.
@@ -761,7 +775,7 @@ Resources to find a Steuerberater in Germany:
 
 2. [**<u>Amtliches Steuerberaterverzeichnis</u>**](https://steuerberaterverzeichnis.berufs-org.de/?lang=de) — official register of the Federal Chamber of Tax Advisors, useful for checking whether someone is a registered Steuerberater.
 
-3. [**<u>DATEV eG</u>**](https://www.datev.com) — accounting/tax professional network; find advisors using modern tooling.
+3. [**<u>DATEV eG</u>**](https://www.datev.com) — a cooperative that develops accounting software. Its directory can help you find a tax adviser.
 
 4. [**<u>Wirtschaftsprüferkammer</u>**](https://www.wpk.de) — auditors’ chamber registry, useful for complex/business/international cases.
 
@@ -771,7 +785,7 @@ German tax law is complex, especially for freelancers and business owners. DIY m
 
 ## 3. Accounting and invoices
 
-Freelancers can use the simplified **Einnahmen-Überschuss-Rechnung (EÜR)** cash-basis system, aimed at small businesses with turnover up to €800,000; it is simpler than double-entry bookkeeping.
+Freelancers and eligible businesses can use the simplified **Einnahmen-Überschuss-Rechnung (EÜR)** to calculate profit. This cash-basis method is simpler than double-entry bookkeeping and is available when you have no duty to keep books and do not keep books and prepare accounts voluntarily. [§ 4 EStG](https://www.gesetze-im-internet.de/estg/__4.html)
 
 ### EÜR essentials
 
@@ -787,14 +801,14 @@ Submit EÜR electronically via ELSTER (or Getsorted/other accounting software).
 
 ### How EÜR works
 
-EÜR uses the **Zu- und Abflussprinzip** (cash principle): income is recognized when cash is received, expenses when cash leaves. No need for accruals/reserves as in double-entry.
+EÜR uses the **Zu- und Abflussprinzip** (cash principle): income generally counts when received and expenses when paid. Depreciation still applies, and special timing rules can apply to recurring payments around year-end. [§ 4 EStG](https://www.gesetze-im-internet.de/estg/__4.html) · [§ 11 EStG](https://www.gesetze-im-internet.de/estg/__11.html)
 
 ### Who must file EÜR?
 
-EÜR is required for:
-1. **Kleinunternehmer** if prior-calendar-year turnover did not exceed €25,000 and current-year turnover does not exceed €100,000.
-2. **Freelancers** (science, arts, education, consulting, etc.).
-3. **Sole proprietors** if they are not required to use double-entry bookkeeping. In 2026, the tax bookkeeping thresholds under §141 AO are more than €800,000 turnover or more than €80,000 profit per calendar year.
+If you use EÜR to calculate profit, normally submit Anlage EÜR with your return. Here’s how it works by status.
+1. **Kleinunternehmer:** KUR concerns VAT. EÜR eligibility follows the bookkeeping rules.
+2. **Freiberufler:** Commercial turnover and profit thresholds do not apply to qualifying liberal-profession income.
+3. **Commercial sole proprietors:** Turnover over €800,000 per calendar year or profit over €80,000 per financial year can trigger bookkeeping under §141 AO after notice from Finanzamt. Commercial-law bookkeeping duties can apply independently. [§ 141 AO](https://www.gesetze-im-internet.de/ao_1977/__141.html)
 
 ### How to create and submit EÜR
 
@@ -844,26 +858,26 @@ Each has pros; choose what fits your work. I use Lexoffice as Getsorted doesn’
 
 ### Invoicing
 **Quick view:**
-- From 01.01.2025 all B2B must receive/store e-invoices (XML/XRechnung); PDF ≠ e-invoice.
+- Since 1 January 2025, German businesses must be able to receive and retain structured e-invoices for covered domestic B2B transactions. A plain PDF is an ordinary invoice. [BMF FAQ](https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html)
 - Issuing obligation phases in; Kleinunternehmer don’t have to issue but must receive.
-- Always include Steuernummer/USt-IdNr, service description, dates, amounts, and proper VAT wording (or §19 note).
+- On a standard invoice include the tax number issued by your Finanzamt (Steuernummer) or your German VAT identification number (Umsatzsteuer-Identifikationsnummer, USt-IdNr.), the service, relevant dates and amounts, and the applicable VAT details.
 
-Freelancers must follow strict invoice rules. From 1 Jan 2025, Germany starts a phased rollout of **mandatory** e-invoices in B2B. All businesses (including Kleinunternehmer) must be able to **receive and store** structured e-invoices from that date; the **issuing** obligation phases in by company size and other factors. PDF alone is **not** an e-invoice. Whether you serve clients domestically, in the EU, or beyond, each invoice must meet legal requirements or tax authorities may reject your expenses/income. Below are the required elements.
+Freelancers must follow invoice rules. Since 1 January 2025, German businesses, including Kleinunternehmer, need to be able to receive and retain structured e-invoices for covered domestic B2B transactions. The requirement to issue them phases in. Other transactions, including work for consumers or foreign clients, follow their applicable invoice rules. Below are the usual fields for a standard invoice. Simplified invoices and special cases may differ. [§ 14 UStG](https://www.gesetze-im-internet.de/ustg_1980/__14.html) · [BMF FAQ](https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html)
 
 #### Contact details (Kontaktdaten)
 
 Include your full details and the client’s:
 
-- Your name/company, address, phone, email.
+- Your full name or business name and address. Phone and email are useful optional contact details.
 - Client name and address.
 
 #### Invoice number and date (Rechnungsnummer / Rechnungsdatum)
 
-Each invoice needs a unique number (sequential, no repeats) and an issue date.
+State the issue date and assign a unique invoice number from one or more numbering sequences. Gaps in the numbering are allowed. [§ 14 UStG](https://www.gesetze-im-internet.de/ustg_1980/__14.html) · [UStAE 14.5](https://amtliche-handbuecher.bundesfinanzministerium.de/usth/2024/A-Umsatzsteuergesetz/IV-Steuer-und-Vorsteuer/Paragraf-14/ae-14-5.html)
 
 #### 3. Tax number (Steuernummer) or VAT ID (USt-IdNr)
 
-Include your **Steuernummer**. If you charge VAT, also show your **USt-IdNr**. For EU clients, include their VAT ID.
+On a standard invoice, include your **Steuernummer or USt-IdNr**. For ordinary intra-EU B2B services under the regular VAT regime, include both parties’ VAT IDs and issue the invoice by the 15th of the month after the supply takes place. [§ 14 UStG](https://www.gesetze-im-internet.de/ustg_1980/__14.html) · [§ 14a UStG](https://www.gesetze-im-internet.de/ustg_1980/__14a.html)
 
 #### 4. Service description (Leistungsbeschreibung)
 
@@ -878,10 +892,10 @@ This avoids disputes and proves what’s being billed.
 An invoice must show:
 
 - Service price without VAT.
-- VAT amount (Umsatzsteuer), if applicable.
+- Applicable VAT rate and VAT amount (Umsatzsteuer), or the required wording for the applicable exemption.
 - Total with VAT.
 
-If you use Kleinunternehmerregelung, note no VAT is charged under § 19 UStG (e.g., “Gemäß § 19 UStG wird keine Umsatzsteuer berechnet.”).
+If you use Kleinunternehmerregelung, note that your sale is exempt under § 19 UStG (e.g., “Für diese Leistung gilt die Steuerbefreiung für Kleinunternehmer gemäß § 19 UStG.”).
 
 #### 6. Payment terms (Zahlungsbedingungen)
 
@@ -889,12 +903,12 @@ List payment terms (Zahlungsbedingungen), e.g.:
 
 - Payment within 14 or 30 days of receipt.
 
-- Bank details (IBAN/BIC).
+- Bank details (IBAN identifies the account and BIC identifies the bank).
 
 You can note late fees/interest for overdue payments.
 
 **TL;DR (e-invoices from 01.01.2025):**
-- All B2B businesses must be able to receive and store structured e-invoices (XML/XRechnung); PDF alone is not an e-invoice.
+- German businesses must be ready to receive and retain structured e-invoices for covered domestic B2B purchases (for example, XRechnung is a machine-readable XML invoice; a compliant ZUGFeRD invoice embeds its structured data in a PDF).
 - Issuing obligations phase in; Kleinunternehmer are exempt from issuing but must still receive.
 - Set up a mailbox/tool/archiving flow to handle incoming structured files.
 
@@ -902,34 +916,34 @@ You can note late fees/interest for overdue payments.
 
 An e-invoice is created/sent/received in a structured format for automated processing (not just PDF). Main German standards: **ZUGFeRD** and **XRechnung**.
 
-The obligation to receive e-invoices is anchored in Jahressteuergesetz 2024 / §34a UStDV: keep the original structured file (XML/XRechnung) in a GoBD-compliant archive for the required retention period.
+The domestic B2B e-invoice rules come from § 14 UStG. § 34a UStDV sets out the special invoice rules for Kleinunternehmer. Keep the original structured data for the required retention period. [§ 14 UStG](https://www.gesetze-im-internet.de/ustg_1980/__14.html) · [§ 34a UStDV](https://www.gesetze-im-internet.de/ustdv_1980/__34a.html) · [BMF FAQ](https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html)
 
 ##### Phased rollout of mandatory e-invoicing
 
 ##### Phase 1: 1 Jan 2025 – 31 Dec 2026
 
-- **Mandatory receipt of e-invoices:** all B2B companies must be able to receive e-invoices in required formats (e.g., XRechnung or Factur-X) starting 01.01.2025.
+- **Mandatory receipt of e-invoices:** since 1 January 2025, all German businesses must be able to receive a structured invoice for covered purchases from other German businesses.
 
-- **Issuing invoices:** still optional; paper/PDF allowed, but PDF requires recipient consent.
+- **Issuing invoices:** the structured format is optional during the transition. Paper is allowed, and PDF requires recipient consent.
 
 - **Preparation:** start adapting systems to send e-invoices.
 
 ##### Phase 2: 1 Jan 2027 – 31 Dec 2027
 
-- **Companies with prior-year turnover > €800,000:** e-invoice issuance mandatory for all B2B.
+- **Companies with prior-year turnover > €800,000:** e-invoice issuance becomes mandatory for covered domestic B2B transactions, subject to the transition for electronic data interchange (EDI) between companies’ systems and the exceptions below.
 
 - **Companies with prior-year turnover ≤ €800,000:** may keep paper/PDF (with recipient consent) in 2027.
 
-- **EDI** remains an allowed alternative.
+- **EDI** that does not already qualify as an e-invoice may still be used with recipient consent through 2027. From 2028, the general transitions end and the exceptions below still apply. [§ 27 UStG](https://www.gesetze-im-internet.de/ustg_1980/__27.html) · [BMF FAQ](https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html)
 
 ##### Key exceptions
 
 Exemptions from mandatory e-invoice issuance:
 
-- Invoices for VAT-exempt operations (e.g., services under §4 Nr. 8–29 UStG such as many medical/financial services) can be sent as “other invoices” (paper/PDF).
-- Small invoices up to €250 may still be sent as “other invoices,” including paper (e.g., tickets).
+- For transactions exempt under § 4 Nos. 8–29 UStG, such as many medical and financial services, an invoice can be issued on paper or, with recipient consent, as a PDF.
+- For small invoices up to €250 and for transport tickets, paper or another permissible invoice format remains available.
 
-- **Kleinunternehmer (§19 UStG):** their sales are VAT-exempt (no input VAT deduction), so they are not obliged to issue e-invoices in the new format. They may keep paper or other electronic formats (e.g., PDF).
+- **Kleinunternehmer (§ 19 UStG):** for sales exempt under that provision, you may issue paper invoices or, with recipient consent, other electronic invoices such as PDF. [§ 34a UStDV](https://www.gesetze-im-internet.de/ustdv_1980/__34a.html) · [BMF FAQ](https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html)
 
 **Important:** Kleinunternehmer must still be able to receive, store, and retrieve structured e-invoices.
 
@@ -940,38 +954,43 @@ Minimum prep checklist for 2025:
 
 #### 8. VAT positioning (Reverse Charge in EU deals)
 
-If reverse charge applies for an EU client, state it clearly. The VAT liability shifts to the client; you do not charge VAT but include wording like: *“Steuerschuldnerschaft des Leistungsempfängers.”*
+For ordinary B2B services to a business in another EU country, the place of supply is generally the customer’s establishment receiving the service. When reverse charge applies, the customer accounts for the VAT. Issue your invoice without German VAT and include *“Steuerschuldnerschaft des Leistungsempfängers.”* [§ 3a UStG](https://www.gesetze-im-internet.de/ustg_1980/__3a.html) · [§ 14a UStG](https://www.gesetze-im-internet.de/ustg_1980/__14a.html)
 
 Remember:
 
-- Ensure the client has a valid VAT ID (check via [VIES](https://ec.europa.eu/taxation_customs/vies/)).
+- Ensure the client has a valid VAT ID (check using [VIES, the EU VAT number validation service](https://ec.europa.eu/taxation_customs/vies/)).
 
-- Report the transaction, including the **Zusammenfassende Meldung** in Germany.
+- Under the regular VAT regime, include qualifying transactions in the EU recapitulative statement, the **Zusammenfassende Meldung (ZM)**. German Kleinunternehmer under § 19(1) are exempt from ZM under § 18a(4). [§ 18a UStG](https://www.gesetze-im-internet.de/ustg_1980/__18a.html)
 
 #### Example invoice cases for international clients and platforms
 
 - German client, you use KUR: invoice without VAT plus §19 UStG note.
-- EU client, B2B with VAT ID: Reverse Charge with the customer’s VAT ID and wording.
-- US/non-EU client: export of services, “Umsatzsteuerfrei nach §4 Nr. 1a UStG.”
-- Platforms (Upwork/Fiverr/Stripe): treat platform receipts as gross revenue before fees; book fees as expenses; for FX, use your bank/PayPal rate on the settlement date. Example: $1,000 hits Upwork, 10% fee → revenue €1,000 at settlement rate (gross), €100 fee as expense; VAT depends on client location (EU B2B RC, non-EU export).
+- EU client receiving an ordinary B2B service under regular VAT rules: reverse charge generally applies. Include both VAT IDs and the reverse-charge wording.
+- US/non-EU business client, ordinary B2B service: the place of supply is generally outside Germany under [§ 3a UStG](https://www.gesetze-im-internet.de/ustg_1980/__3a.html). Check the local tax rules.
+- Platforms (Upwork/Fiverr/Stripe): identify who your customer is under the contract. For an intermediary collecting payment on your behalf, record the revenue before separately charged fees and record the fees separately. For example, a $1,000 payment with a 10% fee gives $1,000 of revenue and $100 of fees, converted to euros using documented rates. Check the VAT treatment of the sale and the fee separately.
 
 ### Invoicing outside the EU
 
-#### 1. Invoices for clients outside the EU (Reverse Charge)
+<a id="1-invoices-for-clients-outside-the-eu-reverse-charge"></a>
 
-For services to clients outside the EU, you are VAT-exempt in Germany (§ 4 Nr. 1a UStG). Note this on the invoice, e.g.:  
-*“Umsatzsteuerfrei nach § 4 Nr. 1a UStG.”*
+#### 1. Invoices for clients outside the EU (place of supply)
+
+For an ordinary B2B service to a non-EU business, the place of supply is generally where the customer receives the service under § 3a(2) UStG. The service is then outside German VAT. For private customers, check the relevant rule for the service, including the exceptions in § 3a(4) and (5). Check any local tax obligations separately. [§ 3a UStG](https://www.gesetze-im-internet.de/ustg_1980/__3a.html)
+
+Possible wording for the ordinary B2B case:
+
+*“Nicht im Inland steuerbare sonstige Leistung gemäß § 3a Abs. 2 UStG.”*
 
 #### 2. Exchange rates
 
 If invoicing in a currency other than EUR:
 
-- State the exchange rate at invoice date.
-- Note payment in EUR or equivalent in that currency. Example: *"Zahlung in Euro oder in der angegebenen Fremdwährung zum aktuellen Wechselkurs."*
+- For bookkeeping, retain the record of how you converted receipts and fees to euros. For VAT, the rule is generally the BMF’s published monthly rate for the relevant period. Finanzamt can permit evidenced daily rates. [§ 16 UStG](https://www.gesetze-im-internet.de/ustg_1980/__16.html)
+- State the agreed payment currency. If you accept payment in either currency, agree how and when the amount is converted. For example: *“Zahlung in Euro oder in der angegebenen Fremdwährung zum vereinbarten Wechselkurs.”*
 
 #### 7. Dealing with difficult/late clients (Mahnwesen)
 
-Even with solid contracts, payments can be late. Follow Mahnwesen: start with a friendly reminder (Zahlungserinnerung). If unpaid, send a formal reminder (Mahnung) with a new deadline and potential late interest (Verzugszinsen) and fees (Mahngebühren). If still unpaid, send a second reminder and consider a court order (Mahnbescheid) or collection/lawyer. Timely, consistent follow-up raises your chance of payment.
+Even with solid contracts, payments can be late. Start with a friendly reminder (Zahlungserinnerung). If payment still doesn’t arrive, send a formal reminder (Mahnung) after the payment becomes due. Default can also arise without a reminder in some cases. Once the debtor is in default, check the applicable late interest and recoverable costs. A second reminder is optional before considering a court order (Mahnbescheid), a collection agency or a lawyer. [§ 286 BGB](https://www.gesetze-im-internet.de/bgb/__286.html) · [§ 288 BGB](https://www.gesetze-im-internet.de/bgb/__288.html)
 
 ### Invoice template
 
@@ -991,13 +1010,13 @@ Example from **getsorted**:
 
 #### 1. What is Stripe and how does it work?
 
-Stripe is an online payments platform to accept payments easily. It supports cards, bank transfers, and local methods like Sofort and Giropay—useful for German freelancers. Main advantage: simplicity and flexibility; you can invoice, collect, and manage payments without traditional banking hurdles.
+Stripe lets you accept payments online, including cards and eligible bank payment methods. The options shown to the customer depend on their location, currency and your account settings. Main advantage: simplicity and flexibility; you can invoice, collect, and manage payments without traditional banking hurdles.
 
 #### 2. Benefits of using Stripe
 
-- **Easy integration:** Plugins for WordPress/WooCommerce and APIs for custom sites. No site? Use payment links or Stripe invoices.
-- **Payment methods:** cards (Visa/Mastercard/AmEx etc.), SEPA transfers, local German methods (Sofort, Giropay), mobile payments (Apple Pay, Google Pay).
-- **Security:** PCI-DSS compliant with strong encryption; clients trust the data handling.
+- **Easy integration:** Plugins for WordPress/WooCommerce and a programming interface (API) for custom sites. No site? Use payment links or Stripe invoices.
+- **Payment methods:** cards (Visa/Mastercard/AmEx etc.), euro transfers within the Single Euro Payments Area (SEPA), SEPA Direct Debit with a customer mandate, mobile payments (Apple Pay, Google Pay).
+- **Security:** Compliant with the Payment Card Industry Data Security Standard (PCI DSS) with strong encryption; clients trust the data handling.
 - **Automation:** Auto invoicing, reminders, recurring charges—helpful for subscriptions or long-term contracts.
 - **Multi-currency:** Accept in 135+ currencies for global clients.
 
@@ -1010,7 +1029,7 @@ Stripe is an online payments platform to accept payments easily. It supports car
 
 ##### Set up payment methods
 
-3. **Choose payment methods:** In “Payments,” enable the methods you want. For German clients, set up SEPA Direct Debit, Sofort, Giropay, etc.
+3. **Choose payment methods:** Open the payment method settings and enable the options your customers need. For SEPA Direct Debit, collect the customer’s mandate.
 4. **Integrate with your site:** Use Stripe plugins for WordPress/WooCommerce or builders; for custom sites, use the Stripe API to build your own flow.
 5. **Create payment links:** No website? Use “Payment Links” to send a pay link by email or messenger.
 
@@ -1018,17 +1037,19 @@ Stripe is an online payments platform to accept payments easily. It supports car
 
 1. **Create an invoice:** Use Stripe’s invoicing; set a template, service description, quantity, and apply tax if needed.
 2. **Receive payment:** Stripe notifies you on payment; funds land in your Stripe balance, then you payout to your bank.
-3. **Automation:** Set up automatic charges for recurring payments (subscriptions or periodic services).
+3. **Automation:** Set up automatic charges for recurring payments (subscriptions or periodic services). Agree the amount and frequency with the customer before the first charge.
 
 #### 5. Fees and payouts
 
-- **Fees:** For EU cards, 1.4% + €0.25 per transaction; non-EU cards 2.9% + €0.25. Extra fees may apply for some payment types (e.g., international).
-- **Payouts:** Auto or manual to your bank (daily/weekly/monthly). Funds usually arrive in 2–7 days.
+- **Fees:** The original review quoted 1.4% + €0.25 for European cards. The old comparison also quoted 2.9% + €0.25 for non-European cards. For a new order, check the card type, issuing country and currency to calculate what you will receive. [Stripe pricing in Germany](https://stripe.com/de/pricing)
+- **Payouts:** Check your account’s payout schedule and expected arrival date. A single deposit can cover several customer payments after fees and refunds. [Stripe payouts](https://docs.stripe.com/payouts)
 
 #### 6. Stripe specifics in Germany
 
-- **Taxation:** If you must charge VAT, Stripe can add it; consult a tax advisor to set it up per German rules.
-- **Local payment methods:** Supports SEPA Direct Debit, Giropay, Sofort, etc., making payments easier for German clients.
+- **VAT on a Stripe invoice.** Suppose you work in Germany and agree to charge a German company €100 for an hour of IT consulting, plus VAT if applicable. Under the standard rules, the invoice shows €100 for the work, €19 VAT (Umsatzsteuer, also called Mehrwertsteuer or MwSt.) and €119 to pay. If the small-business exemption (Kleinunternehmerregelung, KUR) applies to this sale, the customer pays €100. Leave VAT off as a separate amount and include an exemption note, for example: “Für diese Leistung gilt die Steuerbefreiung für Kleinunternehmer gemäß § 19 UStG.” Preview the invoice to check the total and wording your customer will see. [German VAT rate](https://www.gesetze-im-internet.de/ustg_1980/__12.html) · [What to include on a small-business invoice](https://www.gesetze-im-internet.de/ustdv_1980/__34a.html)
+- **How your customer can pay.** For a one-off consultation, you can send a link for a card payment. If the customer prefers a euro debit from their bank account (SEPA Direct Debit), they enter their IBAN and authorise collection by accepting a mandate. Confirmation can take several business days. If Stripe still shows the payment as processing, wait for the result before sending a reminder. [How SEPA Direct Debit works](https://docs.stripe.com/payments/sepa-debit)
+
+  Older German checkout guides mention Giropay and SOFORT. Stripe stopped accepting Giropay payments in June 2024. On 31 March 2025, SOFORT ceased to be a standalone payment method and was consolidated into Klarna. Open the payment link before sending it to see which options are available for the euro order. [Giropay update](https://support.stripe.com/questions/availability-of-giropay-june-2024-update) · [SOFORT and Klarna](https://support.stripe.com/questions/sofort-is-being-consolidated-into-klarna-and-discontinued-as-a-standalone-payment-method)
 - **Bookkeeping:** Detailed transaction reports and integrations with tools like DATEV, Xero, QuickBooks.
 
 #### 7. Practical tips for Stripe
@@ -1039,13 +1060,13 @@ Stripe is an online payments platform to accept payments easily. It supports car
 
 #### What is Wise Business and how does it work?
 
-**Wise Business** is an online service for sending/receiving international payments at real exchange rates—no hidden fees or FX markups. It supports multi-currency accounts, ideal when you work with clients worldwide.
+**Wise Business** is an online service for sending/receiving international payments at real exchange rates—no hidden fees or foreign exchange (FX) markups. It supports multi-currency accounts, ideal when you work with clients worldwide.
 
 Great for businesses invoicing in multiple currencies; payments stay transparent for both sender and recipient.
 
 #### Benefits of using Wise Business for freelancers
 
-1. **Low fees:** fixed fee + % of transfer; cheaper than banks/cards.
+1. **Fees:** Wise gives a quote for the currencies, amount and payment method you choose. Compare what the recipient will actually get after fees.
 2. **Multi-currency accounts:** open virtual accounts in 40+ currencies (EUR, USD, GBP, etc.) to avoid extra FX costs.
 3. **Invoicing:** create professional invoices in the needed currency; clients pay by bank transfer or card.
 4. **Real exchange rates:** mid-market rates with no markup, saving on international transfers.
@@ -1060,10 +1081,10 @@ Great for businesses invoicing in multiple currencies; payments stay transparent
 
 #### Fees and payout timelines
 
-Wise Business charges:
-- **Fixed fee:** e.g., €0.50 per transfer.
-- **Percent of amount:** typically 0.35%–1% depending on currency.
-Payout to a bank usually takes minutes to 1–2 business days.
+Look at two possible components in the Wise transfer quote:
+- **Fixed component:** check whether one applies to your transfer route.
+- **Variable component:** enter the actual payment amount and review the total charge before sending. [Wise Business pricing](https://wise.com/de/pricing/business)
+A euro transfer and an international transfer via SWIFT, the messaging network used by banks, may have different delivery times. Share the estimate shown for the specific transfer with the customer.
 
 #### Wise Business specifics in Germany
 
@@ -1073,20 +1094,20 @@ Working with international payments in Germany has nuances. **Wise Business** he
 
 SEPA enables fast euro transfers across the EU. Wise fully supports SEPA, giving:
 - **Fast transfers:** usually within one business day.
-- **Low fees:** lower than many traditional banks.
-- **Ease of use:** no manual IBAN entry—checks and simplifies sending.
+- **Cost:** compare the charge for a euro transfer with what your bank would charge for the same amount.
+- **Payment details:** copy the beneficiary name and IBAN for the right currency and check both before sending.
 
 ##### 2. Tax compliance
 
-German businesses must handle tax correctly; Wise helps with compliance:
+Check the invoice details and VAT treatment of the sale. The bank statement records the payment; keep the invoice with it.
 - **Include VAT (Mehrwertsteuer):** set the rate (19% or 7%) and show VAT clearly—important for business clients.
-- **Export reports:** pull transaction data for any period for tax returns/audits.
+- **Export reports:** download a statement for each currency you used. Longer periods require several statements. [Wise statement guide](https://wise.com/help/articles/2736049/how-do-i-download-a-statement)
 - **Local tax IDs:** add Steuernummer or USt-IdNr in invoice templates.
 
 ##### 3. Working with clients in Germany
 
 For German clients, familiar payment options matter. Wise offers:
-- **SEPA Direct Debit:** automatic pulls for subscriptions/recurring payments.
+- **SEPA Direct Debit:** an incoming transfer is different from collecting money from a customer by direct debit. If you need recurring collection, confirm that your product supports it. Receiving account details alone do not authorise a debit.
 - **Localized interface:** available in German; invoices/notifications can be in German to boost trust.
 - **Multi-currency invoicing:** bill in EUR, GBP, USD, etc., avoiding extra conversions for clients.
 
@@ -1098,16 +1119,16 @@ Freelancers with international clients often need FX. In Germany:
 
 ##### 5. Bookkeeping automation
 
-Bookkeeping in Germany is complex; Wise integrates with **DATEV**, **Xero**, **QuickBooks** to:
+If your bookkeeping software supports your Wise Business account, test the connection with several real transactions. A statement export can also help your accountant. Check whether you can:
 - Sync transactions automatically.
 - Mark paid invoices and track receivables.
-- Prepare tax data without manual entry.
+- Prepare figures for the return and reconcile them to source invoices and statements.
 
 ##### 6. Integration with German banks
 
-Link a German bank account for payouts/payments:
-- **Fast payouts:** typically 1–2 business days.
-- **Easy IBAN linking:** supports all German banks for simple setup.
+When transferring to your German bank, check the receiving details for the currency:
+- **Timing:** check the estimate for that particular route.
+- **IBAN details:** confirm that the receiving bank accepts this type of transfer.
 
 ##### 7. Practical help for freelancers
 
@@ -1118,8 +1139,8 @@ Wise keeps its knowledge base updated with Germany-specific guides:
 
 ##### 8. Reporting for Finanzamt
 
-Wise lets you prepare what Finanzamt needs:
-- **Download all transactions** for the year (CSV/PDF).
+For tax reporting, keep Wise statements together with invoices, receipts and conversion records. To prepare the banking part of your archive:
+- **Download all transactions** for the year as a CSV file for importing into bookkeeping software or a PDF statement for reading.
 - **Tag account IDs** to sort income.
 - **Include FX details** if payments came in multiple currencies.
 
@@ -1137,7 +1158,7 @@ Annual reporting is essential. It includes gathering all yearly financial data, 
 
 Start by organizing all documents and recording them accurately:
 
-- **Income:** all earnings for the year, invoiced and paid.
+- **Income:** match invoices to incoming payments. Under EÜR you generally record the amount received once. Keep unpaid invoices on your outstanding list.
 - **Expenses:** office rent, equipment, travel, professional training, and other business costs.
 - **Asset depreciation:** equipment/vehicles can be written off over several years.
 
@@ -1173,7 +1194,7 @@ The exact set of forms depends on your registration, VAT status, main employment
 
 #### Checklist before submitting
 
-- Check that all client invoices and all expenses are included in EÜR.
+- Reconcile receipts and expenses to statements, and review unpaid invoices separately.
 - Reconcile bank incoming payments with invoices, especially refunds, partial payments, or foreign-currency payments.
 - If you are VAT-registered, compare Umsatzsteuererklärung with submitted Umsatzsteuer-Voranmeldungen.
 - Check whether Anlage N is needed if you had employment income during the year.
@@ -1199,13 +1220,15 @@ These platforms integrate income/expense data, auto-generate required documents,
 
 Meet deadlines to avoid fines:
 - **By 31 July of the following year** if you file yourself.
-- **Usually by the end of February of the second following year** if you use a tax advisor or Lohnsteuerhilfeverein. If the date falls on a weekend, the deadline shifts to the next working day.
+- **Usually by the end of February of the second following year** if you use a tax advisor. If the date falls on a weekend, the deadline shifts to the next working day.
 
-Example: for tax year 2025, the self-filing deadline is 31 July 2026. With a tax advisor, the deadline usually moves to the end of February 2027, adjusted to the next working day if needed. Meeting deadlines avoids fines; using accounting tools simplifies prep/filing.
+Example: for tax year 2025, the self-filing deadline is 31 July 2026. With a tax advisor, the deadline moves to 1 March 2027, because 28 February 2027 falls on a Sunday. Meeting deadlines avoids fines; using accounting tools simplifies prep/filing.
 
 ## 4. Accounting software
 
-Freelancers in Germany must manage cash flow and taxes efficiently. Accounting software automates processes and eases the load. Below are seven popular options suited to freelancers.
+Freelancers in Germany must manage cash flow and taxes efficiently. Accounting software automates processes and eases the load. Below are nine options suited to freelancers.
+
+**September 2024 comparison.** The prices, features and integrations below are those recorded in the original edition. Check the current plan and support for your particular account before subscribing. The product called lexoffice is now Lexware Office.
 
 #### 1. Lexoffice
 
@@ -1259,7 +1282,7 @@ Pros:
 #### 6. BuchhaltungsButler
 
 BuchhaltungsButler automates bookkeeping and integrates with banks and tax systems like **DATEV** and **ELSTER**, suitable for routine task automation.
-- Supported banks: DATEV, Sparkasse, Deutsche Bank, Volksbank.
+- Banks listed in the original review: Sparkasse, Deutsche Bank and Volksbank. DATEV was listed for accounting data exchange.
 - **Cost:** €34.95–€79.95/month.
 Pros:
 - Automatic document scanning and capture.
@@ -1308,6 +1331,8 @@ Accounting software comparison table
 ### Overview of popular online banks for freelancers in Germany
 
 Choosing the right online bank is key to managing finances. Here are banks with flexible plans, good online banking, accounting integrations, and useful features. A comparison table follows.
+
+**September 2024 comparison.** The prices, features and integrations below are those recorded in the original edition. Check the current plan and support for your particular account before subscribing. For cards, check cashback conditions and cash deposit fees. For bookkeeping, ask whether your adviser can get a PDF statement to read or a CSV file to import the transactions.
 
 #### 1. Kontist
 
@@ -1403,78 +1428,78 @@ For the latest offers on business accounts (Geschäftskonto), see:
 
 Freelancers in Germany should consider key insurances to protect themselves and their business. Some are mandatory, others strongly recommended depending on your work.
 
-Contribution ceilings (BBG/JAEG) shift annually; amounts below are 2026-oriented figures—always check current TK/BMG/DRV figures.
+You may see two similar terms in a letter from your health insurance fund. The Beitragsbemessungsgrenze (BBG) caps the income used to calculate contributions. The Jahresarbeitsentgeltgrenze (JAEG) is the annual employment earnings threshold used to determine whether statutory health insurance (gesetzliche Krankenversicherung, GKV) is compulsory for an employee. Figures below refer to 2026. The optional policy prices are historical illustrations. Ask the insurer for a quote for your activity, cover and deductible.
 
 **Quick view:**
-- Health insurance is mandatory: GKV 14.6% + Zusatzbeitrag, with the average Zusatzbeitrag for 2026 at 2.9%; Pflegeversicherung is generally 3.6%, or 4.2% for childless people older than 23.
-- Consider liability (Haftpflicht) and disability (BU) as baseline optional covers.
-- Check whether DRV/KSK applies to your profession; contributions depend on BBG/JAEG and change yearly.
+- Health and long-term care insurance are compulsory. GKV generally charges 14.0% without statutory sickness benefit (Krankengeld) or 14.6% with it, plus the fund’s Zusatzbeitrag (2026 benchmark: 2.9%). Social long-term care insurance generally charges 3.6%, or 4.2% for childless members after their 23rd birthday, subject to exceptions.
+- Two optional policies to consider are liability insurance (Haftpflichtversicherung) and insurance against losing the ability to work in your occupation (Berufsunfähigkeitsversicherung, BU).
+- Check whether statutory pension insurance applies to your work or whether you qualify for social insurance through the Künstlersozialkasse (KSK), the fund for self-employed artists and publicists. The contribution base and rates depend on the scheme.
 
 #### 1. Health and long-term care insurance (Krankenversicherung + Pflegeversicherung)
 
-Health insurance is mandatory. You can choose public (GKV) or private (PKV). Private can be cheaper for young/healthy people because it is not income-based. In the public system, the base rate is 14.6% plus the individual Zusatzbeitrag of your Krankenkasse; the average Zusatzbeitrag for 2026 is 2.9%. Pflegeversicherung is generally 3.6%, or 4.2% for childless people older than 23. Public insurance can include free family coverage; private usually does not.
+Health insurance is mandatory. Your options for statutory health insurance (gesetzliche Krankenversicherung, GKV) or private health insurance (private Krankenversicherung, PKV) depend on your insurance status and history. Private premiums vary by tariff, age and health at entry. GKV can cover eligible family members without a separate contribution. Its general rate is 14.6% with statutory sickness benefit and its reduced rate is 14.0% without it, plus your fund’s Zusatzbeitrag. The 2026 benchmark is 2.9%. Social long-term care insurance is generally 3.6%, with a surcharge for childless members and reductions for eligible parents with two or more children under 25. [Federal Ministry of Health (BMG): health insurance contributions](https://www.bundesgesundheitsministerium.de/beitraege) · [BMG long-term care contributions](https://www.bundesgesundheitsministerium.de/themen/pflege/online-ratgeber-pflege/die-pflegeversicherung/finanzierung)
 
-Cost: **€250–€1,000/month** depending on plan.
+Cost: Ask your fund or insurer for a current quote that includes long-term care and any sickness-benefit cover. In 2026 the GKV contribution ceiling is €5,812.50 a month, and a minimum contribution base may apply.
 
 #### 2. Accident insurance (Unfallversicherung)
 
-Mandatory if you’re in a **Berufsgenossenschaft**; otherwise voluntary but recommended. Covers rehab and compensation for work accidents.
+Registering an enterprise with its statutory accident insurer and insuring yourself as its owner are separate. A new business generally has a one-week notification deadline. For a Gewerbe, the Gewerbeanmeldung fulfils it. Freiberufler file no Gewerbeanmeldung, so they notify the responsible Berufsgenossenschaft themselves (for IT and consulting, usually the VBG). Employees normally have statutory cover. Owners may have compulsory cover under the law or the insurer’s rules, or be able to apply for voluntary cover. Statutory insurance covers work accidents, commuting accidents and occupational diseases. [German Social Accident Insurance (DGUV): registration guidance](https://www.dguv.de/de/versicherung/unternehmensnummer/anmeldung/index.jsp)
 
-Cost: €5–€20/month.
+Cost: Ask the responsible accident insurer about rates and the insured amount for your activity.
 
 #### 3. Pension insurance (Altersvorsorge)
 
-Mandatory only for some professions (e.g., journalists, doctors, teachers). Others: public pension is voluntary. Start early—there’s no state safety net for freelancers.
+Statutory pension insurance is compulsory for some self-employed people, including teachers who meet the statutory conditions and people who work permanently and essentially for one client without regularly employing a qualifying worker. KSK and professional pension schemes have separate rules. Check whether you must contribute before choosing a retirement plan. For most other freelancers, the statutory pension is voluntary. Start early—no employer pays into a pension for you. [§ 2 SGB VI](https://www.gesetze-im-internet.de/sgb_6/__2.html)
 
-Cost: if you voluntarily pay into gesetzliche Rentenversicherung, the 2026 range is roughly from the minimum voluntary contribution of about €112/month to the maximum contribution of about €1,572/month. Some self-employed professions have mandatory pension rules with different calculations.
+Cost: If you qualify for voluntary statutory pension insurance, monthly contributions for 2026 range from €112.16 to €1,571.70. Compulsory contributions can be calculated differently. [Deutsche Rentenversicherung](https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/Arbeitnehmer-und-Selbststaendige/03_Selbststaendige/selbststaendige_node)
 
 #### Künstlersozialkasse (KSK) for creative professions
 
-For creative/publicist fields (writers, journalists, designers, musicians, etc.), KSK halves your health/care/pension contributions; the other half is covered by KSK (funded by client levies and subsidies). Criteria: mainly artistic/publicist work, self-employed, income above the minimum. Application can take time. Client companies must pay the Künstlersozialabgabe.
+The Künstlersozialkasse covers eligible self-employed artists and publicists such as writers, journalists, designers and musicians. They generally pay roughly half the relevant health, long-term care and pension contributions. The levy and a federal subsidy fund the remainder. Eligibility depends on the actual activity and expected profit, with exceptions to the income threshold, including for beginners. Künstlersozialabgabe applies to qualifying clients and fees. [KSK eligibility](https://www.kuenstlersozialkasse.de/kuenstler-und-publizisten/voraussetzungen) · [Businesses liable for the levy](https://www.kuenstlersozialkasse.de/unternehmen-und-verwerter/wer-ist-abgabepflichtig)
 
 #### 4. Disability insurance (Berufsunfähigkeitsversicherung)
 
-Key protection if illness/accident stops you from working; covers lost income to avoid hardship.
+The policy pays the agreed benefit if illness or injury prevents you from carrying out your occupation to the extent and for the period the policy specifies.
 
 Cost: €60–€200/month.
 
 #### 5. Professional liability (Berufshaftpflichtversicherung)
 
-Important for consultants/project work; protects against work errors causing client losses (e.g., bad advice, IP issues). Covers legal costs/penalties.
+Professional liability can cover claims for financial loss from errors such as incorrect advice. It is compulsory in some regulated professions. Check whether the policy covers defence costs and IP claims, along with its limits, deductible and exclusions. Penalties can be excluded.
 
 Cost: €10–€50/month.
 
 #### Insurance for foreigners
 
-If you are in Germany on a visa or residence permit, insurance is not only a tax and budgeting issue; it can also affect immigration status. For visa applications or renewals, authorities usually expect valid health insurance, sufficient income, and a credible plan for covering risks. Travel insurance is almost never suitable as a long-term solution for living and working in Germany.
+If you need a residence permit to freelance, an adequate health insurance policy is part of the proof that you can support yourself. Check what the consulate requires for entry and what your Ausländerbehörde accepts for long-term residence. Travel insurance may cover entry without meeting the requirements for a residence permit. [Berlin immigration office requirements (Landesamt für Einwanderung, LEA)](https://service.berlin.de/dienstleistung/328332/)
 
 If you move from studies, employment, or another residence title into self-employment, check in advance with your Krankenkasse and Ausländerbehörde which insurance type is accepted. Private insurance may look cheaper at the start, but family coverage, chronic conditions, and any future return to GKV should be checked before signing.
 
 #### 6. Business liability (Betriebshaftpflichtversicherung)
 
-Protects if someone suffers physical/property damage at your premises or due to your work (slip in office, accidental damage). Covers medical/repair costs.
+Can cover claims for bodily injury or property damage caused by your business. Examples include a client slipping in your office or accidental damage to a client’s property. Coverage and limits depend on the policy.
 
 Cost: €8–€25/month.
 
 #### 7. Legal protection (Gewerblicher Rechtsschutz)
 
-Useful if you need to defend your interests in court—e.g., client payment disputes. Covers legal costs (lawyers, court fees).
+Can cover lawyers and court fees for insured business disputes. Check whether the policy includes contract disputes such as a client refusing to pay an invoice.
 
 Cost: €25–€50/month.
 
 #### 8. Business property insurance (Geschäftsinhaltsversicherung)
 
-This protects business assets (office gear/equipment) against theft, fire, or damage—important if you have an office.
+Can protect business assets such as office equipment against covered events, for example burglary or fire. Check which assets, places and events are included.
 
 Cost: €5–€10/month.
 
-Insurance table:
+Insurance table (September 2024 illustration, with historical costs and simplified cover descriptions):
 
 ![](../assets/freelancer-gewerbe-guide/media/image20.png)
 
 #### 9. Conclusion
 
-Choose insurance to protect your business and stability. Some are mandatory (health/care), others (e.g., professional liability) are strongly recommended for unforeseen risks.
+Choose insurance to protect your business and stability. Health and long-term care cover are compulsory. Depending on your work, other cover may be compulsory too, such as professional liability in some regulated professions.
 
 ## 7. Work
 
@@ -1495,24 +1520,24 @@ Next, estimate working hours by counting workdays per year. Example:
 - Workdays/year: 261
 - **Free days:** 45 (holidays, vacation, training, sick)
 
-Not all time is billable; freelancers often lose ~30% to non-billable work (sales, admin, learning). So:
+Allow 30% of the remaining hours for sales, correspondence and administration. Training days are already included in the 45 days away from client work.
 - Non-billable time: 30%
 
 #### Step 3: Calculate billable hours
 
 Compute billable hours:
-- Total working hours/year: 261 × 8 = 2,088
-- Non-billable 30%: 2,088 × 30% = 626.4
-- **Billable/year:** 2,088 – 626.4 = 1,461.6, or 121.8 hours/month.
+- Working hours after days off: (261 − 45) × 8 = 1,728.
+- Non-billable work: 1,728 × 30% = 518.4 hours.
+- **Billable hours:** 1,728 − 518.4 = 1,209.6 per year, or 100.8 per month.
 
-So you have ~121.8 billable hours/month.
+So you have ~100.8 billable hours/month.
 
 #### Step 4: Calculate hourly rate
 
 Minimum hourly rate = target monthly income ÷ billable hours:
 - Monthly: €5,750
-- Billable hours: 121.8
-- Hourly = €5,750 / 121.8 = **€47.20**
+- Billable hours: 100.8
+- Hourly = €5,750 / 100.8 = **€57.04**
 
 This is the floor. You may raise it for:
 1. **Unexpected costs:** extra time on projects or tool/service price hikes.
@@ -1520,12 +1545,12 @@ This is the floor. You may raise it for:
 
 #### Step 5: Account for social charges and taxes
 
-Freelancers pay their own social charges. Example rates:
-- Health (incl. disability): 14.6%
-- Pension: 18.6%
-If social costs are ~20% of income, add 20% to your base rate:
-- €47.20 × 1.20 = **€56.64**
-That’s a rate including social charges.
+Now check your personal budget. If your €69,000 target already includes health cover and pension provision, you have already allowed for those costs.
+- Health and long-term care insurance: use the actual contribution quoted by your insurer.
+- Pension: allow for mandatory contributions where they apply, or budget the amount you intend to save yourself.
+Suppose you budgeted for personal contributions but left out €6,000 of annual business costs. Add that amount to the revenue target and run the calculation again:
+- (€69,000 + €6,000) ÷ 1,209.6 = **€62.00 per hour** before VAT, rounded.
+At that rate, the planned hours cover both your annual target and those extra costs.
 
 #### Step 6: Account for core freelancer expenses
 
@@ -1583,26 +1608,26 @@ To avoid running at a loss, include all of your expenses when setting a rate. Ke
 
 #### Step 7: Factor weekends, sick days, holidays
 
-1.  **Holidays:** Germany has ~13 public holidays/year (varies by state).
-2.  **Vacation:** Recommend budgeting **25 days/year**.
+1.  **Public holidays:** use the calendar for your state and count those falling on your normal workdays.
+2.  **Vacation:** you might budget 25 working days. Use the time you actually want to take off.
 
-3.  **Sick days:** On average, ~10–15 days/year.
+3.  **Sick days:** allow for time off based on your circumstances. Try a week of illness and see what changes.
 
-4.  **Training time:** On average, ~5–10 days/year.
+4.  **Training:** enter the courses or conferences you plan to attend. In this example the four categories add up to 45 working days: 10 public holidays, 25 vacation days, 5 sick days and 5 training days.
 
 #### Example final calculation
 
-Assume target €69,000/year and 1,462 hours/year (after downtime). Compute: 
+Return to the example. With 1,209.6 billable hours in the year, compare the two budgets:
 
-1. Base hourly rate: €47.20
+1. If €69,000 covers the whole annual budget: €57.04/hour.
 
-2. With social charges: €56.64
+2. If another €6,000 of costs must be covered: €62.00/hour.
 
-So aim for **at least €57/hour** to hit the target.
+So aim for **at least €57/hour** to hit the target, or €62 if those extra costs are not yet in your budget. These are before-VAT rates at the assumed workload. If a month opens up between projects, recalculate your billable hours.
 
 #### Step 8: Compare market rates by industry
 
-Hourly rates depend on specialization/industry. German rates vary widely. From **Freelancermap**, average rates:
+The figures below are from the original Freelancermap comparison and illustrate the spread across specialisms at the time of that edition.
 
 - SAP consultants: €99/hr
 
@@ -1614,7 +1639,7 @@ Hourly rates depend on specialization/industry. German rates vary widely. From *
 
 - **Media:** €69/hr
 
-These are industry averages; align your rate to your peers. An IT developer might target €90–€100/hr.
+At the time of that comparison, an IT developer might target €90–€100/hr. For a quote today, compare recent projects at the same level and of similar duration. Two IT contracts might offer similar rates yet differ on whether travel days are billable.
 
 #### 9. Conclusion
 
@@ -1651,7 +1676,7 @@ Active methods:
 - Build a personal brand via social/publishing.
 
 Passive methods:
-- SEO for your site/portfolio.
+- Search engine optimisation (SEO): help clients find your site or portfolio when they search for the service you offer.
 - Blog or publish articles to attract leads.
 - Maintain profiles on freelancer-search platforms.
 - Showcase reviews/case studies to draw new clients.
@@ -1664,7 +1689,7 @@ Know who you want: analyze age, role, interests, industry. Create buyer personas
 
 ##### 2. Find your niche and USP
 
-What sets you apart? Highlight specialized experience, unique skills, or methods. Clarifying your USP helps you stand out and pick the right channels.
+What sets you apart? Highlight specialized experience, unique skills, or methods. Clarifying your unique selling proposition (USP) helps you stand out and pick the right channels.
 
 ##### 3. Choose the right channels
 
@@ -1716,33 +1741,35 @@ Germany offers support programs for those who want to start freelancing while on
 
 #### 1. Start freelancing with unemployment benefit I (ALG I)
 
-If you receive unemployment benefit I (ALG I) and want to freelance, you can apply for the **Gründungszuschuss** (business start-up subsidy). It has two phases:
+If you receive contribution-based unemployment benefit (Arbeitslosengeld, commonly called ALG I) and plan to become primarily self-employed, you can apply for the **Gründungszuschuss** (business start-up grant) before starting. The Agentur für Arbeit decides on discretionary awards. It has two phases:
 
 - **Phase 1:** For the first 6 months you receive the amount of your last unemployment benefit plus €300/month for social insurance.
 
-- **Phase 2:** If you show successful business progress, you can receive another €300/month for the next 9 months​ — see [<u>IHK_DE</u>](https://www.ihk.de/rhein-neckar/gruendung/finanzierung/foerderprogramme/gruendungszuschuss-947662).
+- **Phase 2:** Apply separately for another €300/month for up to 9 months and show evidence that you continue to run the business as your main activity. [Bundesagentur für Arbeit](https://www.arbeitsagentur.de/arbeitslos-arbeit-finden/arbeitslosengeld/gruendungszuschuss-beantragen)
 
 **Requirements for Gründungszuschuss:**
 
-- **Remaining ALG I entitlement:** At least 150 days of ALG I eligibility remaining.
+- **Remaining ALG I entitlement:** Normally at least 150 days when self-employment starts. Exceptions can apply to people with disabilities under § 19 SGB III.
 
-- **Business plan:** Provide a detailed plan with financial projections and concept, approved by an expert body such as the IHK.
+- **Business plan:** Provide a plan with financial projections and obtain a viability assessment from a competent body such as the IHK.
 
 - **Proof of viability:** Demonstrate to the employment agency that you are competent and the idea is viable.
 
 **Additional costs:**
 
-- **IHK fee:** For example, IHK Berlin charges €50 + VAT to assess the business plan.
+- **IHK fee:** For example, IHK Berlin lists €70 plus VAT for the assessment. [IHK Berlin](https://www.ihk.de/berlin/service-und-beratung/finanzierung/gruendungszuschuss-2264252)
 
 - **Initial investments:** Submit a capital expenditure plan, financing plan, and breakdown of personal expenses.
 
-#### 2. Move to unemployment benefit II (ALG II)
+<a id="2-move-to-unemployment-benefit-ii-alg-ii"></a>
 
-If you were freelancing and lost clients, creating financial hardship, you can apply for **Arbeitslosengeld II (ALG II)**, also called Hartz IV. It provides a basic income to cover essential expenses.
+#### 2. Means-tested support through Jobcenter
 
-**Einstiegsgeld for freelancers on ALG II:**
+If you lose clients and your household has insufficient means, you may qualify for **Grundsicherungsgeld**, which replaced Bürgergeld on 1 July 2026. Jobcenter checks eligibility, including income, assets and residence. [Bundesagentur für Arbeit](https://www.arbeitsagentur.de/grundsicherung-loest-buergergeld-ab)
 
-- **Einstiegsgeld:** If you want to return to freelancing while on ALG II, you can apply for this subsidy. It encourages self-employment and is granted for a set period. The amount is set by your Jobcenter advisor based on your situation — see [<u>IHK_DE</u>](https://www.ihk.de/niederbayern/beratung-service/existenzgruendung/gruendungszuschuss-und-einstiegsgeld-3608770).
+**Einstiegsgeld for starting self-employment while receiving Grundsicherungsgeld:**
+
+- **Einstiegsgeld:** Ask Jobcenter before starting your main self-employed activity. It may award the grant to recipients of Grundsicherungsgeld moving into self-employment of at least 15 hours a week. Jobcenter decides the amount and duration, up to 24 months. [Bundesagentur für Arbeit](https://www.arbeitsagentur.de/grundsicherung/arbeit-finden/einstiegsgeld-selbststaendigkeit)
 
 - **Business viability:** As with the Gründungszuschuss, you must prove the idea is viable and you can run the business.
 
@@ -1750,21 +1777,21 @@ If you were freelancing and lost clients, creating financial hardship, you can a
 
 Freelancers can insure against unemployment via **Freiwillige Arbeitslosenversicherung**. You must apply within 3 months of starting self-employment. Contributions are fixed and not income-based. The insurance entitles you to unemployment benefits if conditions are met:
 
-- **Criteria:** The activity must be at least 15 hours per week.
+- **Criteria:** You must work at least 15 hours per week and generally have either 12 months of compulsory unemployment insurance in the preceding 30 months or entitlement to ALG or another SGB III replacement benefit immediately before starting. Other compulsory coverage can affect eligibility.
 
-- **Rights:** If unemployment occurs, insured freelancers can receive Arbeitslosengeld.
+- **Rights:** If you become unemployed, you can claim Arbeitslosengeld if you meet the benefit conditions, including the qualifying insurance period.
 
 **Key aspects of voluntary insurance:**
 
 - **Deadlines:** Apply within 3 months of starting self-employment.
 
-- **Contributions:** Fixed contributions; for new entrepreneurs or parents on parental leave, they can be reduced by 50%.
+- **Contributions:** The contribution is fixed. Self-employed people pay half the standard amount in the calendar year they start and the following calendar year.
 
-- **Benefit amount:** Depends on previous income. You must show that in the two years before unemployment you were socially insured for at least 150 days.
+- **Benefit amount:** The agency generally uses actual prior pay if you had at least 150 days of insured employment with entitlement to pay in the two years before unemployment. Otherwise it uses a statutory notional wage based on the qualification required for the work it seeks to place you in. Benefit eligibility has separate conditions. [Bundesagentur für Arbeit](https://www.arbeitsagentur.de/freiwillige-arbeitslosenversicherung)
 
 #### How to apply?
 
-- **Gründungszuschuss:** Apply and get instructions at your local employment agency or on the [Bundesagentur für Arbeit](https://www.arbeitsagentur.de/freiwillige-arbeitslosenversicherung) site.
+- **Gründungszuschuss:** Apply through your local employment agency. [Bundesagentur für Arbeit](https://www.arbeitsagentur.de/arbeitslos-arbeit-finden/arbeitslosengeld/gruendungszuschuss-beantragen)
 
 - **Freiwillige Arbeitslosenversicherung:** Apply online via the [Arbeitsagentur](https://www.arbeitsagentur.de/freiwillige-arbeitslosenversicherung) portal.
 
@@ -1780,9 +1807,9 @@ A **Dienstvertrag** obligates the freelancer to deliver services without guarant
 
 ##### Features of a Dienstvertrag
 
-- The freelancer **is not liable for the final result**, only for fulfilling duties under the agreement.
+- The freelancer promises the agreed services and remains responsible for performing them properly.
 
-- Work must be done **according to the client’s instructions**, without significant defects, for obligations to be considered fulfilled.
+- Specify the services, professional standards and any coordination with the client. Whether the arrangement is employment depends on how the parties actually work together.
 
 - The freelancer receives **agreed compensation** for the work performed, regardless of project success.
 
@@ -1798,7 +1825,7 @@ A **Dienstvertrag** obligates the freelancer to deliver services without guarant
 
 - Flexibility: the client can receive services on an ongoing basis without tying payment to specific results.
 
-- Protection: the freelancer is shielded from claims tied to final outcomes as long as the work is performed properly.
+- The contract defines what the freelancer owes. The client can still bring claims for a breach of the agreed duties.
 
 - For projects where the **service process** matters more than the end goal, a Dienstvertrag sets clear cooperation terms for both sides.
 
@@ -1806,7 +1833,7 @@ A **Dienstvertrag** obligates the freelancer to deliver services without guarant
 
 Unlike a service contract, a Werkvertrag obligates delivery of a specific result. The focus is on successful project completion. Payment is made for the finished product or service, not for the process.
 
-**Example:** A graphic designer under a Werkvertrag must not only design a website mock-up but also deliver a working site that meets the client’s requirements.
+**Example:** A graphic designer owes a working website if the contract specifies that result. If it calls for a mock-up, the designer owes the agreed mock-up.
 
 #### 3. Fee contract (Honorarvertrag)
 
@@ -1822,39 +1849,39 @@ Suitable for freelancers offering consulting. It governs the consulting scope, p
 
 #### 5. NDA (Geheimhaltungsvereinbarung)
 
-An NDA protects confidential information shared between client and freelancer. It’s key when protecting IP, ideas, or trade secrets.
+A non-disclosure agreement (NDA) protects confidential information shared between client and freelancer. It’s key when protecting intellectual property (IP), ideas, or trade secrets.
 
 **Example:** A graphic designer discussing a new product with a client uses an NDA to prevent the ideas from being used or disclosed without permission.
 
 #### 6. Contract termination (Kündigung)
 
-Termination can be initiated by either party. It requires formal notice to the other side under the timelines and terms in the agreement.
+Who can give notice, in what form and on what timetable depends on the contract and applicable law. A work contract and a service contract can have different termination rights.
 
-**Example:** A graphic designer may terminate if a project proves unworkable, but must respect notice periods set in the contract.
+**Example:** If a website project becomes unworkable, the designer should check whether the contract or law allows them to terminate and, if so, which deadlines and notice requirements apply.
 
 #### 7. Digital employment contracts: what to know (2025 update)
 
-The Bureaucracy Reduction Act (Bürokratieentlastungsgesetz) allows **digital employment contracts**, simplifying paperwork. Employers can provide key contract terms via **email** or e-signature services such as DocuSign. In most cases, strict written form and a qualified electronic signature are not required. **Text form**—including the applicant’s name without a handwritten signature—is sufficient, saving paper and easing document management.
+Under the Bureaucracy Reduction Act, employers can often send the required record of essential employment terms electronically in text form, for example by email. The employer must provide a signed written record on request. This rule concerns employee documentation. Separate form requirements can apply to fixed terms or termination. [§ 2 NachwG](https://www.gesetze-im-internet.de/nachwg/__2.html)
 
 ##### Impressum and Datenschutzerklärung for a freelancer website
 
-If you have a professional website, German law (§ 5 TMG) requires an Impressum with full contact data, address, and tax number/USt-IdNr. You also need a DSGVO-compliant Datenschutzerklärung explaining collection/processing of personal data (contact forms, cookies, analytics). Use reliable generators or consult a lawyer to create these documents.
+A business website generally needs an Impressum with the details required by § 5 DDG, such as name, service address and contact information. Include a VAT ID or Wirtschafts-Identifikationsnummer where applicable. The tax number (Steuernummer) is not required in the Impressum. Explain actual personal-data processing in the privacy notice, including forms, cookies or analytics where used. Use reliable generators or consult a lawyer to create these documents. [§ 5 DDG](https://www.gesetze-im-internet.de/ddg/__5.html)
 
 ##### What requirements apply?
 
-1.  **Contract accessibility:** the employee must be able to open, save, and print the document.
+1.  **Document accessibility:** the employee must be able to access, save and print the record.
 
-2.  **Receipt confirmation:** the employer should request confirmation that the document was received.
+2.  **Receipt confirmation:** the employer must request acknowledgment of receipt when sending the record.
 
 ##### Exceptions to the text-form rule
 
-Some situations do not allow text form:
+Check the form rules for each document:
 
-- Contracts in industries with high risk of illegal employment.
+- For employees in the sectors listed in § 2a SchwarzArbG, such as construction and hospitality, the text-form option for documenting essential terms is unavailable. [§ 2a SchwarzArbG](https://www.gesetze-im-internet.de/schwarzarbg_2004/__2a.html)
 
-- Most fixed-term employment contracts (befristete Arbeitsverträge).
+- A fixed-term clause requires statutory written form. A qualified electronic signature can generally meet that form. [§ 14 TzBfG](https://www.gesetze-im-internet.de/tzbfg/__14.html) · [§§ 126](https://www.gesetze-im-internet.de/bgb/__126.html) and [126a BGB](https://www.gesetze-im-internet.de/bgb/__126a.html)
 
-In these cases, written form with a **handwritten signature** on paper is required.
+Termination of employment by notice or mutual agreement requires signed written form. Electronic form is excluded. [§ 623 BGB](https://www.gesetze-im-internet.de/bgb/__623.html)
 
 Digital contracts are an important step toward digitization and simplifying documentation, but they do not fit every case—employers must consider industry specifics and exceptions.
 
@@ -1878,10 +1905,24 @@ Contract templates:
 
 Ending a contract as a freelancer requires careful attention. When it’s time to finish cooperation with a client, you must prepare the "Kündigung" (termination) correctly, following contract terms and the law. Here’s how to handle termination properly.
 
+If your service contract permits ordinary notice, the letter can be short. Enter the applicable notice clause, the contract date and the date the engagement should end.
+
+```text
+Betreff: Kündigung des Dienstvertrags vom [Datum]
+
+Sehr geehrte/r [Name],
+hiermit kündige ich den Dienstvertrag vom [Datum] gemäß [Vertragsklausel] zum [Datum], hilfsweise zum nächstmöglichen zulässigen Termin.
+Bitte bestätigen Sie den Zugang und den Beendigungszeitpunkt.
+Bitte stimmen wir die Übergabe und Abrechnung offener Leistungen gesondert ab.
+
+Mit freundlichen Grüßen
+[Name]
+```
+
 #### Key points when terminating a contract
 
 **Written form**  
-A Kündigung should be in writing ("schriftlich") and on paper for legal protection. Even if written form is not legally mandatory, freelancers should insist on it. Oral or purely electronic notices (e.g., email) can make it hard to prove the fact, date, and reason for termination.
+Check which form the law and the contract require. For ordinary freelance contracts, a signed paper notice is often practical for proving receipt. Specific contracts, such as construction contracts, have statutory form requirements. Keep evidence of when the other party received the notice. [§ 130 BGB](https://www.gesetze-im-internet.de/bgb/__130.html) · [§ 650h BGB](https://www.gesetze-im-internet.de/bgb/__650h.html)
 
 1.  **Confirmation from the client**  
     Written confirmation ("Bestätigung") from the client is advisable, though not legally required. It adds another layer of assurance.
@@ -1890,10 +1931,10 @@ A Kündigung should be in writing ("schriftlich") and on paper for legal protect
     The letter does not have to use the word "Kündigung", but it must clearly state the aim is to end the business relationship and that the freelancer will no longer provide services.
 
 3.  **Reason for termination**  
-    A reason ("Kündigungsgrund") is required only for extraordinary termination ("außerordentliche Kündigung") for good cause. For ordinary termination ("ordentliche Kündigung"), explaining reasons is optional.
+    Extraordinary termination requires good cause. Whether you must state it in the notice or provide it on request depends on the applicable rule and contract. For example, § 626(2) BGB requires prompt written disclosure on request. Ordinary notice usually needs no explanation. [§ 626 BGB](https://www.gesetze-im-internet.de/bgb/__626.html)
 
 4.  **Withdrawal of termination**  
-    A Kündigung cannot be withdrawn unilaterally because it’s a one-sided declaration. If both parties want to keep working together, they must sign a new contract.
+    A withdrawal can prevent notice from taking effect if it reaches the other side before or at the same time as the notice. Once the notice takes effect, continuing the relationship requires agreement. [§ 130 BGB](https://www.gesetze-im-internet.de/bgb/__130.html)
 
 #### What is a termination letter?
 
@@ -1906,21 +1947,21 @@ Freelancers usually sign a "Dienstvertrag" (services) or "Werkvertrag" (work con
 #### Types of termination and timelines
 
 1.  **Ordinary termination ("ordentliche Kündigung")**  
-    Allows ending the contract within the agreed notice period. If no special terms are defined, the rules of § 620 and § 621 of the German Civil Code (BGB) apply.
+    A fixed-term Dienstvertrag generally ends when its term expires. For open-ended service contracts, the agreed terms or the statutory periods under §§ 620–621 BGB may apply. For a Werkvertrag, § 648 BGB lets the client terminate before completion. The contractor can still be entitled to payment after deductions such as costs saved. [§ 620 BGB](https://www.gesetze-im-internet.de/bgb/__620.html) · [§ 621 BGB](https://www.gesetze-im-internet.de/bgb/__621.html) · [§ 648 BGB](https://www.gesetze-im-internet.de/bgb/__648.html)
 
 2.  **Extraordinary termination for important reason ("außerordentliche Kündigung")**  
-    If one party breaches obligations or other serious reasons arise, either party may terminate immediately. Examples include client non-performance or severe contract violations.
+    Either party can terminate for good cause if continuing until the normal end date would be unreasonable in the circumstances. Check the relevant deadline and whether you must first give a warning or time to remedy a breach. [§ 626 BGB](https://www.gesetze-im-internet.de/bgb/__626.html) · [§ 648a BGB](https://www.gesetze-im-internet.de/bgb/__648a.html) · [§ 314 BGB](https://www.gesetze-im-internet.de/bgb/__314.html)
 
 #### Example reasons for termination
 
 1.  **Late payments**  
-    If the client fails to pay on time, it can justify early termination. The freelancer should first send a written warning ("Mahnung") with a deadline to cure.
+    Serious or repeated payment delays can be relevant. Check whether the applicable rule requires a warning or a deadline to cure before giving notice.
 
 2.  **Contract breaches**  
-    Any serious breach, such as violating confidentiality obligations ("Geheimhaltungsvereinbarung"), can also justify termination.
+    A serious breach of confidentiality can justify early termination, depending on the facts and the applicable rules.
 
 3.  **Criminal acts**  
-    Suspected criminal activity ("Straftat") by either party can be grounds for immediate termination.
+    A criminal act affecting the business relationship can matter. Assess the specific facts and legal standard before relying on a suspicion to end the contract without notice.
 
 #### 9. Conclusion
 
@@ -1928,13 +1969,15 @@ Each contract termination is unique. Study your contract terms before signing. I
 
 ### False self-employment (Scheinselbständigkeit)
 
-#### How to avoid false self-employment in Germany (2024 rules)
+<a id="how-to-avoid-false-self-employment-in-germany-2024-rules"></a>
+
+#### How to avoid false self-employment in Germany
 
 **False self-employment** worries freelancers and clients in Germany. Laws against it protect workers and prevent situations where freelancers effectively work like employees without social protections. It’s vital to distinguish genuine self-employment from false self-employment and know how to avoid problems.
 
 #### What is false self-employment (Scheinselbstständigkeit)?
 
-False self-employment occurs when someone is registered as self-employed (Freiberufler) but in reality works like an employee—fixed hours, vacation, tasks directed by the employer. In such cases, employee obligations and social contributions apply.
+False self-employment occurs when a purportedly independent engagement is actually employment. Direction by the client and integration into the client’s organisation are statutory indicators. The overall assessment considers how the particular engagement works in practice. [§ 7 SGB IV](https://www.gesetze-im-internet.de/sgb_4/__7.html)
 
 #### How to recognize false self-employment?
 
@@ -1946,19 +1989,19 @@ Signs of Scheinselbstständigkeit can include:
 
 - Integration into company processes (feste Prozessintegration)
 
-- **Reporting obligations** (Pflichten zum Reporting)
+- **Reporting obligations** that indicate day-to-day management by the client
 
 - Work carried out under the client’s direction (Tätigkeit nach Weisung)
 
-Other possible indicators:
+Other facts to look at in context:
 
-- More than 80% of income comes from one client
+- Dependence on one customer warrants a separate pension check when it is lasting. Employment status has no 80% income threshold.
 
-- No personal website or other signs of running a business
+- Whether the freelancer actively seeks customers or otherwise runs a business. A personal website is optional.
 
-- Participation in training events organized by the client
+- Whether client training is required as part of managing workers or simply needed for safety, security or project access.
 
-- Income comparable to or lower than an employee salary
+- Whether the fee and other terms leave room for entrepreneurial decisions and risk. An employee salary comparison alone does not determine status.
 
 #### Criteria of self-employment (Selbstständigkeit)
 
@@ -1968,9 +2011,9 @@ German federal courts list criteria that support genuine self-employment:
 
 - Independent pricing and contract negotiation (Eigenständige Preiskalkulation).
 
-- Free scheduling and no paid vacation (Freie Gestaltung von Arbeitszeit und Arbeitsorganisation).
+- Freedom to organise work and schedule time off (Freie Gestaltung von Arbeitszeit und Arbeitsorganisation).
 
-The more of these criteria apply, the more likely the freelancer is truly self-employed.
+The weight of each factor depends on the actual engagement. The decision is based on an overall assessment.
 
 #### Who is at risk of Scheinselbständigkeit?
 
@@ -1984,15 +2027,15 @@ Freelancers in these areas are often scrutinized:
 
 #### Who checks for Scheinselbständigkeit?
 
-The main authority is the German Pension Insurance (Deutsche Rentenversicherung), which can start a **Statusfeststellungsverfahren**—a procedure to determine the employment status.
+The parties can ask Deutsche Rentenversicherung Bund to determine the status of a specific engagement through the **Statusfeststellungsverfahren**. [§ 7a SGB IV](https://www.gesetze-im-internet.de/sgb_4/__7a.html)
 
 #### How to avoid accusations of false self-employment?
 
-Freelancers can reduce risk through solid contracts and clear separation of responsibilities. Contract types such as a **Werkvertrag** (work contract) can help structure cooperation correctly.
+Use a contract that describes the real scope and allocation of responsibilities. A **Werkvertrag** can document the agreed result where appropriate. Status depends on the actual working relationship.
 
 #### Consequences of Scheinselbständigkeit
 
-If false self-employment is found, consequences can be severe for both freelancer and client. For example, the client may owe social contributions (plus penalties and interest) for the last four years—or up to 30 years in cases of intent.
+If an engagement is classified as employment, the client as employer can owe social insurance arrears and late-payment surcharges. Contribution claims generally become time-barred four years after the end of the calendar year in which they fell due, or after 30 years if contributions were intentionally withheld. [§ 25 SGB IV](https://www.gesetze-im-internet.de/sgb_4/__25.html)
 
 #### Recommendations to avoid Scheinselbständigkeit:
 
@@ -2002,13 +2045,13 @@ One of the most important steps is to have well-drafted, legally reviewed contra
 
 - **Work contract (Werkvertrag)** — payment after delivering a concrete result and acceptance.
 
-- **Service contract (Dienstvertrag)** — ongoing services, but the freelancer is not a company employee.
+- **Service contract (Dienstvertrag)** — the parties agree on services. Whether the freelancer is an employee depends on how the work is organised in practice.
 
 Contracts should clearly show the freelancer bears entrepreneurial risk and works independently.
 
 ##### 2. Work with multiple clients
 
-A key indicator of false self-employment is earning more than 80% of income from one client. Mitigate this by keeping multiple clients, even if one project dominates your time—it signals independent business activity.
+Working with several clients spreads business risk. Assess employment status for each engagement on its own facts. Separately, statutory pension insurance can apply to genuinely self-employed people who work permanently and essentially for one client and have no regular employee subject to compulsory insurance. For that pension assessment, the German pension insurance authority (Deutsche Rentenversicherung, DRV) can use at least five-sixths of the relevant business receipts as a criterion for “essentially”. [DRV guidance on § 2 SGB VI](https://rvrecht.deutsche-rentenversicherung.de/SharedDocs/rvRecht/01_GRA_SGB/06_SGB_VI/pp_0001_25/gra_sgb006_p_0002.html)
 
 ##### 3. Show external business presence
 
@@ -2022,62 +2065,64 @@ Act like an independent business:
 
 - Build your own client base.
 
-These show that you operate as an entrepreneur.
+These can show how you find customers. The status of each engagement still depends on how you actually work with that client.
 
 ##### 4. Keep freedom of time and place
 
-You should set your own working hours and location. If the contract or practice imposes fixed hours or a set workplace, it can raise suspicion. For instance, working mainly in the client’s office may signal integration into the company.
+Control over hours and location can support self-employment. Consider why any limits exist. On-site access or agreed project meetings can be necessary, while regular direction over how and when you work can indicate employment.
 
 ##### 5. Use your own equipment
 
-Real freelancers use their own tools and equipment (computers, software, etc.). If the client supplies laptops, software access, or materials, it may indicate dependence.
+Using your own tools can support independence. A client laptop, software account or access badge may be necessary for security or project access. Consider why it was supplied and who actually controls the work.
 
 ##### 6. No employee-style leave or sick pay
 
-Freelancers should not receive paid vacation or sick leave. Those are employee benefits and may point to false self-employment. Breaks should be unpaid and self-planned.
+Employer-style paid vacation, approved absences or continued sick pay can indicate employment when considered with the way work is organised. Agree how time away and interruptions are handled in your actual arrangement.
 
 ##### 7. Long-term contracts with clear scope
 
-For long engagements, use contracts with clearly defined scope and conditions. Ensure the work is project-based and evaluated by results, not time spent.
+For long engagements, define the scope and how services or results are measured. Hourly billing is compatible with genuinely independent work. The actual control and organisation of the work matter.
 
 ##### 8. Use subcontractors
 
-Being able to involve other specialists or subcontractors signals entrepreneurial status rather than employee status.
+If the engagement genuinely allows the freelancer to involve subcontractors, that can be one indication of entrepreneurial discretion. Consider whether that can actually happen under the agreement.
 
 ##### 9. Use risk insurance
 
-Freelancers often insure against professional risks (e.g., errors and omissions), reinforcing their entrepreneurial role. Insurance also helps defend against false self-employment claims.
+Insurance can protect against covered professional risks, such as claims arising from work errors. Employment status depends on the working relationship itself.
 
 ##### 10. Run a status determination (Statusfeststellungsverfahren)
 
-If there is doubt about status, ask Deutsche Rentenversicherung to run a Statusfeststellungsverfahren. It lets freelancers and clients confirm the correct status in advance.
+If in doubt, either party can ask Deutsche Rentenversicherung Bund to assess the engagement. It can also assess the proposed arrangement before work starts. If the actual conditions change, the original assessment may need to be revisited. [§ 7a SGB IV](https://www.gesetze-im-internet.de/sgb_4/__7a.html)
 
-##### 11. Skip corporate training programs
+<a id="11-skip-corporate-training-programs"></a>
 
-Participating in trainings and courses organized by the client can imply close integration. To avoid accusations, decline such programs or attend only as an external guest.
+##### 11. Consider the purpose of client training
+
+Routine staff training that forms part of managing the freelancer can indicate integration. Training needed for security, safety or a specific project can be appropriate for independent contractors. Assess it alongside the rest of the engagement.
 
 #### Additional measures:
 
-- **Written confirmation of independence.** Contracts can state that the freelancer works on their own schedule and bears responsibility for results.
+- **Written confirmation of independence.** Record who sets schedules, who performs the agreed services and who is responsible for any promised result. Keep the contract consistent with how the work is actually done.
 
-- **Regular reporting.** Reports should tie to tasks or project milestones, not hours worked.
+- **Regular reporting.** Reports can document tasks, milestones or billable hours. Consider whether the client uses them for project coordination or to direct your day-to-day work.
 
-Following these recommendations helps freelancers in Germany minimize risk and avoid being classified as falsely self-employed.
+Review the arrangement if the client starts to direct the work like an employer or if an external project becomes a permanent role in its team.
 
 #### 9. Conclusion
 
-Understanding the line between genuine and false self-employment is critical for freelancers in Germany. Clear contracts and adherence to self-employment criteria help avoid negative consequences.
+Keep the contract consistent with the work in practice. If the status of a particular engagement is unclear, ask DRV for an assessment.
 
 ## 8. Side gig as self-employed
 
 In Germany, taking on a side gig as self-employed or as a freelancer is a popular way to earn extra income. Unlike traditional employment, self-employment lets you work for yourself but requires attention to legal and tax obligations. Here’s how to set up a side gig, required steps, and the taxes/limitations to consider.
 
-**Heads-up (e-invoices):** Even for a side gig, if you invoice B2B you must be able to receive and store structured e-invoices from 01.01.2025 (PDF ≠ e-invoice). Kleinunternehmer are exempt from issuing but not from receiving.
+**Heads-up (e-invoices):** From 1 January 2025, domestic businesses must be able to receive and retain structured e-invoices for German domestic B2B transactions. That includes side businesses and Kleinunternehmer. Kleinunternehmer are exempt from the structured issuing requirement. A plain PDF is not a structured e-invoice. [BMF e-invoicing FAQ](https://www.bundesfinanzministerium.de/Content/DE/FAQ/e-rechnung.html)
 
 **Quick view for side gigs:**
-- Inform your employer; avoid conflicts of interest.
+- Check whether you must notify your employer or obtain consent. Avoid conflicts of interest.
 - Watch KUR/VAT limits and Grundfreibetrag; taxes apply to total income.
-- Keep total working time within 48h/week and maintain basic bookkeeping.
+- Plan enough time for your main job and recovery, and keep business records. The working-time rule for several jobs as an employee does not set a fixed allowance for genuinely self-employed side work.
 
 #### 1. Combining with a main job
 
@@ -2105,7 +2150,7 @@ Freelancing can extend your main profession or be something entirely different.
 
 To work legally you must register, depending on work type (see Chapter 1):
 
-- **Liberal professions (Freie Berufe):** IT, consulting, journalism, design, etc. Register by filing with the tax office (Finanzamt) to get a tax number.
+- **Liberal professions (Freie Berufe):** Register with Finanzamt if your actual work and qualifications meet the requirements; you will receive a tax number (Steuernummer). IT, consulting, journalism and design can qualify depending on the activity. [§ 18 EStG](https://www.gesetze-im-internet.de/estg/__18.html)
 
 - **Trade/business activity (Gewerbe):** If the side gig involves trade, craft, or commercial activity, you must register a Gewerbe (Gewerbeanmeldung) in addition to notifying the tax office.
 
@@ -2115,39 +2160,39 @@ After registration the tax office issues a tax number (Steuernummer) for invoice
 
 Key tax points:
 
-- **Income tax (Einkommensteuer):** You must declare freelance income. In 2026, the Grundfreibetrag is €12,348, but for side gigs the important point is total annual income and deductions, not the freelance income in isolation.
+- **Income tax (Einkommensteuer):** Include your side business profit or loss when filing. The 2026 Grundfreibetrag is €12,348 and applies to total taxable income.
 
-- **VAT (Umsatzsteuer):** If you do not use Kleinunternehmerregelung, you must charge and report VAT. For Kleinunternehmer, from 2025 the thresholds are up to €25,000 turnover in the previous calendar year and up to €100,000 in the current year.
+- **VAT (Umsatzsteuer):** Apply the VAT rules for each transaction. Under Kleinunternehmerregelung, the relevant domestic threshold in the year you start is €25,000. In later years the limits are €25,000 for the prior calendar year and €100,000 for the current year. Some transactions, including certain purchases from foreign suppliers, can still create VAT obligations.
 
-- **Bookkeeping:** Track all income/expenses and file tax returns regularly.
+- **Bookkeeping:** Track all income and expenses and check which returns you must file.
 
-For part-time self-employment, the tax office looks at total annual income: salary, freelance profit, deductions, and family situation. Even a small side gig belongs in the tax return, and invoices and expenses should be stored from day one. If you use Kleinunternehmerregelung, watch the current turnover limits and do not show VAT on invoices unless you are entitled to.
+For part-time self-employment, tax depends on total annual income, including salary and freelance profit, as well as deductions and family circumstances. Keep invoices and expense records from day one. If you use Kleinunternehmerregelung, watch the turnover limits and do not show VAT unless you are entitled to charge it.
 
 Check health insurance separately. If the main job remains your main source of income and time, health-insurance contributions often continue through the employer, but if freelance income grows, your Krankenkasse may request data and reassess status or contributions.
 
 #### 6. Social and health insurance
 
-If you combine a side gig with a main job, social insurance works differently than for fully self-employed people. Your employer covers most social contributions; the side gig affects some aspects.
+Employment and self-employment can create separate social insurance obligations. Employment contributions are generally shared between employer and employee. Ask the relevant insurer how the side business affects your status.
 
 ##### Pension insurance (Rentenversicherung)
 
-If the side gig is secondary (not your main income), your employer continues pension contributions from the main job. You generally do not pay extra pension contributions on side income. However, if the side gig starts earning much more than the main job or involves professions with mandatory contributions (e.g., teaching or consulting), consider additional pension payments.
+Pension contributions on salary continue under the normal employment rules. The side business may separately require contributions, for example for eligible teaching work or lasting independent work primarily for one client without a qualifying employee. [§ 2 SGB VI](https://www.gesetze-im-internet.de/sgb_6/__2.html)
 
 ##### Health insurance (Krankenversicherung)
 
-Your main employer already covers health insurance, so a side gig does not mean paying full health premiums twice. But total income (main job + side gig) can affect contribution amounts, especially if income rises substantially.
+If your main job makes you a compulsory member of Germany’s statutory health insurance system (gesetzliche Krankenversicherung, GKV), genuinely secondary self-employed profit generally does not add to contributions. Exceptions can apply, for example alongside a pension or pension-like benefits. Voluntary GKV can assess wider income up to the contribution ceiling. [§ 226 SGB V](https://www.gesetze-im-internet.de/sgb_5/__226.html) · [§ 240 SGB V](https://www.gesetze-im-internet.de/sgb_5/__240.html)
 
-If your employment income exceeds the Jahresarbeitsentgeltgrenze, you may choose between freiwillige GKV and private health insurance (PKV). In 2026, this threshold is €77,400/year. A self-employed side gig can affect how your Krankenkasse evaluates your status, so clarify consequences in advance.
+The general annual employment earnings threshold (Jahresarbeitsentgeltgrenze, JAEG) is €77,400 in 2026. When compulsory membership ends on this basis, you can stay with your statutory fund as a voluntary member (freiwillige Mitgliedschaft in der GKV) or move to private health insurance (private Krankenversicherung, PKV). Freelance receipts do not count towards that employment pay threshold.
 
-For those staying employed full time, statutory insurance (GKV) usually covers all necessary costs; the side income only adjusts the monthly contribution.
+Your Krankenkasse assesses whether self-employment is your main activity by considering factors such as time, economic importance and whether you employ staff. If self-employment becomes your main activity, compulsory GKV through your employment may end. [§ 5 SGB V](https://www.gesetze-im-internet.de/sgb_5/__5.html)
 
 #### 7. Side gig limitations
 
 Keep these limits in mind from both tax authorities and your employer:
 
-- **Time limits:** German law caps total weekly working hours (including side work) at 48. With a 40-hour main job, freelance work should be limited to ~8 hours/week.
+- **Time and recovery:** The Arbeitszeitgesetz combines hours worked for multiple employers. Genuine self-employed work is outside that aggregation, so a 40-hour job does not create an eight-hour freelance allowance. Account for recovery and duties to your employer when planning the side business. [§ 2 ArbZG](https://www.gesetze-im-internet.de/arbzg/__2.html)
 
-- **Income limits:** There is no universal €450/month threshold for freelance work: income must be declared in the annual tax return. The 2026 Minijob threshold is €603/month, but it applies to employment, not self-employment.
+- **Income limits:** The €603 monthly Minijob threshold in 2026 applies to employment. For employees whose salary is subject to wage withholding, one income-tax filing trigger is generally more than €410 a year in total positive taxable income outside wage withholding. Other filing triggers may apply. [§ 46 EStG](https://www.gesetze-im-internet.de/estg/__46.html)
 
 - **Conflict of interest:** If the side gig could conflict with your main job duties, get employer approval. For example, freelancing in the same field as your employer may trigger conflicts. Many German employers include clauses restricting side work without consent.
 
@@ -2192,13 +2237,13 @@ A self-employed side gig in Germany requires not only tax/financial compliance b
 
 German labor law allows employees to have self-employed side gigs, but many employment contracts include clauses regulating secondary employment—especially if it overlaps with the employer’s business.
 
-Under § 60 of the German Civil Code (BGB), employees must notify their employer if the side gig could affect main duties or create a conflict of interest.
+Check for notification or approval duties in your employment contract, applicable collective agreement or workplace rules. If the activity could touch the employer’s legitimate interests, disclose the relevant details. The competition rule in § 60 HGB expressly concerns commercial employees. [§ 60 HGB](https://www.gesetze-im-internet.de/hgb/__60.html)
 
 Key employer-approval points:
 
-- **Conflict of interest:** If your side gig is in the same field, it can be seen as competition. E.g., working in an IT company while freelancing in IT may prompt the employer to demand you stop.
+- **Conflict of interest:** Actual competition can justify an objection. For example, offering the same IT services to your employer’s customers can create a conflict. Consider the services and customers involved.
 
-- **Impact on main job:** The side gig must not hinder your main duties. If overwork or fatigue reduces performance, it can justify contract termination.
+- **Impact on the main job:** The side gig must not hinder your employment duties. If it measurably affects work performance, the employer can address the breach under the applicable employment rules.
 
 - **Confidentiality:** Using knowledge from the main job in your freelance work can breach confidentiality or trade secrets. Be careful with information protected by contract or company policy.
 
@@ -2218,25 +2263,25 @@ If you do not inform the employer and the side gig conflicts with the employment
 
 - **Verbal or written warnings.** If the employer sees that side work affects main duties or breaches the contract, they may issue warnings.
 
-- **Termination of employment.** In serious cases—e.g., disclosing trade secrets or harming the company—the employer may end the employment without notice.
+- **Termination of employment:** Serious breaches, such as disclosing trade secrets, can warrant termination without notice if the circumstances meet the statutory standard. The notice must still meet the written-form requirement. [§ 626 BGB](https://www.gesetze-im-internet.de/bgb/__626.html) · [§ 623 BGB](https://www.gesetze-im-internet.de/bgb/__623.html)
 
 ## 9. Freelance visas
 
-**Important:** visa requirements depend on city, citizenship, profession, and current Aufenthaltstitel. Before applying or starting work, verify the current conditions with your Ausländerbehörde or the German consulate.
+**Important:** The residence route depends on your nationality, profession and current status. The document checklist can vary by authority. Check with your Ausländerbehörde or German consulate before applying or starting work.
 
-If you are not an EU/EEA citizen and want to work independently in Germany, you generally need a residence title that explicitly permits Selbständigkeit or freiberufliche Tätigkeit. For Freiberufler, this often means a residence permit for self-employment under §21 AufenthG, but the exact path depends on profession, city, and whether you apply from abroad or already live in Germany.
+If you are from outside the EU, European Economic Area (EEA) or Switzerland, you generally need a residence status that permits self-employment. The freelance route for a liberal profession is § 21(5) AufenthG. Starting a commercial business normally follows the separate route under § 21(1). [Make it in Germany](https://www.make-it-in-germany.com/en/visa-recognition/visa-types/other/self-employment)
 
-The key rule: first check that your current status permits self-employment. If your residence title is limited to a specific employer or does not permit Selbständigkeit, starting freelance work without clarification is risky.
+Check the residence document and any supplementary sheet before accepting work. An unrestricted “Erwerbstätigkeit erlaubt” generally includes self-employment. If your title restricts you to employment, obtain permission covering the planned self-employed work before starting. [§ 2 AufenthG](https://www.gesetze-im-internet.de/aufenthg_2004/__2.html) · [§ 4a AufenthG](https://www.gesetze-im-internet.de/aufenthg_2004/__4a.html)
 
 ### Visa requirements
 
-Authorities usually check professional qualification, a clear business model, financial plan, clients or letters of intent, health insurance, and sufficient means of support. Some professions may require degrees, portfolio, contracts, housing documents, and an explanation of why the activity is economically viable.
+For the freelance route, be ready to prove that you can finance the work and support yourself, that you have adequate health insurance, and that you have or have been promised any required professional licence. The authority may ask for qualifications, a financial plan, client letters or contracts, and proof of adequate pension provision if the age requirement applies. Check the local rules and any exceptions.
 
-Document lists differ by city. Berlin LEA, for example, publishes its own list for the freelance residence permit, while Make it in Germany gives a federal overview. Use federal sources as orientation, but verify the final list with your local Ausländerbehörde.
+Check the current documents for your application with the competent authority. Berlin LEA, for example, publishes a checklist for freelance residence permits. [Berlin LEA checklist](https://service.berlin.de/dienstleistung/328332/)
 
 ### Application process
 
-If applying from abroad, the process usually starts at a German consulate or embassy. After entering Germany and registering your address, parts of the process may move to the local Ausländerbehörde. If you already live in Germany with another residence title, you often need to apply for a change or extension before starting self-employment.
+If applying from abroad, the process usually starts at a German consulate or embassy. After entering Germany and registering your address, the local Ausländerbehörde generally handles the residence permit. If you already have a permit for another purpose, ask whether freelance permission can be added to it under § 21(6) or whether a different permit is needed. Filing an application alone does not add the new permission. [§ 21 AufenthG](https://www.gesetze-im-internet.de/aufenthg_2004/__21.html)
 
 In practice, prepare a short activity description, projected income, client confirmations, insurance, and housing documents early. Ausländerbehörde appointments can take time, so do not leave renewal or status changes until the final month.
 
@@ -2254,13 +2299,13 @@ A practical document set often includes:
 - bank statements or other proof of financial stability;
 - if available, Finanzamt registration, Steuernummer, or confirmation that the Fragebogen was submitted.
 
-Not every document is needed for everyone, but it is better to have more evidence prepared than to explain gaps during the appointment.
+Documents vary by case. Use your authority’s checklist for the current application. Tax registration and client letters do not grant permission to start work.
 
 ### Visa extension
 
-For renewal, authorities usually check whether the activity actually works: income, tax documents, client invoices, bank incoming payments, health insurance, and absence of serious legal or debt issues. Keep Steuerbescheide, EÜR, contracts, Rechnungen, and business-bank statements organized.
+For renewal, the authority assesses the ongoing activity and whether you and your family can support yourselves. Have recent tax assessments, EÜR or other accounts, contracts, invoices, bank statements and proof of adequate health insurance ready if requested. [Berlin LEA renewal checklist](https://service.berlin.de/dienstleistung/324288/)
 
-In the long term, successful self-employment may support an application for Niederlassungserlaubnis, but timing and requirements depend on status, pension contributions, language, income, and residence history. Plan this early with Ausländerbehörde or an immigration advisor.
+The three-year settlement route under § 21(4) is for qualifying entrepreneurs. For freelance residence under § 21(5), the standard route generally requires five years and meeting the other settlement requirements. Other routes may be available depending on your status and residence history. [Make it in Germany](https://www.make-it-in-germany.com/en/visa-recognition/visa-types/other/self-employment)
 
 ## Useful resources
 
@@ -2290,44 +2335,73 @@ Use communities for experience and contacts, but verify tax, visa, and insurance
 - **Gewerbeamt** — trade office for non-freelance activities.
 - **Grundfreibetrag** — basic income tax allowance.
 - **Umsatzsteuer-Voranmeldung** — periodic VAT prefilings.
-- **GoBD** — rules for compliant digital record-keeping.
-- **EÜR** — cash-basis profit calc (Einnahmen-Überschuss-Rechnung).
+- **GoBD** — Germany’s principles for digital bookkeeping, record retention and access during an audit. For example, keep the electronic file you received for an XRechnung invoice.
+- **EÜR (Einnahmenüberschussrechnung)** — a cash-basis calculation of business profit. The form you will see in ELSTER is called Anlage EÜR.
 - **Vorsteuerabzug** — input VAT deduction.
-- **KUR (§19 UStG)** — small business VAT exemption.
-- **OSS** — One-Stop-Shop for EU B2C VAT.
+- **KUR (Kleinunternehmerregelung)** — the small-business VAT exemption under § 19 UStG.
+- **OSS (One Stop Shop)** — a single portal for reporting VAT on eligible sales to private customers in other EU countries.
 - **E-invoice** — structured invoice (XRechnung/ZUGFeRD), not just PDF.
+- **GKV / PKV** — statutory health insurance (gesetzliche Krankenversicherung) and private health insurance (private Krankenversicherung).
 - **KSK** — Künstlersozialkasse for creative/publicist professions.
-- **BBG/JAEG** — contribution ceilings/limits for social insurance, adjusted yearly.
+- **BBG / JAEG** — Beitragsbemessungsgrenze is the income ceiling used to calculate contributions. Jahresarbeitsentgeltgrenze is the regular annual employment earnings threshold for compulsory statutory health insurance. Both are adjusted yearly.
 - **Elster** — online portal for tax filings.
-- **Steuernummer / USt-IdNr** — tax number / VAT ID.
-- **Soll-/Ist-Versteuerung** — VAT due on invoice date / payment date.
+- **IdNr. / Steuernummer / USt-IdNr.** — your personal tax ID, the number issued by your local tax office, and your VAT identification number. An EU client asking for your VAT ID is asking for the third one.
+- **Soll-/Ist-Versteuerung** — VAT is generally accounted for in the period of supply or, under approved cash accounting, in the period payment is received.
 - **Zusammenfassende Meldung (ZM)** — EU summary report for intra-EU supplies.
 - **Reverse Charge** — VAT liability shifts to the customer.
 - **Betriebsprüfung** — tax audit.
-- **OSS (One-Stop-Shop)** — simplified VAT filing for EU B2C.
-- **EU-KUR** — EU small business regime with buyer-country limits.
+- **B2B / B2C** — a customer can buy in a business capacity (business-to-business) or as a private consumer (business-to-consumer). The distinction affects VAT treatment.
+- **EU-KUR** — the EU small-business scheme for claiming a VAT exemption in other member states when its conditions are met.
 - **Vorauszahlung** — advance tax payments.
 - **Steuerbescheid** — tax assessment notice.
-- **Grundtabelle** — BMF income tax table/formulas.
+- **Grundtabelle** — the basic income tax table published by the German Federal Ministry of Finance (Bundesministerium der Finanzen, BMF).
+
+**Reading German legal citations.** In “§ 18 Abs. 1 EStG”, § identifies the section, Abs. (Absatz) the subsection, and EStG the statute. These are the short titles used in this guide.
+
+**Tax**
+
+- **EStG** — Einkommensteuergesetz, Income Tax Act.
+- **GewStG** — Gewerbesteuergesetz, Trade Tax Act.
+- **UStG** — Umsatzsteuergesetz, VAT Act.
+- **AO** — Abgabenordnung, Fiscal Code.
+- **UStAE** — Umsatzsteuer-Anwendungserlass, VAT Application Decree.
+- **UStDV** — Umsatzsteuer-Durchführungsverordnung, VAT implementing regulation.
+
+**Business and contracts**
+
+- **GewO** — Gewerbeordnung, Trade Regulation Act.
+- **HGB** — Handelsgesetzbuch, Commercial Code.
+- **BGB** — Bürgerliches Gesetzbuch, Civil Code.
+- **DDG** — Digitale-Dienste-Gesetz, Digital Services Act.
+
+**Employment and residence**
+
+- **NachwG** — Nachweisgesetz, Act on documenting employment terms.
+- **SchwarzArbG** — Schwarzarbeitsbekämpfungsgesetz, Act to Combat Undeclared Work.
+- **TzBfG** — Teilzeit- und Befristungsgesetz, Part-Time and Fixed-Term Employment Act.
+- **ArbZG** — Arbeitszeitgesetz, Working Time Act.
+- **AufenthG** — Aufenthaltsgesetz, Residence Act.
+
+**SGB** stands for Sozialgesetzbuch, the Social Code. The Roman numeral identifies the book: III covers employment promotion, IV the common social insurance rules, V statutory health insurance and VI statutory pension insurance.
 
 ## FAQ (short)
 
 **FAQ anchor:** quick jump to short answers.
 
-- **Do programmers need a Gewerbe?** Often no, but Finanzamt decides; argue Freiberufler or accept Gewerbe if required.
+- **Do programmers need a Gewerbe?** That depends on your qualifications and actual work. Describe both to Finanzamt so it can assess your activity.
 - **Exceeded KUR mid-year?** From the crossing invoice charge VAT, inform Finanzamt, switch to standard VAT.
 - **Forgot to register and already earned money?** Submit the Fragebogen ASAP, correct invoices/VAT, send an explanation (ideally with a tax advisor).
 
 ## 10 common mistakes
 
-- One bank account for personal and business.
+- Mixing personal and business transactions without keeping enough records to distinguish them.
 - No bookkeeping (“will do it later in Excel”).
 - Using KUR but already over the limit—issuing invoices without VAT.
 - Not ready to receive e-invoices from 2025.
 - Not checking client VAT IDs in the EU (VIES).
 - Not keeping original invoice files (GoBD; retention 6–10 years).
 - Ignoring Finanzamt/Elster messages.
-- No employer consent for a Nebentätigkeit.
+- Missing a required employer notice or approval for a Nebentätigkeit.
 - Not booking platform fees as expenses.
 - No cash reserve for taxes/insurance, leading to cash gaps.
 
@@ -2335,12 +2409,14 @@ Use communities for experience and contacts, but verify tax, visa, and insurance
 
 | Criteria | Freiberufler | Gewerbe | Employee + side gig | Notes |
 | --- | --- | --- | --- | --- |
-| Registration | Finanzamt (Fragebogen) | Finanzamt + Gewerbeamt | Typically Finanzamt (freelance), inform employer | Employer notice for side gigs |
-| Trade tax | No | Yes (Freibetrag ~€24,500) | No for side-gig freelancing | Check local Hebesatz |
-| IHK/Handelsregister | Not mandatory | Possible/mandatory by activity | No | Depends on activity |
-| KUR/VAT | Can apply | Can apply | Can apply | KUR 25k/100k; switch on exceeding |
-| Social insurance | Self-managed | Self-managed | Main job via employer; side gig may adjust taxes/contributions | Total income can affect contributions |
-| Typical cases | IT, consulting, journalism, design | Trade, crafts, e-commerce | Any non-competing side work | Avoid conflicts of interest |
+| Registration | Finanzamt (Fragebogen) | Gewerbeamt + Finanzamt | Depends on the activity, as for the other columns | Check whether you must notify your employer or obtain approval |
+| Hiring | Possible; retain required personal professional direction/responsibility | Possible | Possible, with employer/payroll duties for the business | Staff bring payroll, social insurance and accident insurance duties |
+| Trade tax | No on qualifying liberal-profession income | Sole-proprietor allowance €24,500 against Gewerbeertrag, then local calculation; filing assessed separately | Depends on the side activity; no separate exemption merely because it is secondary | Check local Hebesatz |
+| IHK / Handelsregister | Generally no IHK/Handelsregister duty solely for a liberal profession; professional chambers may apply | Chamber and register obligations depend on activity, legal form and scale; small sole traders need not automatically enter Handelsregister | Follows the actual side activity | Gewerbeanmeldung and Handelsregister are separate procedures |
+| KUR/VAT | Can apply if conditions are met | Can apply if conditions are met | Same rules for the self-employed activity | Start year: 25k; later: 25k/100k; check incoming §13b reverse charge separately |
+| Social insurance | Self-managed | Self-managed | Payroll contributions for the main job. Check the side business separately | Contribution rules depend on insurance status and activity |
+| Profit accounting | EÜR where §4(3) applies | EÜR if eligible, otherwise formal books | Follows the business | KUR concerns VAT, not the profit method |
+| Typical cases | Doctors, architects, translators, teaching; IT when §18 EStG conditions are met | Trade, crafts, e-commerce and other commercial services | Either liberal-profession or commercial work | Classification depends on the actual work |
 
 ## Conclusion
 
