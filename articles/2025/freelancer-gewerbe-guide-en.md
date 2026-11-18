@@ -2354,7 +2354,15 @@ AI assistants such as Anthropic's Claude and OpenAI's Codex have become everyday
 
 ### Where AI genuinely helps
 
-I work with Claude and Codex myself and built a set of skills for them, German Business Kit (more at the end of this chapter). AI saves the most time on preparation:
+I work with Claude and Codex myself and built a set of skills for them, German Business Kit (more at the end of this chapter). Here are real tasks I have done with Claude Code:
+
+- **Tax return.** I filled in my tax return with Claude Code and the Claude Opus 5.5 model in computer-use mode: the assistant worked on the on-screen form together with me.
+- **Registration questionnaire.** With Claude Code I filled in the questionnaire for registering as a Freiberufler or Gewerbe.
+- **Reconfiguring Lexware Office (formerly lexoffice).** Claude Code reconfigured my account by controlling the computer and browser.
+
+In tasks like these, the assistant sees everything on screen: tax data, account details, amounts. That is why the plan and settings in the next section matter most here. It is best to sign in and submit the final form yourself, and to check every entered value before submitting.
+
+Beyond such tasks, AI saves the most time on preparation:
 
 - drafts of proposals, letters and client replies in German;
 - plain-language explanations of letters from Finanzamt and other authorities;
