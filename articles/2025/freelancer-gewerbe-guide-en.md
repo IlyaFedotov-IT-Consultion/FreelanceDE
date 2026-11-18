@@ -115,11 +115,15 @@ So, is it for you? If you love adventure, the German language, and bureaucracy�
 
 ## About the Author
 
-Hi! I’m Ilya Fedotov. I’ve lived in Germany for 6+ years and have spent the last two working full-time as a freelance IT specialist. With 20+ years as a Microsoft Solution Architect, I’ve worked on large migration and infrastructure projects for companies like Deutsche Bank, Fujitsu Services, and Infosys. In this guide I share my path into freelancing—from registration to annual reporting and finding clients. It’s based on my own experience in Germany; use it to avoid common pitfalls. I’m not a financial advisor or accountant, so everything you do based on this text is at your own risk (“you’ve been warned” 😊).
+Hi! I’m Ilya Fedotov. I’ve lived in Germany for nine years. I worked as a full-time freelance IT specialist for more than three years and now work full-time in an office job. I have 20+ years of experience as a Microsoft Solution Architect and have worked on large migration and infrastructure projects for companies like Deutsche Bank, Fujitsu Services and Infosys.
 
-I won’t cover freelancing visas in detail—you need to sort that before registering as a freelancer in Germany. That’s just the start of the fun.
+In my spare time I founded a small start-up, [Uverna](https://getuverna.com): an AI assistant for the whole job search. It helps you find jobs in Germany and across Europe, prepare your CV and cover letters, and keep your applications in one place. The interface is available in German, English, Ukrainian and Russian, and you send your applications to employers yourself. Early access is open.
 
-Questions or feedback? Email fedotov.ilya (at) gmail.com or reach out on LinkedIn [<u>https://www.linkedin.com/in/fedotovi/</u>](https://www.linkedin.com/in/fedotovi/).
+In this guide I share my path into freelancing, from registration to annual reporting and finding clients. It’s based on my own experience in Germany; use it to avoid common pitfalls. I’m not a financial advisor or accountant, so everything you do based on this text is at your own risk (“you’ve been warned” 😊).
+
+If you need a freelance visa, start with [Chapter 9](#9-freelance-visas): you need to sort that out before registering as a freelancer in Germany. That’s just the start of the fun.
+
+Questions or feedback? Email fedotov.ilya (at) gmail.com or reach out on [LinkedIn](https://www.linkedin.com/in/fedotovi/).
 
 ## Changelog
 
