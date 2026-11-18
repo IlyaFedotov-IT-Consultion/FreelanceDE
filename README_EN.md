@@ -76,7 +76,7 @@ For normal content updates:
 1. Update [articles/2025/freelancer-gewerbe-guide.md](articles/2025/freelancer-gewerbe-guide.md) first.
 2. If the topic exists in both languages, mirror the change in [articles/2025/freelancer-gewerbe-guide-en.md](articles/2025/freelancer-gewerbe-guide-en.md).
 3. Update the changelog near the top of the relevant article.
-4. If the public HTML page must match, update [blog/freelance-guide.ru.html](blog/freelance-guide.ru.html).
+4. To update the WordPress posts, run `tools/wp_publish.sh ru` or `tools/wp_publish.sh en` for a dry run, then add `--apply` to publish. The script backs up the live post to `.wp-backups/`, keeps legacy anchors, images and WordPress-only blocks, refreshes [blog/freelance-guide.ru.html](blog/freelance-guide.ru.html) for `ru`, and verifies the stored content. URLs and titles are not changed.
 5. Update files in [sources/](sources/) only when intentionally refreshing source/export versions.
 
 For tax, insurance, and visa updates, check official sources first: BMF, ELSTER, BMG, DRV, Bundesagentur für Arbeit, Make it in Germany, Berlin LEA, IHK, BZSt, and current law texts.

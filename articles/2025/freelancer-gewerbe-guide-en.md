@@ -451,7 +451,30 @@ Some costs have caps or are non-deductible, for example:
 
 The table is an older illustration of common expenses. Use the rules above to check separately how much you can deduct from profit and how much input VAT you can reclaim.
 
-![](../assets/freelancer-gewerbe-guide/media/image14.png)
+| Type of Expenses | Full Deduction | VAT Deduction Only |
+| --- | --- | --- |
+| Office Expenses | Yes (Ja) | \- |
+| Office Rent | Yes (Ja) | \- |
+| Office Furniture | Yes (Ja) | \- |
+| Office Supplies | Yes (Ja) | \- |
+| Virtual Office | Yes (Ja) | \- |
+| Technical Equipment | Yes (Ja) | Only VAT, if subject to depreciation |
+| Computers | Partially (according to depreciation/AfA) | Yes (on purchase) |
+| Software | Yes (Ja) | \- |
+| Transport Costs | \- | Yes (VAT on transport costs) |
+| Personal Vehicles for Work Purposes | Partially (according to depreciation/AfA) | Yes (if VAT was paid at purchase) |
+| Travel Tickets | Yes (Ja) | \- |
+| Business Travel Expenses | Yes (Ja) | \- |
+| Meals on Business Trips | Partially (according to flat-rate rules) | \- |
+| Work Materials | Yes (Ja) | \- |
+| Office Supplies (again) | Yes (Ja) | \- |
+| Professional Literature | Yes (Ja) | \- |
+| Representation Expenses | Partially (70%) | Yes (full VAT) |
+| Gifts to Clients | Not deductible if over €50 | \- |
+| Depreciation (AfA) | Partially (according to depreciation/AfA) | \- |
+| Business Insurance | Yes (Ja) | \- |
+| Accounting and Consulting Services | Yes (Ja) | \- |
+| Marketing Services | Yes (Ja) | \- |
 
 ### Car for work
 
@@ -1324,7 +1347,16 @@ Accountable — cloud app for freelancers/self-employed in Germany; automates in
 
 Accounting software comparison table
 
-![](../assets/freelancer-gewerbe-guide/media/image18.png)
+| Program | Free Version | Bank Integration | Tax Management | Invoice Creation | Annual Reports (EÜR) | Monthly Cost | Features |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Lexoffice | No | Kontist, Qonto, N26, Commerzbank, ING | Yes | Yes | Yes | €6.90 – €29.90 | Tax automation, bank integration |
+| SevDesk | No | 3000+ banks, DATEV, Sparkasse, Deutsche Bank | Yes | Yes | Yes | €8.90 – €42.90 | Mobile app, receipt scanning |
+| Lexware | No | Volksbank, Postbank, Sparkasse | Yes | Yes | Yes | €19.90 – €71.80 | Double-entry accounting, payroll management |
+| FastBill | No | Deutsche Bank, N26, Postbank, Sparkasse | Yes | Yes | Yes | €9 – €53 | Receipt automation, DATEV integration |
+| Sage 50 | No | PayPal, Stripe, Commerzbank | Yes | Yes | Yes | €30 – €40 | Inventory management, online store support |
+| BuchhaltungsButler | No | DATEV, Sparkasse, Deutsche Bank, Volksbank | Yes | Yes | Yes | €34.95 – €79.95 | Accounting automation, ELSTER data transfer |
+| WISO Mein Büro | No | Commerzbank, Sparkasse, Postbank | Yes | Yes | Yes | €14.90 – €139.90 | Cloud and desktop versions, ELSTER support |
+| Getsorted | No | N26, Deutsche Bank, Commerzbank, Sparkasse | Yes | Yes | Yes | €8 | Full tax automation, ELSTER integration |
 
 ## 5. Banks
 
@@ -1416,7 +1448,7 @@ Notes:
 
 Table created: 11.09.2024
 
-![](../assets/freelancer-gewerbe-guide/media/image19.png)
+![Comparison table of online banks for freelancers, September 2024](../assets/freelancer-gewerbe-guide/media/en/bank-comparison-en.png)
 
 For the latest offers on business accounts (Geschäftskonto), see:
 
@@ -1495,7 +1527,7 @@ Cost: €5–€10/month.
 
 Insurance table (September 2024 illustration, with historical costs and simplified cover descriptions):
 
-![](../assets/freelancer-gewerbe-guide/media/image20.png)
+![Insurance overview with historical monthly costs, September 2024](../assets/freelancer-gewerbe-guide/media/en/insurance-overview-en.png)
 
 #### 9. Conclusion
 
@@ -2436,4 +2468,4 @@ Key takeaways:
 
 **Client acquisition:** Success relies on a steady stream of clients. Use the strategies and platforms described to build your client base and find projects.
 
-**Freelancing in Germany** is a system you must learn to navigate. The "freelancer_gewerbe_guide_v0.4" helps avoid common mistakes and gives you tools to operate successfully. With this guide, you can start and grow as a freelancer or business owner while managing financial and legal obligations in Germany’s bureaucratic environment.
+**Freelancing in Germany** is a system you must learn to navigate. The "freelancer_gewerbe_guide_v0.5" helps avoid common mistakes and gives you tools to operate successfully. With this guide, you can start and grow as a freelancer or business owner while managing financial and legal obligations in Germany’s bureaucratic environment.

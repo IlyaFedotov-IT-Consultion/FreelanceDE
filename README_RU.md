@@ -76,7 +76,7 @@ podcasts/
 1. Сначала обновите [articles/2025/freelancer-gewerbe-guide.md](articles/2025/freelancer-gewerbe-guide.md).
 2. Если тема есть в обеих версиях, зеркально обновите [articles/2025/freelancer-gewerbe-guide-en.md](articles/2025/freelancer-gewerbe-guide-en.md).
 3. Обновите changelog в начале соответствующей статьи.
-4. Если публичная HTML-страница должна совпадать, обновите [blog/freelance-guide.ru.html](blog/freelance-guide.ru.html).
+4. Чтобы обновить записи в WordPress, запустите `tools/wp_publish.sh ru` или `tools/wp_publish.sh en` для пробного прогона, затем добавьте `--apply` для публикации. Скрипт сохраняет текущую запись в `.wp-backups/`, переносит старые якоря, изображения и блоки, которые есть только в WordPress, обновляет [blog/freelance-guide.ru.html](blog/freelance-guide.ru.html) для `ru` и проверяет сохранённое содержимое. URL и заголовки не меняются.
 5. Файлы в [sources/](sources/) обновляйте только при сознательном обновлении source/export-версий.
 
 Для налоговых, страховых и визовых изменений сначала сверяйтесь с официальными источниками: BMF, ELSTER, BMG, DRV, Bundesagentur für Arbeit, Make it in Germany, Berlin LEA, IHK, BZSt и актуальными текстами законов.
