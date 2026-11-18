@@ -37,6 +37,11 @@ LANGS = {
     },
 }
 RELATED = "<!-- ilya-related-reading -->"
+# Cross-links between the editions point to Markdown files in the repo and to posts on the site.
+SITE_URLS = {
+    "freelancer-gewerbe-guide.md": "https://ilyafedotov.com/freelancer_guide_v4/",
+    "freelancer-gewerbe-guide-en.md": "https://ilyafedotov.com/freelancers-handbook-in-germany-v0-4-by-ilya-fedotov/",
+}
 FIG = '<figure class="wp-block-table" style="overflow-x:auto">'
 PRE = '<pre style="white-space:pre-wrap;overflow-wrap:anywhere"'
 
@@ -56,6 +61,14 @@ def build(lang, reference):
         capture_output=True, text=True, check=True,
     ).stdout
     html = re.sub(r'^<h1 id="[^"]*">.*?</h1>\n', "", html, count=1)
+    html = re.sub(
+        r'href="([^"#/:]+\.md)(#[^"]*)?"',
+        lambda m: f'href="{SITE_URLS[m.group(1)]}{m.group(2) or ""}"' if m.group(1) in SITE_URLS else m.group(0),
+        html,
+    )
+    leftover = re.findall(r'href="([^"]+\.md(?:#[^"]*)?)"', html)
+    if leftover:
+        fail("links to Markdown files have no site URL: " + ", ".join(leftover))
 
     # WordPress-only blocks are cut from the reference first, so they are not
     # mistaken for article content below.
@@ -114,6 +127,9 @@ def build(lang, reference):
     if related:
         html = html.rstrip("\n") + "\n" + related
 
+    if "\\" in html:
+        snippet = html[max(0, html.index("\\") - 40): html.index("\\") + 20]
+        fail(f"output contains a backslash, which WordPress strips on save: ...{snippet}...")
     lost = sorted(set(ids(reference)) - set(ids(html)))
     if lost:
         fail("ids from the published post would be lost: " + ", ".join(lost))

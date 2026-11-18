@@ -11,9 +11,13 @@ summary: >-
 ---
 # Freelancer Gewerbe Guide
 
+Английская версия: [Freelancer & Gewerbe Guide (EN)](freelancer-gewerbe-guide-en.md)
+
 **Последнее обновление:** 18.11.2026. Уточнены регистрация, налоги, страхование и расчёт ставки, возвращены некоторые примеры и советы из прежней версии. 02.05.2026: Проверены внутренние ссылки, внешние источники и ключевые налоговые цифры на 2026 год: Grundfreibetrag, Kinderfreibetrag, лимиты Kleinunternehmerregelung, сроки подачи декларации и базовые параметры медицинского страхования. Правила могут меняться, поэтому перед подачей документов сверяйтесь с Finanzamt, Ausländerbehörde, Krankenkasse или Steuerberater.
 
-## Contents
+<a id="contents"></a>
+
+## Содержание
 
 - [Предисловие](#предисловие)
 - [Об Авторе](#об-авторе)
@@ -307,7 +311,7 @@ summary: >-
 | Kirchensteuer | Членам церкви | Если состоите | 8–9% от ESt | Автоматом с ESt | --- |
 
 Калькуляторы Hebesatz по землям: <https://www.hebesatzdatenbank.de/> (есть фильтр по Bundesland).
-Формулы/нормативка: Einkommensteuer (Grundtabelle BMF), Umsatzsteuer (§§ 18, 19 UStG), Gewerbesteuer (§ 11 GewStG, калькулятор <https://bmf-steuerrechner.de/gewst/>), Soli (BMF: Solidarit\u00e4tszuschlag).
+Формулы/нормативка: Einkommensteuer (Grundtabelle BMF), Umsatzsteuer (§§ 18, 19 UStG), Gewerbesteuer (§ 11 GewStG, калькулятор <https://bmf-steuerrechner.de/gewst/>), Soli (BMF: Solidaritätszuschlag).
 
 #### 1. Подоходный налог (Einkommensteuer)
 
