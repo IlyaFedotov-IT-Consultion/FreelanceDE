@@ -14,7 +14,7 @@ summary: >-
 
 Russian version: [Freelancer Gewerbe Guide (RU)](freelancer-gewerbe-guide.md)
 
-**Last updated:** 18.11.2026. Registration, tax, insurance and hourly-rate sections received targeted corrections, and several original examples and tips were restored. On 02.05.2026: Internal links, external sources, and key 2026 tax figures were checked: Grundfreibetrag, Kinderfreibetrag, Kleinunternehmerregelung limits, filing deadlines, and baseline health-insurance parameters. Rules can change, so before filing or applying, verify the current requirements with Finanzamt, Ausländerbehörde, Krankenkasse, or a Steuerberater.
+**Last updated:** 18.11.2026. Registration, tax, insurance and hourly-rate sections received targeted corrections, several original examples and tips were restored, and Chapter 10 on AI in freelancing was added. On 02.05.2026: Internal links, external sources, and key 2026 tax figures were checked: Grundfreibetrag, Kinderfreibetrag, Kleinunternehmerregelung limits, filing deadlines, and baseline health-insurance parameters. Rules can change, so before filing or applying, verify the current requirements with Finanzamt, Ausländerbehörde, Krankenkasse, or a Steuerberater.
 
 ## Contents
 
@@ -81,6 +81,14 @@ Russian version: [Freelancer Gewerbe Guide (RU)](freelancer-gewerbe-guide.md)
   - [Application process](#application-process)
   - [Documents for foreigners](#documents-for-foreigners)
   - [Visa extension](#visa-extension)
+- [10. AI in freelancing: Claude, Codex and GDPR](#10-ai-in-freelancing-claude-codex-and-gdpr)
+  - [Where AI genuinely helps](#where-ai-genuinely-helps)
+  - [Personal or business plan: who processes your data](#personal-or-business-plan-who-processes-your-data)
+  - [GDPR: when your work involves clients' personal data](#gdpr-when-your-work-involves-clients-personal-data)
+  - [Contracts, NDAs and professional secrecy](#contracts-ndas-and-professional-secrecy)
+  - [EU AI Act: what applies to freelancers](#eu-ai-act-what-applies-to-freelancers)
+  - [Taxes and bookkeeping for AI subscriptions](#taxes-and-bookkeeping-for-ai-subscriptions)
+  - [Experimental: German Business Kit](#experimental-german-business-kit)
 - [Useful resources](#useful-resources)
 - [Freelancer communities in Germany](#freelancer-communities-in-germany)
 - [Quick glossary](#quick-glossary)
@@ -117,6 +125,7 @@ Questions or feedback? Email fedotov.ilya (at) gmail.com or reach out on LinkedI
 
 | **Change** | **Page** | **Date** | **Comments** | **Author** |
 |----|:--:|:--:|:--:|:--:|
+| Chapter 10: AI in freelancing | Chapter 10 | 18.11.2026 | Claude and Codex plans and training, GDPR and AVV, NDAs and § 203 StGB, AI Act, reverse charge for subscriptions, German Business Kit (preview) | Ilya |
 | Legal and tax corrections, restored examples | Entire document | 18.11.2026 | Freiberufler vs Gewerbe, §141 AO, VAT periods (2027 start-ups), trade tax credit, car VAT example, KUR invoice note, retention, accident insurance, hourly rate, status comparison table | Ilya |
 | 2026 tax figures and filing section update | Entire document | 02.05.2026 | Grundfreibetrag, Kinderfreibetrag, KUR, insurance contributions, filing deadlines, ELSTER forms by status | Ilya |
 | TL;DR, tax/insurance tables, FAQ/glossary | Entire document | 22.11.2025 | Added quick blocks, tax/status tables, FAQ/10 mistakes | Ilya |
@@ -2338,6 +2347,102 @@ Documents vary by case. Use your authority’s checklist for the current applica
 For renewal, the authority assesses the ongoing activity and whether you and your family can support yourselves. Have recent tax assessments, EÜR or other accounts, contracts, invoices, bank statements and proof of adequate health insurance ready if requested. [Berlin LEA renewal checklist](https://service.berlin.de/dienstleistung/324288/)
 
 The three-year settlement route under § 21(4) is for qualifying entrepreneurs. For freelance residence under § 21(5), the standard route generally requires five years and meeting the other settlement requirements. Other routes may be available depending on your status and residence history. [Make it in Germany](https://www.make-it-in-germany.com/en/visa-recognition/visa-types/other/self-employment)
+
+## 10. AI in freelancing: Claude, Codex and GDPR
+
+AI assistants such as Anthropic's Claude and OpenAI's Codex have become everyday work tools: they draft texts, read documents, research and help with code. For a freelancer in Germany, three questions are easy to miss: who processes your clients' data, what your contract allows, and how to treat the subscription for tax. Below is a practical overview as of 18.11.2026. Provider terms change, so check the links in each section before working with real data.
+
+### Where AI genuinely helps
+
+I work with Claude and Codex myself and built a set of skills for them, German Business Kit (more at the end of this chapter). AI saves the most time on preparation:
+
+- drafts of proposals, letters and client replies in German;
+- plain-language explanations of letters from Finanzamt and other authorities;
+- invoices, checklists and cross-checking documents;
+- research into laws and official guidance, always checked against the primary source;
+- code, scripts and automation of routine work.
+
+The main rule from practice: AI speeds up preparation, but you remain responsible for the result. A model can mix up the year, a threshold or a legal reference. Check figures, deadlines and legal conclusions against the primary source, and important decisions with a professional.
+
+### Personal or business plan: who processes your data
+
+Everything you send to the assistant, including files and screenshots it opens, is processed by the provider, Anthropic or OpenAI. A local folder on your computer does not mean the AI runs locally. The terms depend on the plan, not on whether you pay:
+
+| Service and plan | Training on your data | Data processing agreement (DPA, AVV) | What to check |
+| --- | --- | --- | --- |
+| Claude Free, Pro, Max (and Claude Code with these accounts) | Only if you turned on model improvement in the privacy settings. Conversations flagged for safety review and feedback you send may be used even with the setting off | No: a personal plan comes with no data processing agreement | The model-improvement setting. Don't use 👍/👎 in chats with client data: feedback keeps the whole conversation for up to 5 years |
+| Claude Team, Enterprise, Claude API | Not by default. Exceptions are feedback and explicit opt-in | The DPA is automatically part of the Commercial Terms and includes the EU Standard Contractual Clauses (SCCs) | A Team or Enterprise owner can turn off response ratings (Rate chats) |
+| ChatGPT and Codex Free, Plus, Pro | Yes by default. "Improve the model for everyone" also covers Codex tasks | No | Turn that setting off. Check the separate Codex setting for training on environments (Include environments). Feedback can send a conversation for training even with the setting off |
+| ChatGPT Business, Enterprise, OpenAI API | Not by default | A DPA is available | Data residency and processing in Europe (EEA and Switzerland) is available for Enterprise, Edu and the API. For the API, the region is chosen when you create a project |
+
+"No training" does not mean "no processing or storage". The provider still receives the data, may keep it for a limited time and may check it for abuse. Sources: [Claude, personal plans](https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training) (updated 16.03.2026), [Claude, commercial plans](https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training) (18.08.2026), [Anthropic DPA](https://www.anthropic.com/legal/data-processing-addendum), [OpenAI data use](https://help.openai.com/en/articles/5722486), [OpenAI for business](https://openai.com/business-data/), [OpenAI DPA](https://openai.com/policies/data-processing-addendum/), [OpenAI data residency in Europe](https://help.openai.com/en/articles/9903489).
+
+### GDPR: when your work involves clients' personal data
+
+As long as you work with your own texts and code without personal data, GDPR hardly gets in the way. That changes once names, addresses, correspondence, or data about your client's staff or customers end up in a request.
+
+- **Your role.** If you process personal data on a client's behalf, you are usually their processor (Auftragsverarbeiter) under Art. 28 GDPR, and you need a data processing agreement (Auftragsverarbeitungsvertrag, AVV) between you.
+- **The AI service is a sub-processor.** You may engage it only with the client's prior written authorisation, specific or general (Art. 28(2) GDPR). Check your AVV: it often lists the approved sub-processors.
+- **Transfers to the US.** These are permitted if the provider is certified under the EU-US Data Privacy Framework or if your contract with it contains the EU Standard Contractual Clauses. Check certification on the [official DPF list](https://www.dataprivacyframework.gov/list); Anthropic's DPA, for example, includes SCCs.
+- **Minimise data.** Share only what the task needs. Replace names and account details with placeholders. Don't put client or employee data into a personal plan at all: it has no data processing agreement.
+- **Special categories.** Process health, religious and other special-category data under Art. 9 GDPR with AI only with a specific legal basis and after taking advice.
+
+A short checklist before you give client material to an assistant:
+
+1. Does the task need personal data, or can you remove it?
+2. Does your client contract or AVV allow this service?
+3. Are you on a business plan with a DPA, and have you checked the training settings?
+4. Does the provider have DPF certification or SCCs for transfers to the US?
+5. Have you noted which service you used and for what, in case the client asks?
+
+GDPR text: [Regulation (EU) 2016/679](https://eur-lex.europa.eu/eli/reg/2016/679/oj).
+
+### Contracts, NDAs and professional secrecy
+
+- **Contract and NDA.** Many contracts forbid sharing confidential information with third parties, and some expressly restrict AI tools. If the wording is unclear, ask the client in advance and get the answer in writing.
+- **Professional secrecy.** For doctors, lawyers, tax advisers and several other professions, disclosing secrets is a criminal offence under [§ 203 StGB](https://www.gesetze-im-internet.de/stgb/__203.html). They may involve external services only under that provision's special conditions; get advice before you start.
+- **Trade secrets.** The Trade Secrets Act protects information only if its holder takes reasonable protective measures ([§ 2 GeschGehG](https://www.gesetze-im-internet.de/geschgehg/__2.html)). A business plan with a DPA and checked settings is part of those measures.
+- **Copyright.** German law protects personal intellectual creations ([§ 2(2) UrhG](https://www.gesetze-im-internet.de/urhg/__2.html)). Text or code generated entirely by AI without your creative input is probably not protected. If you promise a client exclusive rights, take this into account and disclose AI use where appropriate.
+
+### EU AI Act: what applies to freelancers
+
+Ordinary freelance work brings few obligations, but there are some.
+
+- **AI literacy (Art. 4).** It has applied since 2 February 2025 to everyone who uses AI systems professionally, including the self-employed. Since the amendments in Regulation (EU) 2026/1744 took effect on 27 July 2026, the duty is to take measures that support AI literacy rather than to guarantee a level of it. For a freelancer, in practice this means understanding what your tools can and cannot do, and explaining it to anyone working on your behalf.
+- **Transparency (Art. 50).** Since 2 August 2026, anyone who publishes deepfakes, or AI-generated text meant to inform the public on matters of public interest, must disclose that the content is AI-generated. For text there is an exception if a person reviewed it and someone holds editorial responsibility. Ordinary client deliverables are usually not covered.
+- **High-risk systems** (for example candidate screening or credit scoring) face stricter rules but rarely come up in typical freelance work.
+
+Texts: [AI Act, Regulation (EU) 2024/1689](https://eur-lex.europa.eu/eli/reg/2024/1689/oj), [amendments 2026/1744](https://eur-lex.europa.eu/eli/reg/2026/1744/oj).
+
+### Taxes and bookkeeping for AI subscriptions
+
+An AI subscription used for work is an ordinary business expense (Betriebsausgabe). If you also use it privately, deduct only the business share. Download the invoices from the billing settings and keep them with your other records.
+
+Check who issued the invoice and whether it includes VAT:
+
+- **Foreign provider, invoice without VAT.** This usually happens once you enter your USt-IdNr in the billing settings. The place of supply is Germany ([§ 3a(2) UStG](https://www.gesetze-im-internet.de/ustg_1980/__3a.html)), and you pay the VAT under reverse charge ([§ 13b UStG](https://www.gesetze-im-internet.de/ustg_1980/__13b.html)). Under standard VAT you deduct it straight back as input VAT, so the net effect is zero, but you still fill in the lines in your Voranmeldung.
+- **Kleinunternehmer.** A small business owner is still an Unternehmer, so they must pay reverse-charge VAT and cannot deduct it. A Voranmeldung is due for the period in which that tax arises ([§ 18(4a) UStG](https://www.gesetze-im-internet.de/ustg_1980/__18.html)). Budget for 19% on top of the subscription price.
+- **Invoice with VAT.** If the provider charged VAT, check whether it treated your status correctly. If needed, enter your USt-IdNr and ask for future invoices to be corrected.
+
+Providers don't always handle VAT IDs correctly, so check every invoice and discuss unclear cases with a Steuerberater.
+
+### Experimental: German Business Kit
+
+> **Disclosure:** this is my own open-source project (MIT licence). Status: preview (0.11.0-preview.1 as of 27.10.2026).
+
+[German Business Kit](https://github.com/ilyafedotov-ops/german-business-skills) is a set of seven skills for Claude and Codex that help you start and run a small business in Germany: preparation and registration, everyday work, accounting, taxes and reporting, changes and closure. You can write in English or Russian, and no coding is needed. The skills save confirmed facts, documents and the next step in your private business folder, so you can continue in a new chat.
+
+To try it, open Claude or Codex and paste the request from the README, for example:
+
+> Install German Business Kit from https://github.com/ilyafedotov-ops/german-business-skills and show me how to use it.
+
+Keep in mind:
+
+- This is AI assistance, not tax advice and not a replacement for a Steuerberater. The model can make mistakes in calculations and deadlines.
+- Files the assistant reads are processed by Anthropic or OpenAI. Before using real documents, read ["AI limits and your data"](https://github.com/ilyafedotov-ops/german-business-skills/blob/main/skills/de-business-kit/guides/user-guide.en.md#ai-limits-and-your-data) and check your plan's settings against the table above.
+- Start with a fictional example, and use a business plan with a DPA for client data.
+
+If you try it, tell me in [GitHub Issues](https://github.com/ilyafedotov-ops/german-business-skills/issues) what worked and where you needed more help: it's a preview, and feedback directly shapes its development.
 
 ## Useful resources
 

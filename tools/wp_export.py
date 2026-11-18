@@ -66,7 +66,8 @@ def build(lang, reference):
         lambda m: f'href="{SITE_URLS[m.group(1)]}{m.group(2) or ""}"' if m.group(1) in SITE_URLS else m.group(0),
         html,
     )
-    leftover = re.findall(r'href="([^"]+\.md(?:#[^"]*)?)"', html)
+    # Relative links to repository Markdown files; absolute URLs (e.g. GitHub) are fine.
+    leftover = re.findall(r'href="(?![a-zA-Z][a-zA-Z0-9+.-]*:|/)([^"]+\.md(?:#[^"]*)?)"', html)
     if leftover:
         fail("links to Markdown files have no site URL: " + ", ".join(leftover))
 
