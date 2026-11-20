@@ -14,7 +14,7 @@ summary: >-
 
 Russian version: [Freelancer Gewerbe Guide (RU)](freelancer-gewerbe-guide.md)
 
-**Last updated:** 18.11.2026. Registration, tax, insurance and hourly-rate sections received targeted corrections, several original examples and tips were restored, and Chapter 10 on AI in freelancing was added. On 02.05.2026: Internal links, external sources, and key 2026 tax figures were checked: Grundfreibetrag, Kinderfreibetrag, Kleinunternehmerregelung limits, filing deadlines, and baseline health-insurance parameters. Rules can change, so before filing or applying, verify the current requirements with Finanzamt, Ausländerbehörde, Krankenkasse, or a Steuerberater.
+**Last updated:** 20.11.2026: Chapter 11 on closing or pausing your business was added. 18.11.2026: Registration, tax, insurance and hourly-rate sections received targeted corrections, several original examples and tips were restored, and Chapter 10 on AI in freelancing was added. On 02.05.2026: Internal links, external sources, and key 2026 tax figures were checked: Grundfreibetrag, Kinderfreibetrag, Kleinunternehmerregelung limits, filing deadlines, and baseline health-insurance parameters. Rules can change, so before filing or applying, verify the current requirements with Finanzamt, Ausländerbehörde, Krankenkasse, or a Steuerberater.
 
 ## Contents
 
@@ -104,6 +104,14 @@ Russian version: [Freelancer Gewerbe Guide (RU)](freelancer-gewerbe-guide.md)
   - [EU AI Act: what applies to freelancers](#eu-ai-act-what-applies-to-freelancers)
   - [Taxes and bookkeeping for AI subscriptions](#taxes-and-bookkeeping-for-ai-subscriptions)
   - [Experimental: German Business Kit](#experimental-german-business-kit)
+- [Chapter 11. Closing or pausing your business](#chapter-11-closing-or-pausing-your-business)
+  - [Close it or keep it as a side gig](#close-it-or-keep-it-as-a-side-gig)
+  - [How a Freiberufler closes the business](#how-a-freiberufler-closes-the-business)
+  - [How to close a Gewerbe](#how-to-close-a-gewerbe)
+  - [Taxes for the final year](#taxes-for-the-final-year)
+  - [Insurance and social contributions](#insurance-and-social-contributions)
+  - [If you have a visa or residence permit for self-employment](#if-you-have-a-visa-or-residence-permit-for-self-employment)
+  - [Closing checklist](#closing-checklist)
 - [Useful resources](#useful-resources)
 - [Freelancer communities in Germany](#freelancer-communities-in-germany)
 - [Quick glossary](#quick-glossary)
@@ -142,6 +150,7 @@ Questions or feedback? Email fedotov.ilya (at) gmail.com or reach out on [Linked
 
 | **Change** | **Page** | **Date** | **Comments** | **Author** |
 |----|:--:|:--:|:--:|:--:|
+| Chapter 11: closing the business | Chapter 11 | 20.11.2026 | Close or keep as a side gig, Freiberufler and Gewerbe, final-year taxes, insurance, self-employment residence permits, checklist | Ilya |
 | Chapter 10: AI in freelancing | Chapter 10 | 18.11.2026 | Claude and Codex plans and training, GDPR and AVV, NDAs and § 203 StGB, AI Act, reverse charge for subscriptions, German Business Kit (preview) | Ilya |
 | Legal and tax corrections, restored examples | Entire document | 18.11.2026 | Freiberufler vs Gewerbe, §141 AO, VAT periods (2027 start-ups), trade tax credit, car VAT example, KUR invoice note, retention, accident insurance, hourly rate, status comparison table | Ilya |
 | 2026 tax figures and filing section update | Entire document | 02.05.2026 | Grundfreibetrag, Kinderfreibetrag, KUR, insurance contributions, filing deadlines, ELSTER forms by status | Ilya |
@@ -2457,6 +2466,8 @@ If you do not inform the employer and the side gig conflicts with the employment
 
 <a id="9-freelance-visas"></a>
 
+If you decide to stop freelancing altogether rather than combine it with a job, see [Chapter 11](#chapter-11-closing-or-pausing-your-business) for how to close the business.
+
 ## Chapter 9. Freelance visas
 
 **Important:** The residence route depends on your nationality, profession and current status. The document checklist can vary by authority. Check with your Ausländerbehörde or German consulate before applying or starting work.
@@ -2604,6 +2615,76 @@ Keep in mind:
 - Start with a fictional example, and use a business plan with a DPA for client data.
 
 If you try it, tell me in [GitHub Issues](https://github.com/ilyafedotov-ops/german-business-skills/issues) what worked and where you needed more help: it's a preview, and feedback directly shapes its development.
+
+## Chapter 11. Closing or pausing your business
+
+Freelancing does not have to be forever. Some people take a permanent job, some move abroad, some are simply tired of the bookkeeping. Closing a business in Germany is easier than opening one, but a few obligations continue after your last invoice. This chapter covers what to do, in which order, and what is easy to forget.
+
+**In short:**
+
+- A Freiberufler tells the Finanzamt within one month that the activity has ended. A Gewerbe owner files a Gewerbeabmeldung with the Gewerbeamt and, to be safe, also writes to the Finanzamt.
+- All the usual returns are due for the year you close, and money that arrives after closing is still taxable.
+- Records must be kept for 8–10 years after closing.
+- You have to move your health insurance, KSK and other contributions to your new status yourself.
+- If your residence permit was issued for self-employment, talk to the Ausländerbehörde first.
+
+### Close it or keep it as a side gig
+
+If you are moving to a permanent job, you do not have to close your freelance business. You can keep it as a side gig (Nebentätigkeit) if your employment contract allows it. See [Chapter 8](#chapter-8-side-gig-as-self-employed) for details.
+
+Germany has no official "paused" status. If you keep the registration without income, the obligations remain: tax returns (including zero returns) and, for a Gewerbe, IHK fees. If you do not plan to come back, it is simpler to close the business and register again later if you need to.
+
+### How a Freiberufler closes the business
+
+A Freiberufler is not registered with the Gewerbeamt, so there is nothing to close there. You must tell your Finanzamt that the activity has ended **within one month** — the same obligation as when you started. [§ 138 AO](https://www.gesetze-im-internet.de/ao_1977/__138.html)
+
+There is no special form: a letter or a message through ELSTER ("Sonstige Nachricht an das Finanzamt") is enough. Give your tax number, the date the activity ended and what happens to your business assets: sold, kept privately or disposed of.
+
+### How to close a Gewerbe
+
+A Gewerbe owner files a **Gewerbeabmeldung** with the Gewerbeamt where the business was registered. [§ 14 GewO](https://www.gesetze-im-internet.de/gewo/__14.html) Many cities accept it online. In Berlin, for example, the Abmeldung is free and can be filed online or in person. [Deregistering a trade in Berlin](https://service.berlin.de/dienstleistung/122107/) Elsewhere, check the procedure and any fee on your Gewerbeamt's website.
+
+The Gewerbeamt passes the Abmeldung on to the Finanzamt, the IHK, the Berufsgenossenschaft, the Ausländerbehörde and other offices. Still, write to the Finanzamt yourself: your advance payments get adjusted sooner and there is no doubt about the closing date.
+
+### Taxes for the final year
+
+- **Returns.** The usual returns are due for the year you close: the income tax return with Anlage EÜR, the annual VAT return and, for a Gewerbe, the trade tax return. File the last Umsatzsteuer-Voranmeldung for the period in which you closed.
+- **Advance payments.** Ask the Finanzamt to reduce or cancel your Vorauszahlungen: they are based on your past income, and the tax office can adjust them to the tax you are now expected to owe. [§ 37 EStG](https://www.gesetze-im-internet.de/estg/__37.html)
+- **Unpaid invoices.** If you use the EÜR, selling or closing the business is treated as switching to balance-sheet accounting at that moment (R 4.5 (6) EStR). Invoices issued but not yet paid when you close therefore count towards the profit of the final year, not the following one.
+- **Money after closing.** Payments that arrive after closing for earlier work are still taxable as income from a former activity. [§ 24 EStG](https://www.gesetze-im-internet.de/estg/__24.html)
+- **Equipment and car.** If you keep a laptop, phone or car that belonged to the business, that is a withdrawal (Entnahme). The difference between the item's current value and its remaining book value is added to your profit; for a fully depreciated laptop this is almost its whole current price. If you deducted VAT when you bought it, the withdrawal is also subject to VAT. [§ 3 UStG](https://www.gesetze-im-internet.de/ustg_1980/__3.html)
+- **Profit on closing.** Tax law treats closing a business like selling it. If you are 55 or older or permanently unable to work, a one-off allowance of €45,000 applies on application; it shrinks if the closing profit exceeds €136,000. The same rules apply to a Freiberufler. [§ 16 EStG](https://www.gesetze-im-internet.de/estg/__16.html) · [§ 18 EStG](https://www.gesetze-im-internet.de/estg/__18.html)
+
+If the business owned expensive items or a car, have a tax adviser check the final year once: mistakes here cost more than the adviser.
+
+### Insurance and social contributions
+
+- **Health insurance.** If you were voluntarily insured in the GKV as self-employed, tell your Krankenkasse that the activity has ended so that contributions are no longer based on freelance income. When you take a job, you are usually insured compulsorily through your employer. [§ 5 SGB V](https://www.gesetze-im-internet.de/sgb_5/__5.html) If you had private insurance (PKV) and your salary is below the compulsory insurance threshold (Jahresarbeitsentgeltgrenze), you also move to the GKV. The exception: if you are 55 or older and were not in the GKV during the last five years, you stay in private insurance. [§ 6 SGB V](https://www.gesetze-im-internet.de/sgb_5/__6.html)
+- **KSK.** If you were insured through the Künstlersozialkasse, tell it that your creative work has ended.
+- **Pension insurance.** If you paid compulsory or voluntary contributions as self-employed, inform the Deutsche Rentenversicherung.
+- **Unemployment insurance.** Voluntary unemployment insurance for the self-employed ends with the activity. [§ 28a SGB III](https://www.gesetze-im-internet.de/sgb_3/__28a.html) If you have no job after closing, register with the Arbeitsagentur right away: your benefit depends on it.
+- **Professional liability.** Client claims can arrive after you close. Before cancelling your Berufshaftpflicht, check whether the policy covers claims made later (Nachhaftung) or whether you need separate cover for that period.
+
+### If you have a visa or residence permit for self-employment
+
+If your residence permit was issued for self-employment ([§ 21 AufenthG](https://www.gesetze-im-internet.de/aufenthg_2004/__21.html)), closing the business affects the basis of your stay. If an essential condition for the permit no longer applies, the Ausländerbehörde can shorten its validity. [§ 7 AufenthG](https://www.gesetze-im-internet.de/aufenthg_2004/__7.html) The Gewerbeamt also passes the Abmeldung on to the Ausländerbehörde.
+
+So agree on a new basis first, for example a residence permit for employment, and only then close the business. Check the procedure and documents with your Ausländerbehörde.
+
+### Closing checklist
+
+1. Decide whether to close completely or keep the business as a side gig.
+2. If you hold a self-employment residence permit, first discuss a new basis with the Ausländerbehörde.
+3. Finish or terminate your client contracts and send the last invoices. A sample termination letter is in [Chapter 7](#contract-termination-and-sample-letter).
+4. Freiberufler: tell the Finanzamt within one month that the activity has ended. Gewerbe: file the Gewerbeabmeldung and also write to the Finanzamt.
+5. Ask the Finanzamt to reduce your advance payments.
+6. Inform the Krankenkasse, the KSK, the Deutsche Rentenversicherung and the Berufsgenossenschaft if you are insured with them.
+7. Check the Nachhaftung terms, then cancel your business insurance.
+8. Before cancelling your accounting software, export all data and documents: the retention period continues. [Retention periods](#how-to-track-expenses-and-keep-receipts)
+9. Close the business account after the last incoming and outgoing payments.
+10. Take the website down or update the Impressum; cancel subscriptions and domains you no longer need.
+11. File the returns for the year you closed.
+12. Keep records for 8–10 years after the end of the year they were created. [§ 147 AO](https://www.gesetze-im-internet.de/ao_1977/__147.html)
 
 ## Useful resources
 
