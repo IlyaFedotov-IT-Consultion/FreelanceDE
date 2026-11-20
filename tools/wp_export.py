@@ -88,6 +88,13 @@ def build(lang, reference):
     }
     new_heading_ids = set(re.findall(r'<h[1-6] id="([^"]+)">', html))
     missing = sorted(set(heading_anchors) - new_heading_ids)
+    # A renamed heading keeps its old id as an <a id="old-id"></a> line before it
+    # in the Markdown; its legacy anchors go next to that alias.
+    for old in list(missing):
+        alias = f'<a id="{old}"></a>'
+        if alias in html:
+            html = html.replace(alias, alias + heading_anchors[old], 1)
+            missing.remove(old)
     if missing:
         fail("headings with legacy anchors were renamed or removed; map them first: "
              + ", ".join(missing))
