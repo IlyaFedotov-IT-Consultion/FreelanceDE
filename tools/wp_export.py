@@ -104,8 +104,16 @@ def build(lang, reference):
         html,
     )
 
+    # Anchor-only paragraphs come from <a id="old-id"></a> alias lines of renamed
+    # headings; legacy anchors published next to an alias stay next to it.
+    for m in re.finditer(r'<p>((?:<a id="[^"]*"></a>)+)</p>', body):
+        first, *rest = re.findall(r'<a id="[^"]*"></a>', m.group(1))
+        extra = "".join(a for a in rest if a not in html)
+        if extra and first in html:
+            html = html.replace(first, first + extra, 1)
+
     # Legacy anchors on paragraphs, matched by the paragraph's opening words.
-    for m in re.finditer(r'<p>((?:<a id="[^"]*"></a>)+)(.{40})', body):
+    for m in re.finditer(r'<p>((?:<a id="[^"]*"></a>)+)(?!<a id=)(.{40})', body):
         key = "<p>" + m.group(2)
         if key not in html:
             fail(f"paragraph with anchor {m.group(1)} changed; update its opening words")
@@ -117,7 +125,19 @@ def build(lang, reference):
     if len(ref_imgs) != len(new_imgs):
         fail(f"image count differs: published {len(ref_imgs)}, Markdown {len(new_imgs)}")
     it = iter(ref_imgs)
-    html = re.sub(r"<img [^>]*>", lambda _: next(it), html)
+
+    def media_img(m):
+        # Keep the media-library tag; a non-empty Markdown alt text replaces its alt.
+        tag = next(it)
+        alt = re.search(r'\balt="([^"]*)"', m.group(0))
+        if alt and alt.group(1).strip():
+            if re.search(r'\balt="[^"]*"', tag):
+                tag = re.sub(r'\balt="[^"]*"', lambda _: f'alt="{alt.group(1)}"', tag, count=1)
+            else:
+                tag = tag.replace("<img ", f'<img alt="{alt.group(1)}" ', 1)
+        return tag
+
+    html = re.sub(r"<img [^>]*>", media_img, html)
 
     html = html.replace("<table>", FIG + "<table>").replace("</table>", "</table></figure>")
     html = html.replace(' type="1"', "").replace("<li></li>\n", "")

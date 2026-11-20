@@ -165,7 +165,7 @@ Questions or feedback? Email fedotov.ilya (at) gmail.com or reach out on [Linked
 
 The overall registration flow looks roughly like this:
 
-![](../assets/freelancer-gewerbe-guide/media/image1.png)
+![ELSTER registration flow: from data entry to the certificate and first login](../assets/freelancer-gewerbe-guide/media/image1.png)
 
 ### Who are freelancers and Gewerbe owners in Germany?
 
@@ -175,7 +175,7 @@ In everyday English, “freelancer” can describe anyone who works for clients 
 
 Doctors, architects and translators are examples of the liberal professions. Independent teaching also qualifies. If you work in IT, describe what you actually deliver and what qualifications the work requires. Designing a complex system and repairing computers are quite different activities, even if both specialists introduce themselves as IT freelancers. [§ 18 EStG](https://www.gesetze-im-internet.de/estg/__18.html)
 
-Individuals practising only a liberal profession generally do not need registration in the Handelsregister or membership of the local chamber of commerce and industry (Industrie- und Handelskammer, IHK). Members of regulated professions may have their own professional chamber. But not every activity will be accepted as “freelance.” To check if you can be a Freiberufler, review the IHK guidance: [<u>https://www.ihk.de/magdeburg/recht/allgemeine-rechtsauskuenfte-1/gewerberecht-ordner/gewerbeordnung/freier-beruf/abgrenzung-gewerbe-und-freier-beruf-1717318</u>](https://www.ihk.de/magdeburg/recht/allgemeine-rechtsauskuenfte-1/gewerberecht-ordner/gewerbeordnung/freier-beruf/abgrenzung-gewerbe-und-freier-beruf-1717318)
+Individuals practising only a liberal profession generally do not need registration in the Handelsregister or membership of the local chamber of commerce and industry (Industrie- und Handelskammer, IHK). Members of regulated professions may have their own professional chamber. But not every activity will be accepted as “freelance.” To check if you can be a Freiberufler, review the IHK guidance: [IHK Magdeburg: Abgrenzung Gewerbe und freier Beruf](https://www.ihk.de/magdeburg/recht/allgemeine-rechtsauskuenfte-1/gewerberecht-ordner/gewerbeordnung/freier-beruf/abgrenzung-gewerbe-und-freier-beruf-1717318)
 
 ### Gewerbe (small business owners)
 
@@ -193,9 +193,9 @@ What about bookkeeping? A small workshop can also use simple cash-basis accounts
 
 Registration also varies by activity and region, so review local guidance:
 
-[<u>https://www.lexware.de/wissen/gruendung/gewerbe-anmelden/</u>](https://www.lexware.de/wissen/gruendung/gewerbe-anmelden/)
+[Lexware: Gewerbe anmelden](https://www.lexware.de/wissen/gruendung/gewerbe-anmelden/)
 
-[<u>https://www.ihk.de/karlsruhe/fachthemen/recht/gewerberecht/gewerbeanmeldung-4632354</u>](https://www.ihk.de/karlsruhe/fachthemen/recht/gewerberecht/gewerbeanmeldung-4632354)
+[IHK Karlsruhe: Gewerbeanmeldung](https://www.ihk.de/karlsruhe/fachthemen/recht/gewerberecht/gewerbeanmeldung-4632354)
 
 If you offer several things, describe each activity separately. Developing software for a client and selling hardware may need different accounting treatment. It is easier to settle that before the first invoice, while you can still explain exactly what the customer is buying.
 
@@ -205,43 +205,43 @@ So you don’t pick Freiberufler or Gewerbe like a tariff plan: your work decide
 
 **Prerequisite:** You need access to Mein ELSTER, the online portal for communicating with your tax office (Finanzamt). ELSTER stands for elektronische Steuererklärung, or electronic tax return. There you submit your freelance application, communicate with the tax office, file returns, and grant access to a Steuerberater. Steps:
 
-1. Go to [<u>https://www.elster.de/eportal/start?themaGlobal=help_registrierung</u>](https://www.elster.de/eportal/start?themaGlobal=help_registrierung)
+1. Go to [the ELSTER registration page](https://www.elster.de/eportal/start?themaGlobal=help_registrierung)
 
 2. Click **Next**
 
-![](../assets/freelancer-gewerbe-guide/media/image2.png)
+![ELSTER registration, step 2: the Next button](../assets/freelancer-gewerbe-guide/media/image2.png)
 
 3. Click **Next**
 
-![](../assets/freelancer-gewerbe-guide/media/image3.png)
+![ELSTER registration, step 3: the Next button](../assets/freelancer-gewerbe-guide/media/image3.png)
 
 4. Choose **Certificate file** and click **Select**
 
-![](../assets/freelancer-gewerbe-guide/media/image4.png)
+![ELSTER registration: choosing login with a certificate file](../assets/freelancer-gewerbe-guide/media/image4.png)
 
-5. Select **For me ( and my partner)** and click **Next**
+5. Select **For me (and my partner)** and click **Next**
 
-![](../assets/freelancer-gewerbe-guide/media/image5.png)
+![ELSTER registration: the For me (and my partner) option](../assets/freelancer-gewerbe-guide/media/image5.png)
 
 6. Choose **With tax identification number**
 
-![](../assets/freelancer-gewerbe-guide/media/image6.png)
+![ELSTER registration: registering with the tax identification number](../assets/freelancer-gewerbe-guide/media/image6.png)
 
 7. Enter your data in **Data Entry**, tick **I confirm**, and click **Next**
 
-![](../assets/freelancer-gewerbe-guide/media/image7.png)
+![ELSTER registration: Data Entry and the I confirm checkbox](../assets/freelancer-gewerbe-guide/media/image7.png)
 
 8. Fill **Pre-filling the income tax return**:
 
-If you want to share this account with your spouse/children, add their tax IDs here. Elster stores the data you provide and can prefill core forms next year. You can edit changes later; this saves time and shows what you filed previously. Click **Check** to review before submitting.
+    If you want to share this account with your spouse/children, add their tax IDs here. Elster stores the data you provide and can prefill core forms next year. You can edit changes later; this saves time and shows what you filed previously. Click **Check** to review before submitting.
 
-![](../assets/freelancer-gewerbe-guide/media/image8.png)
+![ELSTER: pre-filled tax return and access for a spouse or children](../assets/freelancer-gewerbe-guide/media/image8.png)
 
 9. Registration confirmation
 
-If everything is filled (grey fields), click **Submit**. You’ll get an email to confirm the data—click the activation link (valid for 7 days; check spam). Then you’ll receive a second letter with activation instructions and an activation ID—save it.
+    If everything is filled (grey fields), click **Submit**. You’ll get an email to confirm the data—click the activation link (valid for 7 days; check spam). Then you’ll receive a second letter with activation instructions and an activation ID—save it.
 
-![](../assets/freelancer-gewerbe-guide/media/image9.png)
+![ELSTER: email confirmed, activation data sent](../assets/freelancer-gewerbe-guide/media/image9.png)
 
 10. Registration in **Elster Online**
 
@@ -253,27 +253,27 @@ A dedicated account makes it easier to distinguish customer payments from person
 
 Note: not an ad for getsorted. The screenshots show the workflow when this guide was prepared. Button names may differ today.
 
-1. Sign up at [<u>https://en.getsorted.de</u>](https://en.getsorted.de)
+1. Sign up at [en.getsorted.de](https://en.getsorted.de)
 
 2. On the homepage, click **Start registration**
 
-![](../assets/freelancer-gewerbe-guide/media/image10.png)
+![Getsorted: home page with the Start registration button](../assets/freelancer-gewerbe-guide/media/image10.png)
 
 3. Fill the **Personal Details** form. Be sure to specify your profession.
 
 4. Fill in **Business Info.** Describe your profession and the work you do for clients. Finanzamt assesses your activity using these details. The software selection alone does not settle your status.
 
-![](../assets/freelancer-gewerbe-guide/media/image11.png)
+![Getsorted: Business Info form with the profession description](../assets/freelancer-gewerbe-guide/media/image11.png)
 
 5. **Tax Setup.** Under **Profit determination method**, choose single-entry bookkeeping if you use EÜR. Select the balance-sheet method if that is how you keep your books. For a commercial business, turnover over €800,000 or profit over €80,000 can trigger a bookkeeping obligation following notice from Finanzamt under §141 AO. That rule does not apply to income from a liberal profession. [§ 141 AO](https://www.gesetze-im-internet.de/ao_1977/__141.html)
 
 6. **Tax Estimation.** Enter your freelance status and expected income for the current and next year (details vary per situation).
 
-**Bank Account.** Enter the international bank account number (IBAN) you will use for business. If you have opened a dedicated account, use its details here.
+7. **Bank Account.** Enter the international bank account number (IBAN) you will use for business. If you have opened a dedicated account, use its details here.
 
-![](../assets/freelancer-gewerbe-guide/media/image12.png)
+![Getsorted: the Bank Account step of registration](../assets/freelancer-gewerbe-guide/media/image12.png)
 
-7. **Review and Submit.** Choose your local Finanzamt office and click **Submit to the Finanzamt**.
+8. **Review and Submit.** Choose your local Finanzamt office and click **Submit to the Finanzamt**.
 
 ### Detailed registration
 
@@ -283,11 +283,11 @@ Recommended walk-through videos:
 
 - Russian: **Tupa Germania**:
 
-[<u>https://www.youtube.com/watch?v=S9eyTPUcp1s</u>](https://www.youtube.com/watch?v=S9eyTPUcp1s)
+[Tupa Germania video on YouTube](https://www.youtube.com/watch?v=S9eyTPUcp1s)
 
 - German: **Steuerfit**:
 
-[<u>https://www.youtube.com/watch?v=Uqe_tQvaILg&t=1s</u>](https://www.youtube.com/watch?v=Uqe_tQvaILg&t=1s)
+[Steuerfit video on YouTube](https://www.youtube.com/watch?v=Uqe_tQvaILg&t=1s)
 
 **Gewerbe registration videos (German)**
 
@@ -356,7 +356,7 @@ Example: at €80,000 of taxable income in 2026, the basic single-person tariff 
 
 The screenshot below uses the 2024 tariff to illustrate the difference between the average and marginal rate.
 
-![](../assets/freelancer-gewerbe-guide/media/image13.png)
+![Income tax calculation with the 2024 tariff: average and marginal rate](../assets/freelancer-gewerbe-guide/media/image13.png)
 
 #### 2. VAT (Umsatzsteuer)
 
@@ -776,9 +776,9 @@ From 1 Jan 2025 an EU small-business VAT regime (EU-KUR) starts. It eases cross-
 
 Handy **tax calculators**:
 
-[<u>https://www.bmf-steuerrechner.de/</u>](https://www.bmf-steuerrechner.de/)
+[BMF-Steuerrechner](https://www.bmf-steuerrechner.de/)
 
-[<u>https://www.steuertipps.de/service/rechner/einkommensteuer-rechner</u>](https://www.steuertipps.de/service/rechner/einkommensteuer-rechner)
+[Steuertipps: Einkommensteuer-Rechner](https://www.steuertipps.de/service/rechner/einkommensteuer-rechner)
 
 ### Tax advisor
 
@@ -840,13 +840,13 @@ First consultations (Erstberatung) are often paid—ask upfront. Get quotes from
 
 Resources to find a Steuerberater in Germany:
 
-1. [**<u>Steuerberater.de</u>**](https://www.steuerberater.de) — large directory; filter by location/specialty.
+1. [**Steuerberater.de**](https://www.steuerberater.de) — large directory; filter by location/specialty.
 
-2. [**<u>Amtliches Steuerberaterverzeichnis</u>**](https://steuerberaterverzeichnis.berufs-org.de/?lang=de) — official register of the Federal Chamber of Tax Advisors, useful for checking whether someone is a registered Steuerberater.
+2. [**Amtliches Steuerberaterverzeichnis**](https://steuerberaterverzeichnis.berufs-org.de/?lang=de) — official register of the Federal Chamber of Tax Advisors, useful for checking whether someone is a registered Steuerberater.
 
-3. [**<u>DATEV eG</u>**](https://www.datev.com) — a cooperative that develops accounting software. Its directory can help you find a tax adviser.
+3. [**DATEV eG**](https://www.datev.com) — a cooperative that develops accounting software. Its directory can help you find a tax adviser.
 
-4. [**<u>Wirtschaftsprüferkammer</u>**](https://www.wpk.de) — auditors’ chamber registry, useful for complex/business/international cases.
+4. [**Wirtschaftsprüferkammer**](https://www.wpk.de) — auditors’ chamber registry, useful for complex/business/international cases.
 
 #### Tax advisor summary
 
@@ -1077,17 +1077,17 @@ Even with solid contracts, payments can be late. Start with a friendly reminder 
 
 ### Invoice template
 
-[<u>https://www.lexware.de/fileadmin/noindex-follow/wissen-tipps/vorlagen/lexware_rechnung_freiberufler_mustervorlage.odt</u>](https://www.lexware.de/fileadmin/noindex-follow/wissen-tipps/vorlagen/lexware_rechnung_freiberufler_mustervorlage.odt)
+[Lexware: invoice template for Freiberufler (ODT)](https://www.lexware.de/fileadmin/noindex-follow/wissen-tipps/vorlagen/lexware_rechnung_freiberufler_mustervorlage.odt)
 
-![](../assets/freelancer-gewerbe-guide/media/image15.png)
+![Sample freelancer invoice based on the Lexware template](../assets/freelancer-gewerbe-guide/media/image15.png)
 
 Note: accounting software and business online banks often include invoicing modules—you just fill missing fields.
 
 Example from **getsorted**:
 
-![](../assets/freelancer-gewerbe-guide/media/image16.png)
+![Getsorted: the Income section for invoicing](../assets/freelancer-gewerbe-guide/media/image16.png)
 
-![](../assets/freelancer-gewerbe-guide/media/image17.png)
+![Getsorted: creating an invoice (Add invoice)](../assets/freelancer-gewerbe-guide/media/image17.png)
 
 ### Invoicing via website and online platforms
 
@@ -1637,7 +1637,7 @@ Cost: €5–€10/month.
 
 Insurance table (September 2024 illustration, with historical costs and simplified cover descriptions):
 
-![Insurance overview with historical monthly costs, September 2024](../assets/freelancer-gewerbe-guide/media/en/insurance-overview-en.png)
+![Insurance table for the self-employed: mandatory or optional and monthly cost, September 2024](../assets/freelancer-gewerbe-guide/media/en/insurance-overview-en.png)
 
 <a id="9-conclusion"></a>
 
@@ -2049,11 +2049,11 @@ The right contract choice is key to successful project completion and transparen
 
 Contract templates:
 
-[<u>https://www.freelancermap.de/blog/freelancer-vertrag-abschliessen/#:~:text=Auch%20die%20jeweiligen%20Rechte%20und,%2D%2C%20Honorar%2D%20oder%20Beratervertr%C3%A4ge</u>](https://www.freelancermap.de/blog/freelancer-vertrag-abschliessen/#:~:text=Auch%20die%20jeweiligen%20Rechte%20und,%2D%2C%20Honorar%2D%20oder%20Beratervertr%C3%A4ge).
+[freelancermap: Freelancer-Vertrag abschließen](https://www.freelancermap.de/blog/freelancer-vertrag-abschliessen/#:~:text=Auch%20die%20jeweiligen%20Rechte%20und,%2D%2C%20Honorar%2D%20oder%20Beratervertr%C3%A4ge).
 
-[<u>https://www.frankfurt-main.ihk.de/recht/mustervertraege/freie-mitarbeiter-vertrag-5196842</u>](https://www.frankfurt-main.ihk.de/recht/mustervertraege/freie-mitarbeiter-vertrag-5196842)
+[IHK Frankfurt am Main: Vertrag für freie Mitarbeiter](https://www.frankfurt-main.ihk.de/recht/mustervertraege/freie-mitarbeiter-vertrag-5196842)
 
-[<u>https://www.arbeitsvertrag.org/freelancer-vertrag/</u>](https://www.arbeitsvertrag.org/freelancer-vertrag/)
+[arbeitsvertrag.org: Freelancer-Vertrag](https://www.arbeitsvertrag.org/freelancer-vertrag/)
 
 ### Contract termination and sample letter
 
